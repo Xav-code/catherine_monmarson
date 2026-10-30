@@ -1,0 +1,121 @@
+---
+import { Image } from 'astro:assets';
+import { useT, href, routes, type Lang } from '../../i18n/ui';
+import { featured, stats, imageOf, altText, seriesWithWorks } from '../../lib/works';
+import { quotes, statement } from '../../data/content';
+import WorkCard from '../WorkCard.astro';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+
+const hero = featured[0];
+const heroImg = hero ? imageOf(hero) : null;
+const rest = featured.slice(1, 7);
+const worksUrl = href(lang, routes[lang].works);
+---
+
+<section class="hero">
+  <p class="caps">{t('site.tagline')}</p>
+  <h1 style="margin-top: var(--s4)">
+    {lang === 'fr' ? 'Peinture & sculpture' : 'Painting & sculpture'}
+  </h1>
+  <p class="lede hero__sub">{t('home.intro')}</p>
+</section>
+
+{
+  hero && heroImg && (
+    <section class="stage reveal">
+      <figure class="stage__frame" style="margin:0">
+        <a href={href(lang, `${routes[lang].works}/${hero.slug}`)}>
+          <Image
+            src={heroImg}
+            alt={altText(hero, lang)}
+            widths={[720, 1100, 1600, 2000]}
+            sizes="(min-width: 1200px) 72rem, 94vw"
+            quality={82}
+            loading="eager"
+            fetchpriority="high"
+          />
+        </a>
+        <figcaption class="caps" style="margin-top: var(--s4); display:flex; gap: var(--s4); flex-wrap:wrap">
+          <span class="serif" style="font-size: var(--t-md); text-transform:none; letter-spacing:0; color: var(--ink)">
+            {hero.title[lang]}
+          </span>
+          <span>{hero.medium[lang]}</span>
+          {hero.dimensions && <span>{hero.dimensions.h} × {hero.dimensions.w} cm</span>}
+        </figcaption>
+      </figure>
+    </section>
+  )
+}
+
+<nav class="doors" aria-label={t('home.selected')}>
+  <a class="door link--quiet" href={`${worksUrl}?medium=peinture`}>
+    <h2>{t('home.door.paintings')}</h2>
+    <p>{t('home.door.paintings.note')}</p>
+    <span class="door__more link">{t('home.enter')} →</span>
+  </a>
+  <a class="door link--quiet" href={`${worksUrl}?medium=sculpture`}>
+    <h2>{t('home.door.sculpture')}</h2>
+    <p>{t('home.door.sculpture.note')}</p>
+    <span class="door__more link">{t('home.enter')} →</span>
+  </a>
+  <a class="door link--quiet" href={href(lang, routes[lang].studio)}>
+    <h2>{t('home.door.studio')}</h2>
+    <p>{t('home.door.studio.note')}</p>
+    <span class="door__more link">{t('home.enter')} →</span>
+  </a>
+</nav>
+
+<section class="section reveal">
+  <blockquote class="quote">
+    {quotes[0][lang]}
+    <cite>Catherine Monmarson</cite>
+  </blockquote>
+</section>
+
+<section class="section">
+  <div class="section__head">
+    <h2>{t('home.selected')}</h2>
+    <p class="caps" style="margin:0">{t('home.selected.note', { n: stats.total })}</p>
+  </div>
+  <div class="works works--roomy">
+    {rest.map((w) => <WorkCard work={w} lang={lang} />)}
+  </div>
+  <p style="margin-top: var(--s7)">
+    <a class="btn btn--ghost" href={worksUrl}>{t('home.allWorks')}</a>
+  </p>
+</section>
+
+<section class="section rule reveal">
+  <div class="section__head">
+    <h2>{t('home.series')}</h2>
+    <a class="link link--quiet caps" href={href(lang, routes[lang].series)}>{t('series.title')} →</a>
+  </div>
+  <ul class="doors" style="list-style:none; padding:0; margin:0">
+    {
+      seriesWithWorks.slice(0, 4).map((s) => (
+        <li class="door" style="border-top-color: var(--rule)">
+          <a class="link link--quiet" href={href(lang, `${routes[lang].series}/${s.slug}`)}>
+            <h2 style="font-size: var(--t-md)">{s[lang].name}</h2>
+          </a>
+          <p>{s[lang].note}</p>
+          <span class="door__more faint">{t('series.works', { n: s.works.length })}</span>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<section class="section reveal">
+  <div class="section__head">
+    <h2>{t('home.studioTitle')}</h2>
+    <a class="link link--quiet caps" href={href(lang, routes[lang].studio)}>{t('nav.studio')} →</a>
+  </div>
+  <div class="prose">
+    {statement[lang].slice(0, 2).map((p) => <p>{p}</p>)}
+  </div>
+</section>

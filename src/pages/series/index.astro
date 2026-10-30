@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import SeriesIndexView from '../../components/views/SeriesIndexView.astro';
+import { useT } from '../../i18n/ui';
+const t = useT('fr');
+---
+<Base lang="fr" paths={{ fr: '/series', en: '/series' }} title={t('series.title')} description={t('series.intro')}>
+  <SeriesIndexView lang="fr" />
+</Base>

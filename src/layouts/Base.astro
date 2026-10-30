@@ -1,0 +1,161 @@
+---
+import '../styles/global.css';
+import Masthead from '../components/Masthead.astro';
+import Footer from '../components/Footer.astro';
+import { useT, type Lang, href } from '../i18n/ui';
+import { artist } from '../data/content';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  description?: string;
+  /** This page's path in each language, without the language prefix.
+   *  e.g. { fr: '/oeuvres', en: '/works' } */
+  paths?: Partial<Record<Lang, string>>;
+  /** Absolute or site-relative image for social cards. */
+  ogImage?: string;
+  /** Extra JSON-LD to embed. */
+  schema?: unknown;
+  /** Trail above this page, nearest ancestor last: [{ name, path }]. */
+  crumbs?: { name: string; path: string }[];
+  /** Keep this page out of search results (confirmations, dead ends). */
+  noindex?: boolean;
+  wide?: boolean;
+}
+
+const {
+  lang,
+  title,
+  description,
+  paths = { fr: '/', en: '/' },
+  ogImage,
+  schema,
+  crumbs,
+  noindex = false,
+  wide = false,
+} = Astro.props;
+
+const t = useT(lang);
+const siteName = t('site.name');
+const pageTitle = title ? `${title} — ${siteName}` : `${siteName} — ${t('site.tagline')}`;
+const desc = description ?? t('site.description');
+const origin = Astro.site ?? new URL(Astro.url.origin);
+const pathFor = (l: Lang) => href(l, paths[l] ?? '/');
+const canonical = new URL(pathFor(lang), origin).toString();
+const altLang: Lang = lang === 'fr' ? 'en' : 'fr';
+const altHref = new URL(pathFor(altLang), origin).toString();
+/* Every page gets a social card; artwork pages override it with the work. */
+const og = new URL(ogImage ?? '/og-default.jpg', origin).toString();
+
+const breadcrumbSchema =
+  crumbs && crumbs.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { name: siteName, path: '/' },
+          ...crumbs,
+          ...(title ? [{ name: title, path: paths[lang] ?? '/' }] : []),
+        ].map((c, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: c.name,
+          item: new URL(href(lang, c.path), origin).toString(),
+        })),
+      }
+    : null;
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: artist.name,
+  jobTitle: lang === 'fr' ? 'Peintre et sculptrice' : 'Painter and sculptor',
+  birthDate: String(artist.born),
+  nationality: 'FR',
+  url: canonical,
+  sameAs: [artist.artmajeur, artist.instagram].filter(Boolean),
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: artist.city,
+    addressRegion: 'Alpes-Maritimes',
+    addressCountry: 'FR',
+  },
+};
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={desc} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={lang} href={canonical} />
+    <link rel="alternate" hreflang={altLang} href={altHref} />
+    <link rel="alternate" hreflang="x-default" href={new URL(pathFor('fr'), origin).toString()} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={title ?? siteName} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_GB'} />
+    <meta property="og:image" content={og} />
+    <meta property="og:image:alt" content={title ?? siteName} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@400;500&display=swap"
+    />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+    {breadcrumbSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    )}
+  </head>
+
+  <body>
+    <a class="skip" href="#main">{t('nav.skip')}</a>
+    <Masthead lang={lang} altHref={href(altLang, paths[altLang] ?? '/')} />
+    <main id="main" class={wide ? '' : 'shell'}>
+      <slot />
+    </main>
+    <Footer lang={lang} />
+
+    <script>
+      // Fade sections in once, cheaply. No library, no layout thrash.
+      const items = document.querySelectorAll('.reveal');
+      if (items.length) {
+        if (!('IntersectionObserver' in window)) {
+          items.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver(
+            (entries) => {
+              for (const e of entries) {
+                if (e.isIntersecting) {
+                  e.target.classList.add('is-in');
+                  io.unobserve(e.target);
+                }
+              }
+            },
+            { rootMargin: '0px 0px -8% 0px', threshold: 0.05 }
+          );
+          items.forEach((el) => io.observe(el));
+        }
+      }
+    </script>
+  </body>
+</html>

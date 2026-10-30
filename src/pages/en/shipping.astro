@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import ShippingView from '../../components/views/ShippingView.astro';
+import { useT } from '../../i18n/ui';
+const t = useT('en');
+---
+<Base
+  lang="en"
+  paths={{ fr: '/expedition', en: '/shipping' }}
+  title={t('ship.title')}
+  description={t('ship.intro')}
+>
+  <ShippingView lang="en" />
+</Base>

@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+import { artist } from '../data/content';
+---
+
+<Base
+  lang="fr"
+  paths={{ fr: '/mentions-legales', en: '/legal' }}
+  title="Mentions légales"
+  description="Mentions légales, conditions de vente et politique de confidentialité du site de Catherine Monmarson."
+>
+  <section class="hero" style="padding-block: var(--s8) var(--s6)">
+    <h1 style="font-size: var(--t-2xl)">Mentions légales</h1>
+  </section>
+
+  <div class="prose">
+    <h2>Éditeur du site</h2>
+    <p>
+      Catherine Monmarson — artiste plasticienne.<br />
+      {artist.address}<br />
+      Courriel : {artist.email}
+    </p>
+    <p class="faint">
+      SIRET et statut d’artiste-auteur à compléter avant la mise en ligne publique.
+    </p>
+
+    <h2>Hébergement</h2>
+    <p>
+      Site statique hébergé par Netlify, Inc. — 512 2nd Street, Suite 200, San Francisco,
+      CA 94107, États-Unis.
+    </p>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>
+      L’ensemble des œuvres, photographies et textes présentés sur ce site est la propriété
+      exclusive de Catherine Monmarson. Toute reproduction, représentation ou diffusion,
+      totale ou partielle, sans autorisation écrite préalable est interdite.
+    </p>
+
+    <h2>Conditions de vente</h2>
+    <h3>Œuvres</h3>
+    <p>
+      Chaque œuvre proposée est une pièce unique, originale, signée par l’artiste et
+      accompagnée d’un certificat d’authenticité. Les dimensions sont indiquées hors cadre,
+      hauteur × largeur. Les couleurs à l’écran peuvent légèrement différer de l’original.
+    </p>
+    <h3>Prix et paiement</h3>
+    <p>
+      Les prix sont indiqués en euros, toutes taxes comprises, hors frais d’expédition.
+      Le paiement s’effectue par carte bancaire via un prestataire sécurisé, ou par virement
+      bancaire. Un paiement en trois fois est possible, sur demande, au-delà de 1 500 €.
+    </p>
+    <h3>Expédition</h3>
+    <p>
+      Les œuvres sont expédiées depuis Biot (06410), emballées sur mesure et assurées pendant
+      le transport. Délai habituel : 5 à 10 jours ouvrés en France, 10 à 20 jours à
+      l’international. Les sculptures et les toiles de plus de 130 cm font l’objet d’un devis
+      de transport spécifique. Le retrait à l’atelier est possible sur rendez-vous.
+    </p>
+    <h3>Droit de rétractation</h3>
+    <p>
+      Conformément au code de la consommation, l’acheteur dispose de quatorze jours à compter
+      de la réception pour se rétracter, sans justification. L’œuvre doit être retournée dans
+      son emballage d’origine, en parfait état ; les frais de retour sont à la charge de
+      l’acheteur. Le remboursement intervient sous quatorze jours après réception.
+    </p>
+
+    <h2>Données personnelles</h2>
+    <p>
+      Les informations transmises par le formulaire de contact — nom, adresse électronique et
+      message — sont utilisées uniquement pour répondre à la demande. Elles ne sont ni
+      revendues ni transmises à des tiers, et sont conservées trois ans au maximum.
+      Conformément au RGPD, vous pouvez demander l’accès, la rectification ou l’effacement de
+      vos données en écrivant à {artist.email}.
+    </p>
+    <p>
+      Ce site n’utilise aucun cookie publicitaire ni traceur tiers. La mesure d’audience, si
+      elle est activée, est anonyme et sans cookie.
+    </p>
+
+    <h2>Médiation</h2>
+    <p class="faint">
+      Coordonnées du médiateur de la consommation à compléter avant la mise en ligne publique.
+    </p>
+  </div>
+</Base>

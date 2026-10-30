@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactView from '../components/views/ContactView.astro';
+import { useT } from '../i18n/ui';
+const t = useT('fr');
+---
+<Base lang="fr" paths={{ fr: '/contact', en: '/contact' }} title={t('contact.title')} description={t('contact.intro')}>
+  <ContactView lang="fr" />
+</Base>

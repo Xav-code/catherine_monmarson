@@ -1,0 +1,3 @@
+{
+  "_readme": "Map of work id -> Stripe Payment Link URL. Create one link per work in the Stripe dashboard (one-off, quantity 1, shipping address collected), paste the https://buy.stripe.com/... URL here, rebuild. Works listed here show a direct Buy button; everything else routes to the enquiry form. See ROADMAP section 4."
+}

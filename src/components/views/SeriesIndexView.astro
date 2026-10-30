@@ -1,0 +1,50 @@
+---
+import { Image } from 'astro:assets';
+import { useT, href, routes, type Lang } from '../../i18n/ui';
+import { seriesWithWorks, imageOf, altText } from '../../lib/works';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+---
+
+<section class="hero" style="padding-block: var(--s8) var(--s6)">
+  <h1 style="font-size: var(--t-2xl)">{t('series.title')}</h1>
+  <p class="lede hero__sub">{t('series.intro')}</p>
+</section>
+
+<div class="series-list" style="padding-block: var(--s7)">
+  {
+    seriesWithWorks.map((s) => (
+      <article class="series-row reveal">
+        <div>
+          <h2 style="font-size: var(--t-lg)">
+            <a class="link link--quiet" href={href(lang, `${routes[lang].series}/${s.slug}`)}>
+              {s[lang].name}
+            </a>
+          </h2>
+          <p class="muted" style="font-size: var(--t-sm); margin-top: var(--s3)">{s[lang].note}</p>
+          <p class="caps" style="margin:0">
+            <a class="link link--quiet" href={href(lang, `${routes[lang].series}/${s.slug}`)}>
+              {t('series.works', { n: s.works.length })} →
+            </a>
+          </p>
+        </div>
+        <div class="series-row__strip">
+          {s.works.slice(0, 6).map((w) => {
+            const img = imageOf(w);
+            return (
+              img && (
+                <a href={href(lang, `${routes[lang].works}/${w.slug}`)} aria-label={w.title[lang]}>
+                  <Image src={img} alt={altText(w, lang)} widths={[220, 440]} sizes="9rem" quality={68} loading="lazy" />
+                </a>
+              )
+            );
+          })}
+        </div>
+      </article>
+    ))
+  }
+</div>

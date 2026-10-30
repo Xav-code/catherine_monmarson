@@ -1,0 +1,13 @@
+[build]
+  command = "npm run catalogue && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# French is the default language; keep the bare domain on it.
+[[redirects]]
+  from = "/fr/*"
+  to = "/:splat"
+  status = 301
+  force = true

@@ -1,0 +1,79 @@
+---
+import { useT, href, route, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  /** Ready-made href for the same page in the other language. */
+  altHref: string;
+}
+const { lang, altHref } = Astro.props;
+const t = useT(lang);
+const other: Lang = lang === 'fr' ? 'en' : 'fr';
+
+const links = [
+  { href: route(lang, 'works'), label: t('nav.works') },
+  { href: route(lang, 'series'), label: t('nav.series') },
+  { href: route(lang, 'studio'), label: t('nav.studio') },
+  { href: route(lang, 'contact'), label: t('nav.contact') },
+];
+
+const here = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isCurrent = (h: string) => here === h.replace(/\/$/, '');
+---
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a href={href(lang)} class="wordmark link link--quiet">
+      Catherine Monmarson
+      <small>{t('site.role')}</small>
+    </a>
+
+    <button
+      class="nav__toggle caps"
+      aria-expanded="false"
+      aria-controls="sitenav"
+      data-label-open={t('nav.menu')}
+      data-label-close={t('nav.close')}
+    >
+      {t('nav.menu')}
+    </button>
+
+    <nav id="sitenav" class="nav" data-open="false" aria-label={t('nav.menu')}>
+      {
+        links.map((l) => (
+          <a href={l.href} aria-current={isCurrent(l.href) ? 'page' : undefined}>
+            {l.label}
+          </a>
+        ))
+      }
+      <span class="nav__lang">
+        <span aria-current="true">{lang.toUpperCase()}</span>
+        <span class="faint">/</span>
+        <a href={altHref} hreflang={other} class="link link--quiet">{other.toUpperCase()}</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.querySelector<HTMLButtonElement>('.nav__toggle');
+  const nav = document.getElementById('sitenav');
+  if (btn && nav) {
+    const set = (open: boolean) => {
+      nav.dataset.open = String(open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.textContent = open ? btn.dataset.labelClose! : btn.dataset.labelOpen!;
+    };
+    btn.addEventListener('click', () => set(nav.dataset.open !== 'true'));
+    nav.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) set(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.dataset.open === 'true') {
+        set(false);
+        btn.focus();
+      }
+    });
+    window.matchMedia('(min-width: 861px)').addEventListener('change', () => set(false));
+  }
+</script>

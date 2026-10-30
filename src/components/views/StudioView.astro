@@ -1,0 +1,146 @@
+---
+import { Image } from 'astro:assets';
+import { useT, href, routes, type Lang } from '../../i18n/ui';
+import {
+  artist,
+  biography,
+  statement,
+  process,
+  quotes,
+  soloShows,
+  groupShows,
+  collections,
+  press,
+} from '../../data/content';
+import { works, imageOf, altText } from '../../lib/works';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+
+/* Until Cathy sends studio photographs (ROADMAP §6.4), the studio page is
+   illustrated with raku pieces — the material the text is about. */
+const plates = works.filter((w) => w.series.includes('raku')).slice(0, 3);
+---
+
+<section class="hero" style="padding-block: var(--s8) var(--s6)">
+  <p class="caps">{artist.city} · {artist.region[lang]}</p>
+  <h1 style="font-size: var(--t-2xl); margin-top: var(--s4)">{t('studio.title')}</h1>
+</section>
+
+<section class="reveal" style="padding-bottom: var(--s8)">
+  <blockquote class="quote">
+    {quotes[0][lang]}
+    <cite>Catherine Monmarson</cite>
+  </blockquote>
+</section>
+
+<div class="prose">
+  {statement[lang].map((p) => <p>{p}</p>)}
+</div>
+
+<section class="section reveal">
+  <div class="section__head"><h2>{process[lang].title}</h2></div>
+  <div class="prose">
+    {process[lang].body.map((p) => <p>{p}</p>)}
+  </div>
+</section>
+
+{
+  plates.length > 0 && (
+    <section class="works" style="padding-block: var(--s7)">
+      {plates.map((w) => {
+        const img = imageOf(w);
+        return (
+          img && (
+            <figure class="card reveal" style="margin:0">
+              <a class="card__media" href={href(lang, `${routes[lang].works}/${w.slug}`)}>
+                <Image src={img} alt={altText(w, lang)} widths={[400, 700]} sizes="30vw" quality={72} loading="lazy" />
+              </a>
+              <figcaption class="card__meta">{w.title[lang]} · {w.medium[lang]}</figcaption>
+            </figure>
+          )
+        );
+      })}
+    </section>
+  )
+}
+
+<section class="section reveal">
+  <div class="section__head"><h2>{t('studio.cv')}</h2></div>
+  <div class="prose">
+    {biography[lang].map((p) => <p>{p}</p>)}
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="caps" style="font-family: var(--sans); margin-bottom: var(--s5)">{t('studio.solo')}</h2>
+  <div class="cv">
+    {
+      soloShows.map((e) => (
+        <div class="cv__row">
+          <span class="cv__year">{e.year}</span>
+          <span>{e[lang]}</span>
+        </div>
+      ))
+    }
+  </div>
+
+  <h2 class="caps" style="font-family: var(--sans); margin: var(--s8) 0 var(--s5)">
+    {t('studio.group')}
+  </h2>
+  <div class="cv">
+    {
+      groupShows.map((e) => (
+        <div class="cv__row">
+          <span class="cv__year">{e.year}</span>
+          <span>{e[lang]}</span>
+        </div>
+      ))
+    }
+  </div>
+
+  <h2 class="caps" style="font-family: var(--sans); margin: var(--s8) 0 var(--s5)">
+    {t('studio.collections')}
+  </h2>
+  <div class="cv">
+    {
+      collections.map((c) => (
+        <div class="cv__row">
+          <span class="cv__year">—</span>
+          <span>{c[lang]}</span>
+        </div>
+      ))
+    }
+  </div>
+
+  {
+    press.length > 0 && (
+      <>
+        <h2 class="caps" style="font-family: var(--sans); margin: var(--s8) 0 var(--s5)">
+          {t('studio.press')}
+        </h2>
+        {press.map((p) => (
+          <blockquote class="quote" style="font-size: var(--t-lg)">
+            {p[lang]}
+            <cite>
+              {p.source}, {p.year}
+            </cite>
+          </blockquote>
+        ))}
+      </>
+    )
+  }
+</section>
+
+<section class="section rule reveal">
+  <blockquote class="quote">
+    {quotes[3][lang]}
+    <cite>Catherine Monmarson</cite>
+  </blockquote>
+  <p style="margin-top: var(--s7)">
+    <a class="btn" href={href(lang, routes[lang].contact)}>{t('nav.contact')}</a>
+  </p>
+</section>

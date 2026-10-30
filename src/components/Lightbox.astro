@@ -1,0 +1,102 @@
+---
+import { useT, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+---
+
+<div
+  class="lightbox"
+  id="lightbox"
+  hidden
+  role="dialog"
+  aria-modal="true"
+  aria-label={t('work.zoom')}
+>
+  <div class="lightbox__bar">
+    <span id="lightbox-title"></span>
+    <span class="faint" id="lightbox-pos"></span>
+    <button type="button" id="lightbox-prev" class="link link--quiet" hidden>← {t('work.prevView')}</button>
+    <button type="button" id="lightbox-next" class="link link--quiet" hidden>{t('work.nextView')} →</button>
+    <button type="button" id="lightbox-close" class="link link--quiet" style="margin-left:auto">
+      {t('nav.close')} ✕
+    </button>
+  </div>
+  <div class="lightbox__canvas" id="lightbox-canvas" data-zoom="out">
+    <img id="lightbox-img" alt="" />
+  </div>
+</div>
+
+<script>
+  const box = document.getElementById('lightbox');
+  const canvas = document.getElementById('lightbox-canvas');
+  const img = document.getElementById('lightbox-img') as HTMLImageElement | null;
+  const label = document.getElementById('lightbox-title');
+  const pos = document.getElementById('lightbox-pos');
+  const closeBtn = document.getElementById('lightbox-close');
+  const prevBtn = document.getElementById('lightbox-prev');
+  const nextBtn = document.getElementById('lightbox-next');
+
+  if (box && canvas && img && closeBtn && prevBtn && nextBtn) {
+    const panes = Array.from(document.querySelectorAll<HTMLElement>('[data-zoomable]'));
+    let index = 0;
+    let opener: HTMLElement | null = null;
+
+    const render = () => {
+      const el = panes[index];
+      if (!el) return;
+      img.src = el.dataset.full || '';
+      img.alt = el.dataset.alt || '';
+      if (label) label.textContent = el.dataset.caption || '';
+      if (pos) pos.textContent = panes.length > 1 ? `${index + 1} / ${panes.length}` : '';
+      canvas.dataset.zoom = 'out';
+      canvas.scrollTo(0, 0);
+      prevBtn.hidden = panes.length < 2;
+      nextBtn.hidden = panes.length < 2;
+    };
+
+    const open = (i: number) => {
+      index = i;
+      render();
+      box.hidden = false;
+      document.documentElement.style.overflow = 'hidden';
+      closeBtn.focus();
+    };
+
+    const close = () => {
+      box.hidden = true;
+      document.documentElement.style.overflow = '';
+      opener?.focus();
+    };
+
+    const step = (d: number) => {
+      index = (index + d + panes.length) % panes.length;
+      render();
+    };
+
+    panes.forEach((el, i) =>
+      el.addEventListener('click', () => {
+        opener = el;
+        open(i);
+      })
+    );
+
+    closeBtn.addEventListener('click', close);
+    prevBtn.addEventListener('click', () => step(-1));
+    nextBtn.addEventListener('click', () => step(1));
+
+    canvas.addEventListener('click', () => {
+      canvas.dataset.zoom = canvas.dataset.zoom === 'in' ? 'out' : 'in';
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (box.hidden) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft' && panes.length > 1) step(-1);
+      if (e.key === 'ArrowRight' && panes.length > 1) step(1);
+    });
+  }
+</script>

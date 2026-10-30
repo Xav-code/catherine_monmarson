@@ -1,0 +1,29 @@
+---
+import { useT, href, routes, type Lang } from '../../i18n/ui';
+import { inSeries } from '../../lib/works';
+import { series as seriesMeta } from '../../data/content';
+import WorkCard from '../WorkCard.astro';
+
+interface Props {
+  lang: Lang;
+  slug: string;
+}
+const { lang, slug } = Astro.props;
+const t = useT(lang);
+const meta = seriesMeta.find((s) => s.slug === slug)!;
+const items = inSeries(slug);
+---
+
+<nav style="padding-block: var(--s5)">
+  <a class="link link--quiet caps" href={href(lang, routes[lang].series)}>← {t('series.title')}</a>
+</nav>
+
+<section class="hero" style="padding-block: var(--s5) var(--s6)">
+  <h1 style="font-size: var(--t-2xl)">{meta[lang].name}</h1>
+  <p class="lede hero__sub">{meta[lang].note}</p>
+  <p class="caps" style="margin-top: var(--s4)">{t('series.works', { n: items.length })}</p>
+</section>
+
+<div class="works works--roomy" style="padding-block: var(--s7)">
+  {items.map((w) => <WorkCard work={w} lang={lang} />)}
+</div>

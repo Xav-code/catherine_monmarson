@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import SeriesDetailView from '../../components/views/SeriesDetailView.astro';
+import { seriesWithWorks } from '../../lib/works';
+
+export function getStaticPaths() {
+  return seriesWithWorks.map((s) => ({ params: { slug: s.slug }, props: { meta: s } }));
+}
+const { meta } = Astro.props;
+---
+<Base
+  lang="fr"
+  paths={{ fr: `/series/${meta.slug}`, en: `/series/${meta.slug}` }}
+  title={meta.fr.name}
+  description={meta.fr.note}
+  crumbs={[{ name: 'Séries', path: '/series' }]}
+>
+  <SeriesDetailView lang="fr" slug={meta.slug} />
+</Base>

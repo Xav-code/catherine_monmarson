@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+import { useT, href, routes, type Lang } from '../i18n/ui';
+import {
+  imageOf,
+  altText,
+  formatPrice,
+  sizeBand,
+  priceBand,
+  type Work,
+} from '../lib/works';
+
+interface Props {
+  work: Work;
+  lang: Lang;
+  /* Cards stay lazy even above the fold: the browser fetches in-viewport lazy
+     images immediately anyway, and eager cards on a 162-item grid cost half a
+     megabyte of blocking fetch for no gain. Only true LCP elements — the
+     homepage hero and the artwork stage — are eager. */
+  /** Rendered width hints for srcset. */
+  widths?: number[];
+  sizes?: string;
+  priority?: boolean;
+}
+
+const { work, lang, widths = [280, 420, 560, 760], sizes = '(min-width: 1100px) 24rem, (min-width: 700px) 40vw, 86vw', priority = false } = Astro.props;
+const t = useT(lang);
+const img = imageOf(work);
+const url = href(lang, `${routes[lang].works}/${work.slug}`);
+const band = sizeBand(work);
+---
+
+<article
+  class="card reveal"
+  data-work
+  data-medium={work.category}
+  data-series={work.series.join(' ')}
+  data-size={band ?? ''}
+  data-price-band={priceBand(work) ?? ''}
+  data-availability={work.availability}
+  data-price={work.price ?? ''}
+  data-year={work.year ?? ''}
+>
+  <a href={url} class="card__media" aria-label={work.title[lang]}>
+    {
+      img && (
+        <Image
+          src={img}
+          alt={altText(work, lang)}
+          widths={widths}
+          sizes={sizes}
+          quality={70}
+          loading={priority ? 'eager' : 'lazy'}
+          decoding={priority ? 'sync' : 'async'}
+          fetchpriority={priority ? 'high' : 'auto'}
+        />
+      )
+    }
+  </a>
+
+  <div>
+    <h3 class="card__title">
+      <a class="link link--quiet" href={url}>{work.title[lang]}</a>
+      {work.year && <span class="faint"> · {work.year}</span>}
+    </h3>
+    <p class="card__meta">
+      <span>{work.medium[lang]}</span>
+      {work.dimensions && <span>{work.dimensions.h} × {work.dimensions.w} cm</span>}
+    </p>
+    <p style="margin:0.35rem 0 0">
+      {work.availability === 'sold' && <span class="card__sold">{t('avail.sold')}</span>}
+      {
+        work.availability === 'for-sale' && work.price && (
+          <span class="card__price">{formatPrice(work.price, lang)}</span>
+        )
+      }
+      {work.availability === 'on-request' && <span class="card__sold">{t('avail.on-request')}</span>}
+    </p>
+  </div>
+</article>

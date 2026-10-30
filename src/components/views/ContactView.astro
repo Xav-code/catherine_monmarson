@@ -1,0 +1,141 @@
+---
+import { useT, href, routes, type Lang } from '../../i18n/ui';
+import { artist } from '../../data/content';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+
+const subjects = [
+  'acquire',
+  'visit',
+  'commission',
+  'workshop',
+  'press',
+  'other',
+] as const;
+---
+
+<section class="hero" style="padding-block: var(--s8) var(--s6)">
+  <h1 style="font-size: var(--t-2xl)">{t('contact.title')}</h1>
+  <p class="lede hero__sub">{t('contact.intro')}</p>
+</section>
+
+<div class="contact-grid">
+  <!-- Netlify Forms: `data-netlify` is read at deploy time; the honeypot keeps bots out. -->
+  <form
+    class="form"
+    id="form"
+    name="enquiry"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action={href(lang, routes[lang].thanks)}
+  >
+    <input type="hidden" name="form-name" value="enquiry" />
+    <input type="hidden" name="subject-line" value={`Site — ${t('contact.title')}`} />
+    <input type="hidden" name="lang" value={lang} />
+    <input type="hidden" name="ref" id="field-ref" value="" />
+    <p hidden><label>Do not fill<input name="bot-field" /></label></p>
+
+    <div class="field">
+      <label for="f-name">{t('contact.name')} *</label>
+      <input id="f-name" name="name" type="text" required autocomplete="name" />
+    </div>
+
+    <div class="field">
+      <label for="f-email">{t('contact.email')} *</label>
+      <input id="f-email" name="email" type="email" required autocomplete="email" />
+    </div>
+
+    <div class="field">
+      <label for="f-subject">{t('contact.subject')}</label>
+      <select id="f-subject" name="subject">
+        {subjects.map((s) => <option value={s}>{t(`contact.subject.${s}` as 'contact.subject.other')}</option>)}
+      </select>
+    </div>
+
+    <div class="field" id="about-field" hidden>
+      <label for="f-about">{t('contact.about')}</label>
+      <input id="f-about" name="about" type="text" readonly />
+    </div>
+
+    <div class="field">
+      <label for="f-message">{t('contact.message')} *</label>
+      <textarea id="f-message" name="message" required></textarea>
+    </div>
+
+    <p class="field__hint">* {t('contact.required')}</p>
+
+    <p style="margin:0">
+      <button class="btn" type="submit">{t('contact.send')}</button>
+    </p>
+  </form>
+
+  <aside style="display:grid; gap: var(--s6); align-content:start">
+    <div>
+      <h2 class="caps" style="font-family: var(--sans); margin-bottom: var(--s3)">
+        {t('contact.studio')}
+      </h2>
+      <p class="muted" style="margin:0">
+        {artist.address}<br />
+        {t('contact.studioNote')}
+      </p>
+    </div>
+
+    <div id="workshops">
+      <h2 class="caps" style="font-family: var(--sans); margin-bottom: var(--s3)">
+        {t('contact.workshops')}
+      </h2>
+      <p class="muted" style="margin:0">{t('contact.workshopsNote')}</p>
+    </div>
+
+    <div>
+      <h2 class="caps" style="font-family: var(--sans); margin-bottom: var(--s3)">
+        {t('foot.elsewhere')}
+      </h2>
+      <p style="margin:0">
+        <a class="link link--quiet" href={artist.artmajeur} rel="noopener">ArtMajeur</a>
+      </p>
+    </div>
+  </aside>
+</div>
+
+<style>
+  .contact-grid {
+    display: grid;
+    gap: var(--s9);
+    grid-template-columns: minmax(0, 1fr);
+    padding-bottom: var(--s8);
+  }
+
+  @media (min-width: 900px) {
+    .contact-grid {
+      grid-template-columns: minmax(0, 1fr) 20rem;
+      gap: var(--s9) var(--s8);
+    }
+  }
+</style>
+
+<script>
+  // Arriving from an artwork's "Acquire" button: pre-fill what it is about.
+  const params = new URLSearchParams(location.search);
+  const about = params.get('about');
+  const ref = params.get('ref');
+  if (about) {
+    const field = document.getElementById('about-field');
+    const input = document.getElementById('f-about') as HTMLInputElement | null;
+    const subject = document.getElementById('f-subject') as HTMLSelectElement | null;
+    if (field && input) {
+      field.hidden = false;
+      input.value = ref ? `${about} (CM-${ref})` : about;
+    }
+    if (subject) subject.value = 'acquire';
+  }
+  if (ref) {
+    const hidden = document.getElementById('field-ref') as HTMLInputElement | null;
+    if (hidden) hidden.value = ref;
+  }
+</script>

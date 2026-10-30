@@ -1,0 +1,23 @@
+---
+import { useT, type Lang } from '../../i18n/ui';
+import { works, stats } from '../../lib/works';
+import Filters from '../Filters.astro';
+import WorkCard from '../WorkCard.astro';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+---
+
+<section class="hero" style="padding-block: var(--s8) var(--s6)">
+  <h1 style="font-size: var(--t-2xl)">{t('works.title')}</h1>
+  <p class="lede hero__sub">{t('works.intro', { n: stats.total })}</p>
+</section>
+
+<Filters lang={lang} total={works.length} />
+
+<div class="works" style="padding-block: var(--s8)">
+  {works.map((w) => <WorkCard work={w} lang={lang} />)}
+</div>

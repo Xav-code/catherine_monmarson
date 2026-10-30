@@ -1,0 +1,117 @@
+---
+import { useT, href, routes, type Lang } from '../../i18n/ui';
+import { terms } from '../../data/content';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+
+/* Written out in full rather than left to the legal page: a buyer deciding on a
+   €3 000 canvas wants this before the enquiry, not after. TO CONFIRM with Cathy —
+   the rates and the carrier are the two things she needs to settle. */
+const sections = {
+  fr: [
+    {
+      head: t('ship.packing'),
+      body: [
+        'Les toiles tendues sur châssis partent dans une caisse-carton double cannelure, coins renforcés, film et mousse. Les œuvres sur papier voyagent à plat entre deux plaques rigides.',
+        'Sur demande, une toile peut être détendue et expédiée roulée dans un tube — moins cher, plus simple à l’international, et le remontage est facile à faire sur place.',
+        'Les sculptures raku sont calées individuellement en mousse découpée puis mises en caisse bois. La terre enfumée est fragile : c’est le seul emballage que j’accepte pour elles.',
+      ],
+    },
+    {
+      head: t('ship.delays'),
+      body: [
+        'Comptez 3 à 5 jours ouvrés pour la préparation, puis 2 à 5 jours en France métropolitaine, 5 à 10 jours dans l’Union européenne, 10 à 20 jours au-delà.',
+        'Les grands formats et les sculptures passent par un transporteur spécialisé : le délai dépend de sa tournée, il est annoncé avant la commande.',
+      ],
+    },
+    {
+      head: t('ship.rates'),
+      body: [
+        'France métropolitaine : 25 € jusqu’à 100 cm, 60 € au-delà. Union européenne : 55 € jusqu’à 100 cm, 120 € au-delà. Reste du monde : sur devis.',
+        'Sculptures et toiles de plus de 130 cm : devis de transport spécifique, communiqué avant tout engagement. L’assurance est comprise dans tous les cas, à hauteur du prix de l’œuvre.',
+      ],
+    },
+    {
+      head: t('ship.returns'),
+      body: [
+        `Vous disposez de ${terms.returnDays} jours à compter de la réception pour changer d’avis, sans avoir à vous justifier.`,
+        'L’œuvre doit revenir dans son emballage d’origine et en parfait état. Les frais de retour sont à votre charge, sauf si l’œuvre est arrivée abîmée — dans ce cas je prends tout en charge, retour comme remboursement.',
+        'Le remboursement intervient sous quatorze jours après réception de l’œuvre à l’atelier.',
+      ],
+    },
+    {
+      head: t('ship.pickup'),
+      body: [
+        'Vous pouvez venir chercher l’œuvre à l’atelier, à Biot, sur rendez-vous. C’est gratuit, et cela permet de voir la pièce en vrai avant de décider — ainsi que les autres.',
+      ],
+    },
+  ],
+  en: [
+    {
+      head: t('ship.packing'),
+      body: [
+        'Stretched canvases travel in a double-wall carton with reinforced corners, film and foam. Works on paper travel flat between two rigid boards.',
+        'On request a canvas can be taken off its stretcher and sent rolled in a tube — cheaper, simpler internationally, and easy to re-stretch locally.',
+        'Raku sculpture is individually blocked in cut foam and then crated in timber. Smoke-fired clay is fragile; it is the only packing I will send it in.',
+      ],
+    },
+    {
+      head: t('ship.delays'),
+      body: [
+        'Allow 3–5 working days to prepare, then 2–5 days within mainland France, 5–10 days within the EU, 10–20 days beyond.',
+        'Large formats and sculpture go by a specialist carrier; the timing depends on their route and is confirmed before you order.',
+      ],
+    },
+    {
+      head: t('ship.rates'),
+      body: [
+        'Mainland France: €25 up to 100 cm, €60 above. European Union: €55 up to 100 cm, €120 above. Rest of the world: quoted.',
+        'Sculpture and canvases over 130 cm are quoted individually for freight, given to you before any commitment. Insurance to the full value of the work is included in every case.',
+      ],
+    },
+    {
+      head: t('ship.returns'),
+      body: [
+        `You have ${terms.returnDays} days from delivery to change your mind, with no reason needed.`,
+        'The work must come back in its original packing and in perfect condition. Return shipping is at your expense — unless the work arrived damaged, in which case I cover everything, return and refund both.',
+        'Refunds are issued within fourteen days of the work arriving back at the studio.',
+      ],
+    },
+    {
+      head: t('ship.pickup'),
+      body: [
+        'You are welcome to collect the work from the studio in Biot, by appointment. It costs nothing, and it lets you see the piece in person before deciding — along with the others.',
+      ],
+    },
+  ],
+};
+---
+
+<section class="hero" style="padding-block: var(--s8) var(--s6)">
+  <h1 style="font-size: var(--t-2xl)">{t('ship.title')}</h1>
+  <p class="lede hero__sub">{t('ship.intro')}</p>
+</section>
+
+<div class="ship-list" style="padding-bottom: var(--s8)">
+  {
+    sections[lang].map((s) => (
+      <section>
+        <h2>{s.head}</h2>
+        {s.body.map((p) => (
+          <p class="measure">{p}</p>
+        ))}
+      </section>
+    ))
+  }
+
+  <section>
+    <h2>{t('ship.questions')}</h2>
+    <p class="measure">
+      <a class="link link--quiet" href={href(lang, routes[lang].contact)}>{t('nav.contact')} →</a>
+    </p>
+  </section>
+</div>

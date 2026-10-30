@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import StudioView from '../components/views/StudioView.astro';
+import { useT } from '../i18n/ui';
+const t = useT('fr');
+---
+<Base
+  lang="fr"
+  paths={{ fr: '/atelier', en: '/studio' }}
+  title={t('studio.title')}
+  description="Catherine Monmarson — biographie, démarche, matières et parcours. Atelier à Biot, Côte d'Azur."
+>
+  <StudioView lang="fr" />
+</Base>

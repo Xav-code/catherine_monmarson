@@ -1,0 +1,148 @@
+---
+import { Image } from 'astro:assets';
+import { useT, href, routes, type Lang } from '../../i18n/ui';
+import { artist, biography, press, soloShows, collections } from '../../data/content';
+import { featured, imageOf, altText, stats } from '../../lib/works';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+
+/* Six works a journalist can use without asking. The same spine as the
+   homepage, so the press image and the site agree with each other. */
+const plates = featured.slice(0, 6);
+
+/* Built as one string so no JSX whitespace lands before a comma. */
+const caption = (w: (typeof plates)[number]) =>
+  [w.year ? `, ${w.year}` : '', ` — ${w.medium[lang]}`,
+   w.dimensions ? `, ${w.dimensions.h} × ${w.dimensions.w} cm` : ''].join('');
+
+const facts = [
+  {
+    k: lang === 'fr' ? 'Née' : 'Born',
+    v: `${artist.born}, ${artist.bornPlace[lang]}`,
+  },
+  {
+    k: lang === 'fr' ? 'Formation' : 'Training',
+    v: lang === 'fr' ? 'École des Beaux-Arts, Paris' : 'École des Beaux-Arts, Paris',
+  },
+  {
+    k: lang === 'fr' ? 'Atelier' : 'Studio',
+    v: `${artist.city}, ${artist.region[lang]}`,
+  },
+  {
+    k: lang === 'fr' ? 'Pratique' : 'Practice',
+    v:
+      lang === 'fr'
+        ? 'Peinture (pigments, cire, œuf, acrylique, huile) et sculpture (terre patinée, enfumée, raku)'
+        : 'Painting (pigment, wax, egg, acrylic, oil) and sculpture (patinated and smoke-fired raku clay)',
+  },
+  {
+    k: lang === 'fr' ? 'Expositions personnelles' : 'Solo exhibitions',
+    v: `${soloShows.length}${lang === 'fr' ? ', de 2000 à 2015' : ', 2000–2015'}`,
+  },
+  {
+    k: lang === 'fr' ? 'Œuvres au catalogue' : 'Catalogued works',
+    v: String(stats.total),
+  },
+  {
+    k: lang === 'fr' ? 'Collections' : 'Collections',
+    v: collections.map((c) => c[lang]).join(' · '),
+  },
+];
+---
+
+<section class="hero" style="padding-block: var(--s8) var(--s6)">
+  <h1 style="font-size: var(--t-2xl)">{t('press.title')}</h1>
+  <p class="lede hero__sub">{t('press.intro')}</p>
+</section>
+
+<section class="section" style="padding-top: var(--s5)">
+  <h2 class="caps" style="font-family: var(--sans); margin-bottom: var(--s5)">
+    {t('press.facts')}
+  </h2>
+  <dl class="facts" style="max-width: 44rem">
+    {
+      facts.map((f) => (
+        <div>
+          <dt>{f.k}</dt>
+          <dd>{f.v}</dd>
+        </div>
+      ))
+    }
+  </dl>
+</section>
+
+<section class="section">
+  <h2 class="caps" style="font-family: var(--sans); margin-bottom: var(--s5)">{t('press.bio')}</h2>
+  <div class="prose">
+    {biography[lang].map((p) => <p>{p}</p>)}
+  </div>
+</section>
+
+{
+  press.length > 0 && (
+    <section class="section">
+      <h2 class="caps" style="font-family: var(--sans); margin-bottom: var(--s5)">
+        {t('studio.press')}
+      </h2>
+      {press.map((p) => (
+        <blockquote class="quote" style="font-size: var(--t-lg)">
+          {p[lang]}
+          <cite>
+            {p.source}, {p.year}
+          </cite>
+        </blockquote>
+      ))}
+    </section>
+  )
+}
+
+<section class="section">
+  <div class="section__head">
+    <h2>{t('press.images')}</h2>
+  </div>
+  <p class="note muted measure" style="margin-bottom: var(--s6); font-size: var(--t-sm)">
+    {t('press.imagesNote')}
+  </p>
+  <div class="press-grid">
+    {
+      plates.map((w) => {
+        const img = imageOf(w);
+        return (
+          img && (
+            <figure>
+              <a href={href(lang, `${routes[lang].works}/${w.slug}`)}>
+                <Image
+                  src={img}
+                  alt={altText(w, lang)}
+                  widths={[320, 640]}
+                  sizes="(min-width: 900px) 15rem, 45vw"
+                  quality={75}
+                  loading="lazy"
+                />
+              </a>
+              <figcaption><i>{w.title[lang]}</i>{caption(w)}</figcaption>
+            </figure>
+          )
+        );
+      })
+    }
+  </div>
+</section>
+
+<section class="section rule">
+  <h2 class="caps" style="font-family: var(--sans); margin-bottom: var(--s4)">
+    {t('press.contact')}
+  </h2>
+  <p class="measure">
+    {artist.name} — {artist.address}
+  </p>
+  <p>
+    <a class="btn" href={`${href(lang, routes[lang].contact)}?subject=press`}>
+      {t('nav.contact')}
+    </a>
+  </p>
+</section>

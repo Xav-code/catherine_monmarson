@@ -1,0 +1,121 @@
+---
+import { Image } from 'astro:assets';
+import { useT, type Lang } from '../i18n/ui';
+import { imageOf, isThreeDimensional, type Work } from '../lib/works';
+
+interface Props {
+  work: Work;
+  lang: Lang;
+}
+const { work, lang } = Astro.props;
+const t = useT(lang);
+const img = imageOf(work);
+
+/* The box represents a wall 320 cm wide and 260 cm tall; because the element's
+   aspect-ratio matches, one centimetre is the same number of pixels in both
+   directions. The floor line sits at 18% of the height. */
+const WALL_W = 320;
+const WALL_H = 260;
+const FLOOR = 18; // % of height
+const floorCm = (WALL_H * FLOOR) / 100;
+const pctW = (cm: number) => (cm / WALL_W) * 100;
+const pctH = (cm: number) => (cm / WALL_H) * 100;
+
+const d = work.dimensions;
+const sculptural = isThreeDimensional(work);
+
+// Hung work: centre of the canvas at 150 cm above the floor.
+// Sculpture: stood on a 100 cm plinth.
+const PLINTH_H = 100;
+const PLINTH_W = 44;
+
+let art: { left: number; bottom: number; width: number; height: number } | null = null;
+let plinth: { left: number; bottom: number; width: number; height: number } | null = null;
+
+if (d) {
+  const width = pctW(d.w);
+  const height = pctH(d.h);
+  if (sculptural) {
+    const baseCm = floorCm + PLINTH_H;
+    art = {
+      left: 50 - width / 2,
+      bottom: pctH(baseCm),
+      width,
+      height,
+    };
+    plinth = {
+      left: 50 - pctW(PLINTH_W) / 2,
+      bottom: FLOOR,
+      width: pctW(PLINTH_W),
+      height: pctH(PLINTH_H),
+    };
+  } else {
+    const centreCm = 150 + floorCm;
+    art = {
+      left: 50 - width / 2,
+      bottom: pctH(centreCm - d.h / 2),
+      width,
+      height,
+    };
+  }
+}
+---
+
+{
+  art && img && (
+    <figure class="room" style="margin:0">
+      <div class="room__wall">
+        <div class="room__floor" aria-hidden="true"></div>
+
+        {plinth && (
+          <div
+            class="room__plinth"
+            aria-hidden="true"
+            style={`left:${plinth.left}%;bottom:${plinth.bottom}%;width:${plinth.width}%;height:${plinth.height}%`}
+          />
+        )}
+
+        <div
+          class="room__art"
+          style={`left:${art.left}%;bottom:${art.bottom}%;width:${art.width}%;height:${art.height}%`}
+        >
+          <Image src={img} alt="" widths={[320, 560]} sizes="40vw" quality={70} loading="lazy" />
+        </div>
+
+        <svg
+          class="room__figure"
+          data-on="true"
+          id="room-figure"
+          viewBox="0 0 60 175"
+          style={`height:${pctH(175)}%`}
+          aria-hidden="true"
+          fill="currentColor"
+        >
+          <circle cx="30" cy="13" r="11" />
+          <path
+            d="M30 26c-11 0-18 6-19 17l-3 34c-.4 4 5 5 5.6 1l3.4-24 1.2 42-4.6 50c-.6 5 6.4 6 7.2 1l6.2-39h5.2l6.2 39c.8 5 7.8 4 7.2-1l-4.6-50 1.2-42 3.4 24c.6 4 6 3 5.6-1l-3-34C48 32 41 26 30 26Z"
+          />
+        </svg>
+      </div>
+
+      <figcaption class="room__caption">
+        <span>{t('work.room')}</span>
+        <label class="toggle" for="room-toggle">
+          <input type="checkbox" id="room-toggle" checked />
+          {t('work.roomToggle')}
+        </label>
+        <span class="faint">{t('work.roomNote')}</span>
+      </figcaption>
+    </figure>
+  )
+}
+
+<script>
+  const toggle = document.getElementById('room-toggle') as HTMLInputElement | null;
+  const figure = document.getElementById('room-figure');
+  if (toggle && figure) {
+    const sync = () => figure.setAttribute('data-on', String(toggle.checked));
+    toggle.addEventListener('change', sync);
+    sync();
+  }
+</script>

@@ -1,0 +1,115 @@
+---
+import { useT, href, route, type Lang } from '../i18n/ui';
+import { artist } from '../data/content';
+import { categories } from '../lib/works';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+const year = new Date().getFullYear();
+
+/* Buttondown, free under 100 subscribers. Replace the handle once the list
+   exists; until then the form posts to a list that does not accept signups,
+   so keep it out of the markup rather than shipping a dead field. */
+const newsletterAction = artist.newsletter
+  ? `https://buttondown.email/api/emails/embed-subscribe/${artist.newsletter}`
+  : null;
+---
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__grid">
+      <div>
+        <h3>{t('foot.explore')}</h3>
+        <ul>
+          <li><a class="link link--quiet" href={route(lang, 'works')}>{t('nav.works')}</a></li>
+          {
+            categories.map((c) => (
+              <li>
+                <a class="link link--quiet" href={`${route(lang, 'works')}?medium=${c}`}>
+                  {t(`cat.${c}` as 'cat.peinture')}
+                </a>
+              </li>
+            ))
+          }
+          <li><a class="link link--quiet" href={route(lang, 'series')}>{t('nav.series')}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>{t('foot.studio')}</h3>
+        <ul>
+          <li><a class="link link--quiet" href={route(lang, 'studio')}>{t('nav.studio')}</a></li>
+          <li><a class="link link--quiet" href={route(lang, 'contact')}>{t('nav.contact')}</a></li>
+          <li>
+            <a class="link link--quiet" href={`${route(lang, 'contact')}#workshops`}>
+              {t('contact.workshops')}
+            </a>
+          </li>
+          <li>
+            <a class="link link--quiet" href={route(lang, 'shipping')}>{t('ship.title')}</a>
+          </li>
+          <li><a class="link link--quiet" href={route(lang, 'press')}>{t('press.title')}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>{t('contact.studio')}</h3>
+        <p style="margin:0">
+          {artist.address}<br />
+          <span class="faint">{t('contact.studioNote')}</span>
+        </p>
+      </div>
+
+      {newsletterAction && (
+      <div class="news">
+        <h3>{t('news.title')}</h3>
+        <p style="margin:0">{t('news.note')}</p>
+        <form action={newsletterAction} method="post" target="_blank" rel="noopener">
+          <label class="visually-hidden" for="news-email">{t('news.email')}</label>
+          <input
+            id="news-email"
+            type="email"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder={t('news.email')}
+          />
+          <button type="submit">{t('news.submit')}</button>
+        </form>
+      </div>
+      )}
+
+      <div>
+        <h3>{t('foot.elsewhere')}</h3>
+        <ul>
+          <li>
+            <a class="link link--quiet" href={artist.artmajeur} rel="noopener">ArtMajeur</a>
+          </li>
+          {
+            artist.instagram && (
+              <li>
+                <a class="link link--quiet" href={artist.instagram} rel="noopener">
+                  Instagram
+                </a>
+              </li>
+            )
+          }
+          <li>
+            <a class="link link--quiet" href={href(lang === 'fr' ? 'en' : 'fr')}>
+              {t(lang === 'fr' ? 'lang.en' : 'lang.fr')}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot__base">
+      <span>{t('foot.rights', { y: year })}</span>
+      <span>{t('foot.credit')}</span>
+      <a class="link link--quiet" href={route(lang, 'legal')}>{t('foot.legal')}</a>
+    </div>
+  </div>
+</footer>

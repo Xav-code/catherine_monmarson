@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import PressView from '../components/views/PressView.astro';
+import { useT } from '../i18n/ui';
+const t = useT('fr');
+---
+<Base lang="fr" paths={{ fr: '/presse', en: '/press' }} title={t('press.title')} description={t('press.intro')}>
+  <PressView lang="fr" />
+</Base>

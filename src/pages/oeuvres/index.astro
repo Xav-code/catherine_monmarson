@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import WorksView from '../../components/views/WorksView.astro';
+import { useT } from '../../i18n/ui';
+const t = useT('fr');
+---
+<Base lang="fr" paths={{ fr: "/oeuvres", en: "/works" }} title={t('works.title')} description={t('works.intro', { n: 162 })}>
+  <WorksView lang="fr" />
+</Base>

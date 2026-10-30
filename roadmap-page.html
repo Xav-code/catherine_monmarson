@@ -1,0 +1,838 @@
+<title>Monmarson Site Roadmap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+
+<style>
+  /* ----------------------------------------------------------------
+     Palette taken from raku itself: kiln smoke, crazed glaze, ash,
+     and the green that copper gives up in reduction.
+     ---------------------------------------------------------------- */
+  :root {
+    --ground: #edeeea;
+    --plate: #f6f6f3;
+    --sunk: #e3e5df;
+    --ink: #16181a;
+    --muted: #5e645f;
+    --faint: #8b918a;
+    --rule: #d3d6cf;
+    --rule-firm: #b9bdb4;
+    --accent: #3f6554;
+    --accent-soft: #dbe4dd;
+    --warn: #8a6a2f;
+    --warn-soft: #ece3d0;
+
+    --display: 'Fraunces', 'Iowan Old Style', Palatino, Georgia, serif;
+    --body: 'IBM Plex Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+    --mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+    --measure: 66ch;
+    --shell: 1180px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) {
+      --ground: #15171a;
+      --plate: #1c1f21;
+      --sunk: #101214;
+      --ink: #e6e8e3;
+      --muted: #9aa099;
+      --faint: #6d736c;
+      --rule: #2a2e30;
+      --rule-firm: #3d4244;
+      --accent: #8aab96;
+      --accent-soft: #22302a;
+      --warn: #c3a265;
+      --warn-soft: #2e2719;
+    }
+  }
+
+  :root[data-theme='dark'] {
+    --ground: #15171a;
+    --plate: #1c1f21;
+    --sunk: #101214;
+    --ink: #e6e8e3;
+    --muted: #9aa099;
+    --faint: #6d736c;
+    --rule: #2a2e30;
+    --rule-firm: #3d4244;
+    --accent: #8aab96;
+    --accent-soft: #22302a;
+    --warn: #c3a265;
+    --warn-soft: #2e2719;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 0.01ms !important; }
+  }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+  a:hover { border-bottom-color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  h1, h2, h3 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-variation-settings: 'SOFT' 0, 'WONK' 0;
+    line-height: 1.14;
+    letter-spacing: -0.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  p { margin: 0; text-wrap: pretty; max-width: var(--measure); }
+
+  /* --------------------------------------------------------- shell */
+
+  .shell {
+    max-width: var(--shell);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 3rem);
+  }
+
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding-block: clamp(2.5rem, 6vw, 4.5rem) clamp(2rem, 4vw, 3rem);
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .masthead h1 {
+    font-size: clamp(2.5rem, 6.5vw, 4.25rem);
+    margin-top: 1rem;
+  }
+
+  .masthead h1 em {
+    font-style: normal;
+    font-variation-settings: 'SOFT' 40, 'WONK' 1;
+    color: var(--accent);
+  }
+
+  .standfirst {
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    color: var(--muted);
+  }
+
+  /* The three references are the thesis of the whole project. */
+  .thesis {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: clamp(2rem, 4vw, 3rem);
+  }
+
+  .thesis div {
+    background: var(--plate);
+    padding: 1.25rem 1.375rem 1.5rem;
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+  }
+
+  .thesis dt {
+    font-family: var(--display);
+    font-size: 1.1875rem;
+  }
+
+  .thesis dd {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  /* ------------------------------------------------------- the body */
+
+  .layout {
+    display: grid;
+    gap: clamp(2rem, 5vw, 4rem);
+    padding-block: clamp(2.5rem, 5vw, 4rem) 0;
+  }
+
+  @media (min-width: 960px) {
+    .layout {
+      grid-template-columns: 12rem minmax(0, 1fr);
+    }
+    .toc {
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
+  }
+
+  .toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.8125rem;
+  }
+
+  .toc a {
+    display: grid;
+    grid-template-columns: 1.75rem 1fr;
+    gap: 0.25rem;
+    color: var(--muted);
+    border: 0;
+  }
+
+  .toc a:hover { color: var(--ink); }
+
+  .toc .num {
+    font-family: var(--mono);
+    font-size: 0.6875rem;
+    color: var(--faint);
+    padding-top: 0.22em;
+  }
+
+  .sections { display: grid; gap: clamp(3rem, 6vw, 5rem); }
+
+  section { display: grid; gap: 1.25rem; scroll-margin-top: 1.5rem; }
+
+  section > h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 0.5rem;
+    align-items: baseline;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule-firm);
+  }
+
+  section > h2 .num {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 1.0625rem;
+    font-family: var(--body);
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .stack { display: grid; gap: 0.875rem; }
+
+  /* ------------------------------------------------------ data bits */
+
+  /* Figures earned a tile only here, where the harvest IS the finding. */
+  .harvest {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+
+  .harvest div {
+    background: var(--plate);
+    padding: 1rem 1.125rem 1.125rem;
+  }
+
+  .harvest .figure {
+    font-family: var(--display);
+    font-size: 2rem;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    display: block;
+  }
+
+  .harvest .figure small {
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  .harvest .label {
+    font-family: var(--mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .scroller { overflow-x: auto; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    min-width: 30rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0.625rem 1rem 0.625rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  thead th {
+    font-family: var(--mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    font-weight: 400;
+    border-bottom-color: var(--rule-firm);
+  }
+
+  td:first-child { color: var(--ink); white-space: nowrap; padding-right: 1.5rem; }
+  td.wrap { white-space: normal; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+  .token {
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+    color: var(--muted);
+  }
+
+  .swatch {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 1px solid var(--rule-firm);
+    vertical-align: -1px;
+    margin-right: 0.4rem;
+  }
+
+  /* Status carries its own form, not just a word. */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid var(--rule-firm);
+    white-space: nowrap;
+  }
+
+  .chip::before {
+    content: '';
+    width: 0.4rem;
+    height: 0.4rem;
+    background: currentColor;
+  }
+
+  .chip--done { color: var(--accent); background: var(--accent-soft); border-color: transparent; }
+  .chip--blocked { color: var(--warn); background: var(--warn-soft); border-color: transparent; }
+  .chip--open { color: var(--faint); }
+  .chip--open::before { background: none; border: 1px solid currentColor; }
+
+  /* Numbered because the asks have a real priority order. */
+  ol.asks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: ask;
+    display: grid;
+    gap: 0.875rem;
+  }
+
+  ol.asks li {
+    counter-increment: ask;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 0.5rem;
+    max-width: var(--measure);
+  }
+
+  ol.asks li::before {
+    content: counter(ask, decimal-leading-zero);
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--faint);
+    padding-top: 0.3em;
+  }
+
+  ul.plain {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.625rem;
+    max-width: var(--measure);
+  }
+
+  ul.plain li {
+    display: grid;
+    grid-template-columns: 0.75rem 1fr;
+    gap: 0.75rem;
+  }
+
+  ul.plain li::before {
+    content: '';
+    width: 0.3rem;
+    height: 0.3rem;
+    background: var(--rule-firm);
+    margin-top: 0.75em;
+  }
+
+  /* The recommendation is the one place the page raises its voice. */
+  .recommendation {
+    border-left: 2px solid var(--accent);
+    padding: 1.25rem 0 1.25rem 1.5rem;
+    background: linear-gradient(90deg, var(--accent-soft), transparent 70%);
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .recommendation p:first-child {
+    font-family: var(--display);
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+
+  .ia {
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+    line-height: 1.9;
+    background: var(--sunk);
+    border: 1px solid var(--rule);
+    padding: 1.125rem 1.25rem;
+    margin: 0;
+    overflow-x: auto;
+  }
+
+  .ia b { font-weight: 500; color: var(--accent); }
+  .ia span { color: var(--muted); }
+
+  .note {
+    font-size: 0.875rem;
+    color: var(--muted);
+    max-width: var(--measure);
+  }
+
+  .gaps {
+    border: 1px solid var(--rule);
+    border-left: 2px solid var(--warn);
+    background: var(--plate);
+    padding: 1rem 1.25rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .gaps h3 { color: var(--warn); font-family: var(--mono); font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; }
+
+  footer {
+    margin-top: clamp(4rem, 8vw, 6rem);
+    border-top: 1px solid var(--rule);
+    padding-block: 1.5rem 3rem;
+    font-family: var(--mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+  }
+</style>
+
+<div class="shell masthead">
+  <p class="eyebrow">Catherine Monmarson · Biot, Alpes-Maritimes · October 2026</p>
+  <h1>A website for the <em>paintings</em> and the <em>raku</em></h1>
+  <p class="standfirst">
+    A plan for an elegant, quiet, commerce-capable site that raises Cathy's visibility
+    and turns attention into sales — across paintings, works on paper, and raku-fired clay.
+  </p>
+
+  <dl class="thesis">
+    <div>
+      <dt>Artsy</dt>
+      <dd>Restraint. One large image per screen, minimal type, a neutral ground, no rails.</dd>
+    </div>
+    <div>
+      <dt>Singulart</dt>
+      <dd>The artist's story. Voice, studio, process, materials — the <i>why</i> behind the work.</dd>
+    </div>
+    <div>
+      <dt>Saatchi Art</dt>
+      <dd>Sculpture handling. Multiple viewing angles, scale cues, the work previewed in a room.</dd>
+    </div>
+  </dl>
+</div>
+
+<div class="shell layout">
+  <nav class="toc" aria-label="Sections">
+    <ol>
+      <li><a href="#s0"><span class="num">00</span><span>What we have</span></a></li>
+      <li><a href="#s1"><span class="num">01</span><span>Structure</span></a></li>
+      <li><a href="#s2"><span class="num">02</span><span>Design system</span></a></li>
+      <li><a href="#s3"><span class="num">03</span><span>The artwork page</span></a></li>
+      <li><a href="#s4"><span class="num">04</span><span>Commerce</span></a></li>
+      <li><a href="#s5"><span class="num">05</span><span>Stack</span></a></li>
+      <li><a href="#s6"><span class="num">06</span><span>What Cathy owes</span></a></li>
+      <li><a href="#s7"><span class="num">07</span><span>Phasing</span></a></li>
+      <li><a href="#s8"><span class="num">08</span><span>Visibility</span></a></li>
+      <li><a href="#s9"><span class="num">09</span><span>Measures</span></a></li>
+    </ol>
+  </nav>
+
+  <div class="sections">
+
+    <section id="s0">
+      <h2><span class="num">00</span><span>What we already have</span></h2>
+      <p>
+        Her ArtMajeur profile has been harvested into a catalogue the site builds from —
+        works, media, dimensions, prices, series, availability, and the images themselves.
+      </p>
+
+      <div class="harvest">
+        <div><span class="figure">163</span><span class="label">Works catalogued</span></div>
+        <div><span class="figure">23</span><span class="label">Raku sculptures</span></div>
+        <div><span class="figure">162</span><span class="label">HD images, 36 MB</span></div>
+        <div><span class="figure">8</span><span class="label">Series</span></div>
+        <div><span class="figure"><small>€</small>209–4 799</span><span class="label">Price range</span></div>
+      </div>
+
+      <div class="stack">
+        <h3>The series, in her own naming</h3>
+        <p class="note">
+          Sculptures raku · Céramiques raku · Terres patinées &amp; enfumées · Land Art ·
+          Paravents · Grands formats · Petits formats · Peintures acryliques
+        </p>
+      </div>
+
+      <div class="stack">
+        <h3>The path</h3>
+        <p class="note">
+          Born 1947 in Orléans. Beaux-Arts de Paris. South of France since 1974 —
+          Châteauneuf-de-Grasse, then Biot from 2012, where she also leads visual arts
+          workshops. Around twenty-five solo and group shows between 1993 and 2015,
+          in France, Belgium and Denmark.
+        </p>
+      </div>
+
+      <div class="gaps">
+        <h3>Known gaps</h3>
+        <p class="note">
+          55 works still carry a camera filename instead of a title. Roughly 40% have no
+          year. The sculptures have height and width but no depth. And there is exactly one
+          photograph per work — no second angle, no surface detail, no scale shot. All of it
+          is fixable, and all of it needs Cathy (§06).
+        </p>
+      </div>
+    </section>
+
+    <section id="s1">
+      <h2><span class="num">01</span><span>Structure</span></h2>
+      <p>
+        One site, two languages — French by default, English second. French is her market;
+        English is her reach. Five destinations a visitor navigates, plus two they are sent to.
+      </p>
+
+      <pre class="ia">/                     <span>Hero: one full-bleed work. Three doors: Peintures · Sculptures · L'atelier</span>
+/oeuvres              <span>The catalogue. Filter by medium · série · format · prix · disponibilité</span>
+/oeuvres/<b>[œuvre]</b>      <span>THE SALES PAGE. Large image, zoom, angles, room preview, price, Acquérir</span>
+/series/<b>[série]</b>       <span>Curated groupings — Raku, Land Art, Grands formats, Paravents…</span>
+/atelier              <span>Biography, statement, process, materials, studio photographs, CV</span>
+/contact              <span>Enquiry, studio visits by appointment in Biot, workshops</span>
+/expedition           <span>Packing, delivery times, rates, returns, collection from the studio</span>
+/presse               <span>Press facts, biographical note, six credited images</span></pre>
+
+      <p class="note">
+        Deliberately absent: a sidebar, a homepage carousel, social-proof badges,
+        a “trending” rail. The restraint <i>is</i> the brand.
+      </p>
+    </section>
+
+    <section id="s2">
+      <h2><span class="num">02</span><span>Design system</span></h2>
+      <p>
+        No accent colour anywhere. The paintings are the colour; the page gives them a
+        warm paper ground and one hairline rule, and otherwise stays out of the way.
+      </p>
+
+      <div class="scroller">
+        <table>
+          <thead>
+            <tr><th scope="col">Token</th><th scope="col">Decision</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ground</td>
+              <td class="wrap"><span class="swatch" style="background:#faf9f7"></span><span class="token">#FAF9F7</span> — warm paper white. Never pure white behind pigment.</td>
+            </tr>
+            <tr>
+              <td>Ink</td>
+              <td class="wrap"><span class="swatch" style="background:#1a1a1a"></span><span class="token">#1A1A1A</span>, muted <span class="token">#6B6560</span></td>
+            </tr>
+            <tr>
+              <td>Accent</td>
+              <td class="wrap">None. One hairline rule at <span class="token">#E4E0DA</span>.</td>
+            </tr>
+            <tr>
+              <td>Display type</td>
+              <td class="wrap">Cormorant Garamond — titles, prices, dimensions.</td>
+            </tr>
+            <tr>
+              <td>Text type</td>
+              <td class="wrap">Inter, 15–17 px, 1.7 line-height.</td>
+            </tr>
+            <tr>
+              <td>Rhythm</td>
+              <td class="wrap">One work per viewport in editorial sections; 2-up or 3-up only in the index grid.</td>
+            </tr>
+            <tr>
+              <td>Motion</td>
+              <td class="wrap">Opacity-only fade, 400 ms. No parallax, no zoom-on-hover.</td>
+            </tr>
+            <tr>
+              <td>Dark mode</td>
+              <td class="wrap">Token-swapped — but artwork always sits on a near-paper plate, never inverted.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note">
+        Accessibility throughout: AA contrast, visible focus rings, a full keyboard path
+        through the lightbox and the filters, and real alt text per work built from its
+        medium and subject.
+      </p>
+    </section>
+
+    <section id="s3">
+      <h2><span class="num">03</span><span>The artwork page</span></h2>
+      <p>This is where sales happen, so it gets the most thought. Seven parts, in order down the page.</p>
+
+      <ol class="asks">
+        <li><span><b>Image stage.</b> Full-height, click to zoom to HD, arrow keys between works.</span></li>
+        <li><span><b>Angles strip.</b> For sculpture: front, three-quarter, profile, detail — thumbnails under the stage.</span></li>
+        <li><span><b>Room preview.</b> The work at true scale on a 3,20 m wall, with a 1,75 m silhouette you can toggle. Sculpture stands on a 100 cm plinth. The single biggest conversion lever for ceramic and for large canvas.</span></li>
+        <li><span><b>Facts.</b> Title, year, medium verbatim (“Pigments sur toile”, “Terre enfumée, raku”), height × width in cm <i>and</i> inches, unique, signed, certificate of authenticity.</span></li>
+        <li><span><b>Price and action.</b> Up to €800, a direct <i>Acheter</i>. Above that, <i>Acquérir</i> — a form, answered within 48 hours. Sold: “demander une œuvre proche de cette série”.</span></li>
+        <li><span><b>Reassurance.</b> Ships from Biot, insured, packed to measure; crated freight for sculpture; 14-day return.</span></li>
+        <li><span><b>Context.</b> Three further works from the same series. Nothing else.</span></li>
+      </ol>
+    </section>
+
+    <section id="s4">
+      <h2><span class="num">04</span><span>Commerce</span></h2>
+
+      <div class="recommendation">
+        <p>Launch on Stripe Payment Links. No shop platform.</p>
+        <p class="note">
+          Every work is unique, quantity one. Stripe gives card plus Apple and Google Pay
+          and French VAT handling with no monthly fee — about 1,5% + €0,25 on EU cards.
+          The enquiry form carries everything above €800, because at €1 500–4 800 fine art
+          genuinely sells by conversation, and a button that opens a dialogue converts
+          better than a cart.
+        </p>
+      </div>
+
+      <div class="stack">
+        <h3>What is already wired</h3>
+        <p class="note">
+          Each work decides its own button from its price and availability. A direct
+          <i>Acheter</i> appears only once a Stripe Payment Link exists for that work;
+          until then it routes to the enquiry form, pre-filled with which piece it is about.
+          Adding a link is pasting one URL into a file and rebuilding — no keys, no server,
+          nothing secret in the repository.
+        </p>
+      </div>
+
+      <div class="stack">
+        <h3>If volume later justifies it</h3>
+        <p class="note">
+          Shopify Basic at roughly €29/month, sitting behind the same custom front-end
+          through the Storefront API — real inventory, shipping zones, a tax engine,
+          abandoned-cart email. Not before it is needed.
+        </p>
+      </div>
+
+      <div class="stack">
+        <h3>Why not a Squarespace or Shopify theme outright</h3>
+        <p class="note">
+          A template gets 80% of this look in a weekend. But the one-work-per-screen stage,
+          the room preview and the sculpture angle strip all fight the template. A custom
+          static site costs the same to host — nothing — and is strictly faster.
+        </p>
+      </div>
+
+      <div class="gaps">
+        <h3>To settle with Cathy</h3>
+        <p class="note">
+          Shipping tiers for France, the EU and worldwide. A rolled-in-tube option for
+          unstretched canvas. Crated freight quoted individually for sculpture and for
+          canvases over 130 cm.
+        </p>
+      </div>
+    </section>
+
+    <section id="s5">
+      <h2><span class="num">05</span><span>Stack</span></h2>
+
+      <div class="scroller">
+        <table>
+          <thead>
+            <tr><th scope="col">Layer</th><th scope="col">Choice</th><th scope="col">Why</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Framework</td><td class="wrap">Astro 5, static</td><td class="wrap">Zero JS by default, perfect Lighthouse</td></tr>
+            <tr><td>Styling</td><td class="wrap">Hand-written CSS, custom properties</td><td class="wrap">No utility-class noise in a design this spare</td></tr>
+            <tr><td>Images</td><td class="wrap">Astro <span class="token">&lt;Image&gt;</span> → AVIF/WebP</td><td class="wrap">36 MB of originals must not become a 36 MB payload</td></tr>
+            <tr><td>Content</td><td class="wrap">JSON in the repo, generated from the catalogue</td><td class="wrap">Cathy edits one file; no CMS to maintain</td></tr>
+            <tr><td>CMS, later</td><td class="wrap">Sveltia, git-backed, free</td><td class="wrap">Lets her add a work from her phone</td></tr>
+            <tr><td>Payments</td><td class="wrap">Stripe Payment Links</td><td class="wrap">See §04</td></tr>
+            <tr><td>Forms</td><td class="wrap">Netlify Forms → her inbox</td><td class="wrap">No server to run</td></tr>
+            <tr><td>Hosting</td><td class="wrap">Netlify or Cloudflare Pages, free tier</td><td class="wrap">Push to deploy, instant rollback</td></tr>
+            <tr><td>Domain</td><td class="wrap">catherinemonmarson.com + .fr</td><td class="wrap">Buy both, redirect one</td></tr>
+            <tr><td>Analytics</td><td class="wrap">Plausible</td><td class="wrap">GDPR-clean, no cookie banner</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="s6">
+      <h2><span class="num">06</span><span>What Cathy owes the site</span></h2>
+      <p>
+        This is the final 20% of quality, and none of it can be invented. In priority order:
+      </p>
+
+      <ol class="asks">
+        <li><span><b>Titles and years</b> for the 55 works currently reading <i>P10154xx.JPG</i>. One pass down a list.</span></li>
+        <li><span><b>Depth for the sculptures</b> — height and width came through from ArtMajeur, depth did not. Plus a weight bracket, for crating.</span></li>
+        <li><span><b>A second photograph of each sculpture</b> (three-quarter view) and one detail of the surface.</span></li>
+        <li><span><b>Studio photographs</b> — six to eight frames: hands in clay, a firing, the reed and branch tools, pigment jars, a wall of work in progress. This is the entire Singulart layer.</span></li>
+        <li><span><b>A 400-word statement in her own voice</b>, in French, first person. The ArtMajeur text is third-person; it needs to become hers.</span></li>
+        <li><span><b>A 60–90 second video of a raku firing.</b> Nothing sells ceramic like opening a kiln.</span></li>
+        <li><span><b>A confirmed price list</b> — current euros, and which works are genuinely still available.</span></li>
+        <li><span><b>Legal</b> — SIRET and artist-author status, mentions légales, CGV, the GDPR text.</span></li>
+      </ol>
+    </section>
+
+    <section id="s7">
+      <h2><span class="num">07</span><span>Phasing</span></h2>
+
+      <div class="scroller">
+        <table>
+          <thead>
+            <tr><th scope="col">Phase</th><th scope="col">Scope</th><th scope="col">Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">00</td>
+              <td class="wrap">Research and catalogue — harvest, 163 works, 162 images, CV, series</td>
+              <td><span class="chip chip--done">Done</span></td>
+            </tr>
+            <tr>
+              <td class="num">01</td>
+              <td class="wrap">Skeleton and design system — tokens, type, layout, nav, FR/EN routing</td>
+              <td><span class="chip chip--done">Done</span></td>
+            </tr>
+            <tr>
+              <td class="num">02</td>
+              <td class="wrap">Catalogue and artwork page — filters, detail page, lightbox, series pages</td>
+              <td><span class="chip chip--done">Done</span></td>
+            </tr>
+            <tr>
+              <td class="num">03</td>
+              <td class="wrap">The story — <span class="token">/atelier</span>, bio, statement, process, CV</td>
+              <td><span class="chip chip--done">Done</span></td>
+            </tr>
+            <tr>
+              <td class="num">04</td>
+              <td class="wrap">Sculpture treatment — angle strip, room preview with scale silhouette</td>
+              <td><span class="chip chip--done">Done</span></td>
+            </tr>
+            <tr>
+              <td class="num">05</td>
+              <td class="wrap">Commerce — enquiry flow, shipping and returns page, Stripe link slots</td>
+              <td><span class="chip chip--done">Built</span></td>
+            </tr>
+            <tr>
+              <td class="num">06</td>
+              <td class="wrap">Polish and launch — artwork, offer and breadcrumb structured data, a social card per work, sitemap, icons, performance, accessibility audit</td>
+              <td><span class="chip chip--done">Done</span></td>
+            </tr>
+            <tr>
+              <td class="num">07</td>
+              <td class="wrap">Growth — press page and newsletter signup built; Instagram discipline and the Google Arts profile remain</td>
+              <td><span class="chip chip--blocked">Part done</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note">
+        All seven phases are built and verified — 358 pages, both languages, both themes,
+        no broken internal links, and a clean accessibility and metadata sweep across every
+        page. What remains is content and Stripe links, not code.
+      </p>
+    </section>
+
+    <section id="s8">
+      <h2><span class="num">08</span><span>Visibility beyond the site</span></h2>
+      <p>The site is the asset. These are the pumps that fill it.</p>
+
+      <ul class="plain">
+        <li><b>SEO.</b> Per-work <span class="token">VisualArtwork</span> structured data, French long-tail — “sculpture raku Côte d'Azur”, “peintre figure humaine Biot” — and a Google Business Profile for the studio.</li>
+        <li><b>Instagram.</b> One work per post, caption in French and English, linking to that work's own URL. Reels of firings.</li>
+        <li><b>Newsletter.</b> Monthly, one work and one paragraph. Buttondown, free under 100 subscribers.</li>
+        <li><b>Local.</b> Biot, Valbonne and Antibes tourism listings, the Côte d'Azur gallery circuit, open-studio weekends, and the Lions Club and Festival d'Art de Seillans contacts she already has.</li>
+        <li><b>Press kit.</b> One PDF — portrait, six works, statement, CV, contact. Nice-Matin already covered her in 2003.</li>
+        <li><b>Marketplaces stay.</b> ArtMajeur, Singulart and Saatchi become discovery funnels pointing home.</li>
+      </ul>
+    </section>
+
+    <section id="s9">
+      <h2><span class="num">09</span><span>What success looks like</span></h2>
+      <p>Six months after launch:</p>
+
+      <div class="scroller">
+        <table>
+          <thead>
+            <tr><th scope="col">Measure</th><th scope="col">Target</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Sessions per month</td><td class="num">1 000</td></tr>
+            <tr><td>Median time on an artwork page</td><td class="num">&gt; 60 s</td></tr>
+            <tr><td>Qualified enquiries per month</td><td class="num">15</td></tr>
+            <tr><td>Sales per month, across price bands</td><td class="num">2–4</td></tr>
+            <tr><td>Newsletter subscribers</td><td class="num">300</td></tr>
+            <tr><td>French search ranking</td><td class="num">Page 1 — her name, “sculpture raku Biot”</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="shell">
+  <footer>
+    <span>Roadmap · October 2026</span>
+    <span>358 pages built</span>
+    <span>Blocked on §06</span>
+  </footer>
+</div>

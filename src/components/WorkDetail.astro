@@ -1,0 +1,237 @@
+---
+
+import { useT, href, routes, type Lang } from '../i18n/ui';
+import { terms } from '../data/content';
+import paymentLinks from '../data/payment-links.json';
+import { series as seriesMeta } from '../data/content';
+import RoomPreview from './RoomPreview.astro';
+import WorkStage from './WorkStage.astro';
+import WorkCard from './WorkCard.astro';
+import Lightbox from './Lightbox.astro';
+import {
+  formatPrice,
+  formatDimensions,
+  relatedTo,
+  neighbours,
+  type Work,
+} from '../lib/works';
+
+interface Props {
+  work: Work;
+  lang: Lang;
+}
+const { work, lang } = Astro.props;
+const t = useT(lang);
+
+const dims = formatDimensions(work, lang);
+const related = relatedTo(work, 3);
+const { prev, next } = neighbours(work);
+const contactUrl = href(lang, routes[lang].contact);
+const worksUrl = href(lang, routes[lang].works);
+const workUrl = (w: Work) => href(lang, `${routes[lang].works}/${w.slug}`);
+
+/* A direct Buy button appears only when a Stripe Payment Link exists for this
+   work. Everything else — and anything above the enquiry threshold — routes to
+   the enquiry form, which converts better at these prices. */
+const links = paymentLinks as Record<string, string>;
+const payLink =
+  work.availability === 'for-sale' && work.price !== null && work.price <= terms.buyNowBelow
+    ? links[work.id]
+    : undefined;
+
+const enquiryHref = `${contactUrl}?about=${encodeURIComponent(work.title[lang])}&ref=${work.id}#form`;
+
+const workSeries = work.series
+  .map((s) => seriesMeta.find((m) => m.slug === s))
+  .filter((s): s is (typeof seriesMeta)[number] => Boolean(s));
+---
+
+<nav aria-label={t('work.back')} style="padding-block: var(--s5)">
+  <a class="link link--quiet caps" href={worksUrl}>← {t('work.back')}</a>
+</nav>
+
+<div class="work">
+  <div>
+    <WorkStage work={work} lang={lang} />
+
+    {
+      work.dimensions && (
+        <section style="margin-top: var(--s7)">
+          <h2 class="caps" style="font-family:var(--sans); margin-bottom: var(--s3)">
+            {t('work.room')}
+          </h2>
+          <RoomPreview work={work} lang={lang} />
+        </section>
+      )
+    }
+  </div>
+
+  <aside class="work__aside">
+    <h1 class="serif" style="font-size: var(--t-xl)">{work.title[lang]}</h1>
+    <p class="muted" style="margin-top: var(--s2)">
+      {work.year ? `${work.medium[lang]}, ${work.year}` : work.medium[lang]}
+    </p>
+
+    <dl class="facts" style="margin-top: var(--s5)">
+      {
+        work.year && (
+          <div>
+            <dt>{t('work.year')}</dt>
+            <dd>{work.year}</dd>
+          </div>
+        )
+      }
+      <div>
+        <dt>{t('work.medium')}</dt>
+        <dd>{work.medium[lang]}</dd>
+      </div>
+      <div>
+        <dt>{t('work.dimensions')}</dt>
+        <dd>{dims ?? t('work.dimsUnavailable')}</dd>
+      </div>
+      <div>
+        <dt>{t('work.unique')}</dt>
+        <dd>{t('work.uniqueNote')}</dd>
+      </div>
+      {
+        workSeries.length > 0 && (
+          <div>
+            <dt>{t('works.filter.series')}</dt>
+            <dd>
+              {workSeries.map((s, i) => (
+                <>
+                  {i > 0 && ', '}
+                  <a class="link link--quiet" href={href(lang, `${routes[lang].series}/${s.slug}`)}>
+                    {s[lang].name}
+                  </a>
+                </>
+              ))}
+            </dd>
+          </div>
+        )
+      }
+      <div>
+        <dt>{t('work.reference')}</dt>
+        <dd class="faint">CM-{work.id}</dd>
+      </div>
+    </dl>
+
+    <div style="margin-top: var(--s6)">
+      {
+        work.availability === 'for-sale' && work.price !== null ? (
+          <p class="price" style="margin:0">{formatPrice(work.price, lang)}</p>
+        ) : work.availability === 'sold' ? (
+          <p class="price" style="margin:0">{t('avail.sold')}</p>
+        ) : (
+          <p class="price" style="margin:0">{t('work.priceOnRequest')}</p>
+        )
+      }
+
+      <div class="actions">
+        {
+          payLink && (
+            <a class="btn" href={payLink} rel="noopener">
+              {t('work.buy')}
+            </a>
+          )
+        }
+        {
+          work.availability === 'for-sale' && (
+            <a class={payLink ? 'btn btn--ghost' : 'btn'} href={enquiryHref}>
+              {t('work.enquire')}
+            </a>
+          )
+        }
+        {
+          work.availability === 'on-request' && (
+            <a class="btn" href={enquiryHref}>{t('work.askPrice')}</a>
+          )
+        }
+        {
+          work.availability === 'sold' && (
+            <a class="btn btn--ghost" href={enquiryHref}>{t('work.enquireSold')}</a>
+          )
+        }
+      </div>
+
+      {work.availability === 'sold' && <p class="price__note">{t('work.soldNote')}</p>}
+
+      <ul class="reassure">
+        {
+          [
+            t('work.certificate'),
+            t('work.shipping'),
+            t('work.returns'),
+            work.price && work.price > terms.instalmentsAbove ? t('work.payment') : null,
+            t('work.visit'),
+          ]
+            .filter(Boolean)
+            .map((line) => (
+              <li>
+                <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                  <circle cx="5" cy="5" r="2" fill="currentColor" />
+                </svg>
+                <span>{line}</span>
+              </li>
+            ))
+        }
+      </ul>
+
+      <p style="margin-top: var(--s4)">
+        <a class="link link--quiet caps" href={href(lang, routes[lang].shipping)}>
+          {t('work.shippingLink')} →
+        </a>
+      </p>
+    </div>
+  </aside>
+</div>
+
+<nav class="paging" aria-label={t('nav.works')}>
+  {prev ? (
+    <a class="paging__link link link--quiet" href={workUrl(prev)} rel="prev">
+      <span class="caps">← {t('work.prevWork')}</span>
+      <span class="paging__title">{prev.title[lang]}</span>
+    </a>
+  ) : (
+    <span />
+  )}
+  {next ? (
+    <a class="paging__link paging__link--next link link--quiet" href={workUrl(next)} rel="next">
+      <span class="caps">{t('work.nextWork')} →</span>
+      <span class="paging__title">{next.title[lang]}</span>
+    </a>
+  ) : (
+    <span />
+  )}
+</nav>
+
+{
+  related.length > 0 && (
+    <section class="section">
+      <div class="section__head">
+        <h2>{work.series.length ? t('work.related') : t('work.alsoSee')}</h2>
+        <a class="link link--quiet caps" href={worksUrl}>{t('home.allWorks')}</a>
+      </div>
+      <div class="works works--roomy">
+        {related.map((r) => <WorkCard work={r} lang={lang} />)}
+      </div>
+    </section>
+  )
+}
+
+<Lightbox lang={lang} />
+
+<script>
+  // Arrow keys page between works when the lightbox is closed.
+  document.addEventListener('keydown', (e) => {
+    const box = document.getElementById('lightbox');
+    if (box && !box.hidden) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const tag = (e.target as HTMLElement)?.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    const rel = e.key === 'ArrowLeft' ? 'prev' : e.key === 'ArrowRight' ? 'next' : null;
+    if (!rel) return;
+    const link = document.querySelector<HTMLAnchorElement>(`a[rel="${rel}"]`);
+    if (link) link.click();
+  });
+</script>

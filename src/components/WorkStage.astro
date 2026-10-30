@@ -1,0 +1,108 @@
+---
+import { Image, getImage } from 'astro:assets';
+import { useT, type Lang } from '../i18n/ui';
+import { imagesOf, altText, formatDimensions, type Work } from '../lib/works';
+
+interface Props {
+  work: Work;
+  lang: Lang;
+}
+const { work, lang } = Astro.props;
+const t = useT(lang);
+
+const views = imagesOf(work);
+const alt = altText(work, lang);
+const dims = formatDimensions(work, lang);
+const caption = `${work.title[lang]} — ${work.medium[lang]}${dims ? ` · ${dims}` : ''}`;
+
+/* Full-resolution sources for the lightbox, one per view. */
+const full = await Promise.all(
+  views.map((v) => getImage({ src: v, width: Math.min(v.width, 2400), format: 'webp' }))
+);
+
+/* Thumbnails only exist to switch between views, so they only appear when
+   there is more than one. A single photograph needs no strip. */
+const thumbs =
+  views.length > 1
+    ? await Promise.all(
+        views.map((v) => getImage({ src: v, width: 180, height: 180, fit: 'cover', format: 'webp' }))
+      )
+    : [];
+
+const viewLabel = (i: number) =>
+  i === 0
+    ? lang === 'fr'
+      ? 'Vue principale'
+      : 'Main view'
+    : lang === 'fr'
+      ? `Vue ${i + 1}`
+      : `View ${i + 1}`;
+---
+
+<div class="work__stage" data-stage data-caption={caption} data-count={views.length}>
+  {
+    views.map((v, i) => (
+      <div
+        class="work__image"
+        data-view={i}
+        data-zoomable
+        data-caption={views.length > 1 ? `${caption} — ${viewLabel(i)}` : caption}
+        data-full={full[i].src}
+        data-alt={i === 0 ? alt : `${alt} — ${viewLabel(i)}`}
+        role="button"
+        tabindex="0"
+        aria-label={t('work.zoom')}
+        hidden={i > 0}
+      >
+        <Image
+          src={v}
+          alt={i === 0 ? alt : `${alt} — ${viewLabel(i)}`}
+          widths={[640, 960, 1280, 1800]}
+          sizes="(min-width: 1000px) 62vw, 92vw"
+          quality={82}
+          loading={i === 0 ? 'eager' : 'lazy'}
+          fetchpriority={i === 0 ? 'high' : 'auto'}
+        />
+      </div>
+    ))
+  }
+
+  {
+    thumbs.length > 1 && (
+      <div class="angles" role="group" aria-label={t('work.angles')}>
+        {thumbs.map((th, i) => (
+          <button type="button" data-view-btn={i} aria-pressed={i === 0 ? 'true' : 'false'}>
+            <img src={th.src} alt={viewLabel(i)} width="72" height="72" loading="lazy" />
+          </button>
+        ))}
+      </div>
+    )
+  }
+
+  <p class="caps" style="margin:0">{t('work.zoomHint')}</p>
+</div>
+
+<script>
+  const stage = document.querySelector<HTMLElement>('[data-stage]');
+  if (stage) {
+    const panes = Array.from(stage.querySelectorAll<HTMLElement>('[data-view]'));
+    const buttons = Array.from(stage.querySelectorAll<HTMLButtonElement>('[data-view-btn]'));
+
+    const show = (i: number) => {
+      panes.forEach((p, n) => (p.hidden = n !== i));
+      buttons.forEach((b, n) => b.setAttribute('aria-pressed', String(n === i)));
+    };
+
+    buttons.forEach((b, i) => b.addEventListener('click', () => show(i)));
+
+    // The stage opens the lightbox; keyboard users get the same via Enter/Space.
+    panes.forEach((p) => {
+      p.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          p.click();
+        }
+      });
+    });
+  }
+</script>

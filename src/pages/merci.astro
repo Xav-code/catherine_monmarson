@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { useT, route } from '../i18n/ui';
+const t = useT('fr');
+---
+<Base lang="fr" paths={{ fr: '/merci', en: '/thank-you' }} title={t('thanks.title')} noindex>
+  <section class="hero" style="padding-block: var(--s10) var(--s9)">
+    <h1 style="font-size: var(--t-2xl)">{t('thanks.title')}</h1>
+    <p class="lede hero__sub">{t('thanks.note')}</p>
+    <p style="margin-top: var(--s6)">
+      <a class="btn" href={route('fr', 'works')}>{t('thanks.cta')}</a>
+    </p>
+  </section>
+</Base>

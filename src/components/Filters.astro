@@ -1,0 +1,158 @@
+---
+import { useT, type Lang } from '../i18n/ui';
+import { categories, seriesWithWorks } from '../lib/works';
+
+interface Props {
+  lang: Lang;
+  total: number;
+}
+const { lang, total } = Astro.props;
+const t = useT(lang);
+
+const groups = [
+  {
+    key: 'medium',
+    label: t('works.filter.medium'),
+    options: categories.map((c) => ({ value: c, label: t(`cat.${c}` as 'cat.peinture') })),
+  },
+  {
+    key: 'series',
+    label: t('works.filter.series'),
+    options: seriesWithWorks.map((s) => ({ value: s.slug, label: s[lang].name })),
+  },
+  {
+    key: 'size',
+    label: t('works.filter.size'),
+    options: (['small', 'medium', 'large', 'xl'] as const).map((s) => ({
+      value: s,
+      label: t(`size.${s}` as 'size.small'),
+    })),
+  },
+  {
+    key: 'priceBand',
+    label: t('works.filter.price'),
+    options: (['under500', '500to1500', '1500to3000', 'over3000'] as const).map((p) => ({
+      value: p,
+      label: t(`price.${p}` as 'price.under500'),
+    })),
+  },
+  {
+    key: 'availability',
+    label: t('works.filter.availability'),
+    options: (['for-sale', 'on-request', 'sold'] as const).map((a) => ({
+      value: a,
+      label: t(`avail.${a}` as 'avail.sold'),
+    })),
+  },
+];
+---
+
+<form class="filters" id="filters" aria-label={t('works.filter.medium')}>
+  {
+    groups.map((g) => (
+      <div class="filters__group" data-group={g.key}>
+        <span class="filters__label">{g.label}</span>
+        {g.options.map((o) => (
+          <button
+            type="button"
+            class="chip"
+            aria-pressed="false"
+            data-filter={g.key}
+            data-value={o.value}
+          >
+            {o.label}
+          </button>
+        ))}
+      </div>
+    ))
+  }
+  <button type="button" class="chip" id="filters-reset" hidden>{t('works.reset')}</button>
+  <output class="count" id="works-count" aria-live="polite"
+    >{t('works.count', { n: total })}</output
+  >
+</form>
+
+<p id="works-empty" class="muted" hidden style="padding-block: var(--s8)">{t('works.none')}</p>
+
+<script is:inline define:vars={{ countOne: t('works.countOne'), countMany: t('works.count', { n: '{n}' }) }}>
+  const init = () => {
+    const form = document.getElementById('filters');
+    if (!form) return;
+    const cards = Array.from(document.querySelectorAll('[data-work]'));
+    const count = document.getElementById('works-count');
+    const empty = document.getElementById('works-empty');
+    const reset = document.getElementById('filters-reset');
+
+    /** key -> Set of selected values */
+    const state = new Map();
+
+    const matches = (card) => {
+      for (const [key, values] of state) {
+        if (!values.size) continue;
+        const raw = card.dataset[key] || '';
+        const own = key === 'series' ? raw.split(' ').filter(Boolean) : [raw];
+        if (!own.some((v) => values.has(v))) return false;
+      }
+      return true;
+    };
+
+    const apply = () => {
+      let shown = 0;
+      for (const card of cards) {
+        const ok = matches(card);
+        card.hidden = !ok;
+        if (ok) shown++;
+      }
+      if (count) count.textContent = shown === 1 ? countOne : countMany.replace('{n}', shown);
+      if (empty) empty.hidden = shown !== 0;
+      const any = [...state.values()].some((s) => s.size);
+      if (reset) reset.hidden = !any;
+      const params = new URLSearchParams();
+      for (const [k, v] of state) if (v.size) params.set(k, [...v].join(','));
+      const qs = params.toString();
+      history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    };
+
+    const setChip = (btn, on) => btn.setAttribute('aria-pressed', String(on));
+
+    form.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-filter]');
+      if (btn) {
+        const { filter, value } = btn.dataset;
+        if (!state.has(filter)) state.set(filter, new Set());
+        const set = state.get(filter);
+        const on = btn.getAttribute('aria-pressed') === 'true';
+        if (on) set.delete(value);
+        else set.add(value);
+        setChip(btn, !on);
+        apply();
+        return;
+      }
+      if (e.target.closest('#filters-reset')) {
+        state.clear();
+        form.querySelectorAll('button[data-filter]').forEach((b) => setChip(b, false));
+        apply();
+      }
+    });
+
+    // Honour ?medium=sculpture etc. so footer and homepage links can deep-link.
+    const params = new URLSearchParams(location.search);
+    for (const [key, raw] of params) {
+      const values = raw.split(',').filter(Boolean);
+      if (!values.length) continue;
+      state.set(key, new Set(values));
+      for (const v of values) {
+        const btn = form.querySelector(`button[data-filter="${key}"][data-value="${v}"]`);
+        if (btn) setChip(btn, true);
+      }
+    }
+    if ([...params.keys()].length) apply();
+  };
+
+  // The grid is rendered after this script, so wait for the document.
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>

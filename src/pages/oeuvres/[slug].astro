@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import WorkDetail from '../../components/WorkDetail.astro';
+import { useT } from '../../i18n/ui';
+import { works, type Work } from '../../lib/works';
+import { workSchema, workMeta } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  return works.map((w) => ({ params: { slug: w.slug }, props: { work: w } }));
+}
+
+const { work } = Astro.props as { work: Work };
+const meta = await workMeta(work, 'fr', Astro.site);
+const t = useT('fr');
+---
+
+<Base
+  lang="fr"
+  paths={{ fr: `/oeuvres/${work.slug}`, en: `/works/${work.slug}` }}
+  title={meta.title}
+  description={meta.description}
+  ogImage={meta.image}
+  schema={workSchema(work, 'fr', meta.url, meta.image)}
+  crumbs={[{ name: t('works.title'), path: '/oeuvres' }]}
+>
+  <WorkDetail work={work} lang="fr" />
+</Base>

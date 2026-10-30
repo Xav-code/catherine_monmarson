@@ -1,0 +1,6244 @@
+{
+ "stats": {
+  "total": 162,
+  "byCategory": {
+   "peinture": 121,
+   "papier": 8,
+   "sculpture": 23,
+   "photographie": 1,
+   "land-art": 9
+  },
+  "forSale": 45,
+  "priceMin": 209,
+  "priceMax": 4799,
+  "generated": "2026-10-30T22:12:33.024Z"
+ },
+ "featured": [
+  "14109713",
+  "17136439",
+  "16920097",
+  "14109776",
+  "16752730",
+  "16057213",
+  "14109809",
+  "16057258"
+ ],
+ "works": [
+  {
+   "id": "17136439",
+   "slug": "predelle-17136439",
+   "title": {
+    "fr": "Predelle",
+    "en": "Predella"
+   },
+   "titled": true,
+   "year": "2022",
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 100,
+    "hIn": 39.4,
+    "wIn": 39.4
+   },
+   "price": 3025,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/17136439.jpg",
+    "width": 1440,
+    "height": 1427,
+    "aspect": 1.009
+   },
+   "images": [
+    {
+     "file": "works/17136439.jpg",
+     "width": 1440,
+     "height": 1427,
+     "aspect": 1.009
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17136439/predelle",
+   "featured": true
+  },
+  {
+   "id": "9037243",
+   "slug": "ci-mediart-9037243",
+   "title": {
+    "fr": "CI Mediart",
+    "en": "CI Mediart"
+   },
+   "titled": true,
+   "year": "2015",
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": 1955,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/9037243.jpg",
+    "width": 1440,
+    "height": 2069,
+    "aspect": 0.696
+   },
+   "images": [
+    {
+     "file": "works/9037243.jpg",
+     "width": 1440,
+     "height": 2069,
+     "aspect": 0.696
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9037243/ci-mediart"
+  },
+  {
+   "id": "15002129",
+   "slug": "petit-format-i-15002129",
+   "title": {
+    "fr": "Petit format I",
+    "en": "Small format I"
+   },
+   "titled": true,
+   "year": "2019",
+   "category": "papier",
+   "medium": {
+    "fr": "Acrylique sur carton",
+    "en": "Acrylic on cardboard"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 20,
+    "hIn": 7.9,
+    "wIn": 7.9
+   },
+   "price": 215,
+   "availability": "for-sale",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/15002129.jpg",
+    "width": 1440,
+    "height": 1372,
+    "aspect": 1.05
+   },
+   "images": [
+    {
+     "file": "works/15002129.jpg",
+     "width": 1440,
+     "height": 1372,
+     "aspect": 1.05
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/15002129/pf1"
+  },
+  {
+   "id": "14109713",
+   "slug": "non-finito-14109713",
+   "title": {
+    "fr": "Non finito",
+    "en": "Non finito"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Pigments sur toile",
+    "en": "Pigments on canvas"
+   },
+   "dimensions": {
+    "h": 162,
+    "w": 114,
+    "hIn": 63.8,
+    "wIn": 44.9
+   },
+   "price": 4341,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/14109713.jpg",
+    "width": 1440,
+    "height": 1800,
+    "aspect": 0.8
+   },
+   "images": [
+    {
+     "file": "works/14109713.jpg",
+     "width": 1440,
+     "height": 1800,
+     "aspect": 0.8
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/14109713/non-finito",
+   "featured": true
+  },
+  {
+   "id": "16920097",
+   "slug": "pita-16920097",
+   "title": {
+    "fr": "Pita",
+    "en": "Pita"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 150,
+    "w": 98,
+    "hIn": 59.1,
+    "wIn": 38.6
+   },
+   "price": 3479,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/16920097.jpg",
+    "width": 1440,
+    "height": 2411,
+    "aspect": 0.597
+   },
+   "images": [
+    {
+     "file": "works/16920097.jpg",
+     "width": 1440,
+     "height": 2411,
+     "aspect": 0.597
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16920097/pita",
+   "featured": true
+  },
+  {
+   "id": "16752730",
+   "slug": "souffle-16752730",
+   "title": {
+    "fr": "Souffle",
+    "en": "Breath"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 150,
+    "w": 98,
+    "hIn": 59.1,
+    "wIn": 38.6
+   },
+   "price": 3479,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/16752730.jpg",
+    "width": 1440,
+    "height": 2219,
+    "aspect": 0.649
+   },
+   "images": [
+    {
+     "file": "works/16752730.jpg",
+     "width": 1440,
+     "height": 2219,
+     "aspect": 0.649
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16752730/souffle",
+   "featured": true
+  },
+  {
+   "id": "14109776",
+   "slug": "venise-14109776",
+   "title": {
+    "fr": "Venise",
+    "en": "Venice"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 130,
+    "w": 97,
+    "hIn": 51.2,
+    "wIn": 38.2
+   },
+   "price": 3046,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/14109776.jpg",
+    "width": 1440,
+    "height": 1800,
+    "aspect": 0.8
+   },
+   "images": [
+    {
+     "file": "works/14109776.jpg",
+     "width": 1440,
+     "height": 1800,
+     "aspect": 0.8
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/14109776/venise",
+   "featured": true
+  },
+  {
+   "id": "14109809",
+   "slug": "conciliabule-14109809",
+   "title": {
+    "fr": "Conciliabule",
+    "en": "Conclave"
+   },
+   "titled": true,
+   "year": "2019",
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": 1955,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/14109809.jpg",
+    "width": 995,
+    "height": 1518,
+    "aspect": 0.655
+   },
+   "images": [
+    {
+     "file": "works/14109809.jpg",
+     "width": 995,
+     "height": 1518,
+     "aspect": 0.655
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/14109809/conciliabule",
+   "featured": true
+  },
+  {
+   "id": "16057213",
+   "slug": "entre-trouble-et-attachement-16057213",
+   "title": {
+    "fr": "Entre trouble et attachement",
+    "en": "Between unease and attachment"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Huile sur toile",
+    "en": "Oil on canvas"
+   },
+   "dimensions": {
+    "h": 130,
+    "w": 97,
+    "hIn": 51.2,
+    "wIn": 38.2
+   },
+   "price": 2537,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/16057213.jpg",
+    "width": 1440,
+    "height": 1962,
+    "aspect": 0.734
+   },
+   "images": [
+    {
+     "file": "works/16057213.jpg",
+     "width": 1440,
+     "height": 1962,
+     "aspect": 0.734
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16057213/entre-trouble-et-attachement",
+   "featured": true
+  },
+  {
+   "id": "9073099",
+   "slug": "noir-et-blanc-9073099",
+   "title": {
+    "fr": "Noir et blanc",
+    "en": "Black and white"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 70,
+    "w": 100,
+    "hIn": 27.6,
+    "wIn": 39.4
+   },
+   "price": 1967,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/9073099.jpg",
+    "width": 1440,
+    "height": 971,
+    "aspect": 1.483
+   },
+   "images": [
+    {
+     "file": "works/9073099.jpg",
+     "width": 1440,
+     "height": 971,
+     "aspect": 1.483
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073099/nb"
+  },
+  {
+   "id": "8224351",
+   "slug": "vigilance-8224351",
+   "title": {
+    "fr": "Vigilance",
+    "en": "Vigilance"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": 1946,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/8224351.jpg",
+    "width": 1440,
+    "height": 1993,
+    "aspect": 0.723
+   },
+   "images": [
+    {
+     "file": "works/8224351.jpg",
+     "width": 1440,
+     "height": 1993,
+     "aspect": 0.723
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224351/vigilence"
+  },
+  {
+   "id": "8224294",
+   "slug": "en-fete-8224294",
+   "title": {
+    "fr": "En fête",
+    "en": "En fête"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": 1946,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/8224294.jpg",
+    "width": 1440,
+    "height": 1920,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/8224294.jpg",
+     "width": 1440,
+     "height": 1920,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224294/en-fete"
+  },
+  {
+   "id": "9073018",
+   "slug": "chakras-9073018",
+   "title": {
+    "fr": "Chakras",
+    "en": "Chakras"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": 1909,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/9073018.jpg",
+    "width": 1440,
+    "height": 2171,
+    "aspect": 0.663
+   },
+   "images": [
+    {
+     "file": "works/9073018.jpg",
+     "width": 1440,
+     "height": 2171,
+     "aspect": 0.663
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073018/chakras"
+  },
+  {
+   "id": "9072997",
+   "slug": "dessin-9072997",
+   "title": {
+    "fr": "Dessin",
+    "en": "Drawing"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 65,
+    "hIn": 39.4,
+    "wIn": 25.6
+   },
+   "price": 1853,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/9072997.jpg",
+    "width": 1440,
+    "height": 2187,
+    "aspect": 0.658
+   },
+   "images": [
+    {
+     "file": "works/9072997.jpg",
+     "width": 1440,
+     "height": 2187,
+     "aspect": 0.658
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9072997/dessin"
+  },
+  {
+   "id": "17600023",
+   "slug": "en-bleu-17600023",
+   "title": {
+    "fr": "En bleu",
+    "en": "In blue"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": 1400,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/17600023.jpg",
+    "width": 1440,
+    "height": 2149,
+    "aspect": 0.67
+   },
+   "images": [
+    {
+     "file": "works/17600023.jpg",
+     "width": 1440,
+     "height": 2149,
+     "aspect": 0.67
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17600023/en-bleu"
+  },
+  {
+   "id": "9037240",
+   "slug": "dos-ii-9037240",
+   "title": {
+    "fr": "Dos II",
+    "en": "Back II"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 72,
+    "w": 54,
+    "hIn": 28.3,
+    "wIn": 21.3
+   },
+   "price": 963,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/9037240.jpg",
+    "width": 1440,
+    "height": 1977,
+    "aspect": 0.728
+   },
+   "images": [
+    {
+     "file": "works/9037240.jpg",
+     "width": 1440,
+     "height": 1977,
+     "aspect": 0.728
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9037240/dos-2"
+  },
+  {
+   "id": "13422404",
+   "slug": "miroir-13422404",
+   "title": {
+    "fr": "Miroir",
+    "en": "Mirror"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 75,
+    "w": 50,
+    "hIn": 29.5,
+    "wIn": 19.7
+   },
+   "price": 913,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/13422404.jpg",
+    "width": 1300,
+    "height": 2209,
+    "aspect": 0.589
+   },
+   "images": [
+    {
+     "file": "works/13422404.jpg",
+     "width": 1300,
+     "height": 2209,
+     "aspect": 0.589
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/13422404/miroir"
+  },
+  {
+   "id": "3788941",
+   "slug": "chercher-du-pied-nu-l-empreinte-sur-le-sable-3788941",
+   "title": {
+    "fr": "Chercher du pied nu l’empreinte sur le sable",
+    "en": "Barefoot, searching the sand for the print"
+   },
+   "titled": true,
+   "year": "2009",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 135,
+    "w": 87,
+    "hIn": 53.1,
+    "wIn": 34.3
+   },
+   "price": 1484,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/3788941.jpg",
+    "width": 445,
+    "height": 650,
+    "aspect": 0.685
+   },
+   "images": [
+    {
+     "file": "works/3788941.jpg",
+     "width": 445,
+     "height": 650,
+     "aspect": 0.685
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/3788941/chercher-du-pied-nu-l-empreinte-sur-le-sable"
+  },
+  {
+   "id": "17599948",
+   "slug": "en-attente-cosmos-ii-17599948",
+   "title": {
+    "fr": "En attente — Cosmos II",
+    "en": "Waiting — Cosmos II"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 60,
+    "w": 80,
+    "hIn": 23.6,
+    "wIn": 31.5
+   },
+   "price": 645,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/17599948.jpg",
+    "width": 1440,
+    "height": 1080,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/17599948.jpg",
+     "width": 1440,
+     "height": 1080,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17599948/en-attente-cosmos-2"
+  },
+  {
+   "id": "17136442",
+   "slug": "cosmos-i-17136442",
+   "title": {
+    "fr": "Cosmos I",
+    "en": "Cosmos I"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 60,
+    "w": 50,
+    "hIn": 23.6,
+    "wIn": 19.7
+   },
+   "price": 625,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/17136442.jpg",
+    "width": 1440,
+    "height": 1920,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/17136442.jpg",
+     "width": 1440,
+     "height": 1920,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17136442/cosmos-1"
+  },
+  {
+   "id": "9073087",
+   "slug": "dessin-noir-et-blanc-9073087",
+   "title": {
+    "fr": "Dessin, noir et blanc",
+    "en": "Drawing, black and white"
+   },
+   "titled": true,
+   "year": null,
+   "category": "papier",
+   "medium": {
+    "fr": "Acrylique sur papier",
+    "en": "Acrylic on paper"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 547,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/9073087.jpg",
+    "width": 1440,
+    "height": 1858,
+    "aspect": 0.775
+   },
+   "images": [
+    {
+     "file": "works/9073087.jpg",
+     "width": 1440,
+     "height": 1858,
+     "aspect": 0.775
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073087/dessin-nb"
+  },
+  {
+   "id": "15069416",
+   "slug": "lithographie-ii-15069416",
+   "title": {
+    "fr": "Lithographie II",
+    "en": "Lithograph II"
+   },
+   "titled": true,
+   "year": null,
+   "category": "papier",
+   "medium": {
+    "fr": "Lithographie sur papier",
+    "en": "Lithograph on paper"
+   },
+   "dimensions": {
+    "h": 30,
+    "w": 20,
+    "hIn": 11.8,
+    "wIn": 7.9
+   },
+   "price": 239,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/15069416.jpg",
+    "width": 1440,
+    "height": 1920,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/15069416.jpg",
+     "width": 1440,
+     "height": 1920,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/15069416/litho2"
+  },
+  {
+   "id": "6557326",
+   "slug": "en-attente-i-6557326",
+   "title": {
+    "fr": "En attente I",
+    "en": "Waiting I"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 130,
+    "w": 130,
+    "hIn": 51.2,
+    "wIn": 51.2
+   },
+   "price": 4188,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/6557326.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6557326.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557326/en-attente-1"
+  },
+  {
+   "id": "16057258",
+   "slug": "vigilance-16057258",
+   "title": {
+    "fr": "Vigilance",
+    "en": "Vigilance"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": 1959,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/16057258.jpg",
+    "width": 1080,
+    "height": 1080,
+    "aspect": 1
+   },
+   "images": [
+    {
+     "file": "works/16057258.jpg",
+     "width": 1080,
+     "height": 1080,
+     "aspect": 1
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16057258/vigilance",
+   "featured": true
+  },
+  {
+   "id": "16007890",
+   "slug": "noir-ii-16007890",
+   "title": {
+    "fr": "Noir II",
+    "en": "Black II"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 72,
+    "hIn": 39.4,
+    "wIn": 28.3
+   },
+   "price": 1861,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/16007890.jpg",
+    "width": 907,
+    "height": 1042,
+    "aspect": 0.87
+   },
+   "images": [
+    {
+     "file": "works/16007890.jpg",
+     "width": 907,
+     "height": 1042,
+     "aspect": 0.87
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16007890/noir2"
+  },
+  {
+   "id": "9571294",
+   "slug": "invite-bleu-9571294",
+   "title": {
+    "fr": "Invité bleu",
+    "en": "Blue guest"
+   },
+   "titled": true,
+   "year": null,
+   "category": "papier",
+   "medium": {
+    "fr": "Acrylique sur papier",
+    "en": "Acrylic on paper"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": 1565,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/9571294.jpg",
+    "width": 1046,
+    "height": 1546,
+    "aspect": 0.677
+   },
+   "images": [
+    {
+     "file": "works/9571294.jpg",
+     "width": 1046,
+     "height": 1546,
+     "aspect": 0.677
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9571294/invite-bleu"
+  },
+  {
+   "id": "9571291",
+   "slug": "pieds-sur-terre-9571291",
+   "title": {
+    "fr": "Pieds sur terre",
+    "en": "Feet on the ground"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": 1565,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/9571291.jpg",
+    "width": 1084,
+    "height": 1552,
+    "aspect": 0.698
+   },
+   "images": [
+    {
+     "file": "works/9571291.jpg",
+     "width": 1084,
+     "height": 1552,
+     "aspect": 0.698
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9571291/pieds-sur-terre"
+  },
+  {
+   "id": "16008061",
+   "slug": "nu-noir-et-blanc-16008061",
+   "title": {
+    "fr": "Nu, noir et blanc",
+    "en": "Nude, black and white"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 72,
+    "w": 54,
+    "hIn": 28.3,
+    "wIn": 21.3
+   },
+   "price": 1035,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/16008061.jpg",
+    "width": 1080,
+    "height": 1080,
+    "aspect": 1
+   },
+   "images": [
+    {
+     "file": "works/16008061.jpg",
+     "width": 1080,
+     "height": 1080,
+     "aspect": 1
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16008061/nu-nb"
+  },
+  {
+   "id": "16008124",
+   "slug": "nu-j-16008124",
+   "title": {
+    "fr": "Nu J",
+    "en": "Nude J"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 828,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/16008124.jpg",
+    "width": 866,
+    "height": 1004,
+    "aspect": 0.863
+   },
+   "images": [
+    {
+     "file": "works/16008124.jpg",
+     "width": 866,
+     "height": 1004,
+     "aspect": 0.863
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16008124/nu-j"
+  },
+  {
+   "id": "16008091",
+   "slug": "nu-noir-et-blanc-ii-16008091",
+   "title": {
+    "fr": "Nu, noir et blanc II",
+    "en": "Nude, black and white II"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 828,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/16008091.jpg",
+    "width": 894,
+    "height": 954,
+    "aspect": 0.937
+   },
+   "images": [
+    {
+     "file": "works/16008091.jpg",
+     "width": 894,
+     "height": 954,
+     "aspect": 0.937
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16008091/nu-nb2"
+  },
+  {
+   "id": "8224375",
+   "slug": "dessin-sur-papier-8224375",
+   "title": {
+    "fr": "Dessin sur papier",
+    "en": "Drawing on paper"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 822,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/8224375.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/8224375.jpg",
+     "width": 1200,
+     "height": 1600,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224375/dessin-sur-papier"
+  },
+  {
+   "id": "5381254",
+   "slug": "la-joue-5381254",
+   "title": {
+    "fr": "La joue",
+    "en": "The cheek"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 722,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/5381254.jpg",
+    "width": 384,
+    "height": 480,
+    "aspect": 0.8
+   },
+   "images": [
+    {
+     "file": "works/5381254.jpg",
+     "width": 384,
+     "height": 480,
+     "aspect": 0.8
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/5381254/la-joue"
+  },
+  {
+   "id": "8224387",
+   "slug": "dessin-sur-papier-noir-et-blanc-iii-8224387",
+   "title": {
+    "fr": "Dessin sur papier, noir et blanc III",
+    "en": "Drawing on paper, black and white III"
+   },
+   "titled": true,
+   "year": null,
+   "category": "papier",
+   "medium": {
+    "fr": "Acrylique sur papier",
+    "en": "Acrylic on paper"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 507,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/8224387.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/8224387.jpg",
+     "width": 1200,
+     "height": 1600,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224387/dessin-sur-papier-nb3"
+  },
+  {
+   "id": "13422374",
+   "slug": "petit-format-ii-13422374",
+   "title": {
+    "fr": "Petit format II",
+    "en": "Small format II"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 30,
+    "hIn": 7.9,
+    "wIn": 11.8
+   },
+   "price": 209,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/13422374.jpg",
+    "width": 512,
+    "height": 384,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/13422374.jpg",
+     "width": 512,
+     "height": 384,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/13422374/petits-formats-2"
+  },
+  {
+   "id": "6938575",
+   "slug": "sans-titre-14-6938575",
+   "title": {
+    "fr": "Sans titre 14",
+    "en": "Untitled 14"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 148,
+    "w": 115,
+    "hIn": 58.3,
+    "wIn": 45.3
+   },
+   "price": 4799,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/6938575.jpg",
+    "width": 563,
+    "height": 750,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6938575.jpg",
+     "width": 563,
+     "height": 750,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938575/snc16329-jpg"
+  },
+  {
+   "id": "8224357",
+   "slug": "sans-titre-13-8224357",
+   "title": {
+    "fr": "Sans titre 13",
+    "en": "Untitled 13"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 522,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/8224357.jpg",
+    "width": 1440,
+    "height": 2168,
+    "aspect": 0.664
+   },
+   "images": [
+    {
+     "file": "works/8224357.jpg",
+     "width": 1440,
+     "height": 2168,
+     "aspect": 0.664
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224357/p1016439-001-jpg"
+  },
+  {
+   "id": "15012422",
+   "slug": "pfx-15012422",
+   "title": {
+    "fr": "Pfx",
+    "en": "Pfx"
+   },
+   "titled": true,
+   "year": "2020",
+   "category": "papier",
+   "medium": {
+    "fr": "Acrylique sur carton",
+    "en": "Acrylic on cardboard"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 20,
+    "hIn": 7.9,
+    "wIn": 7.9
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/15012422.jpg",
+    "width": 1440,
+    "height": 1458,
+    "aspect": 0.988
+   },
+   "images": [
+    {
+     "file": "works/15012422.jpg",
+     "width": 1440,
+     "height": 1458,
+     "aspect": 0.988
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/15012422/pfx"
+  },
+  {
+   "id": "15012266",
+   "slug": "pf2-15012266",
+   "title": {
+    "fr": "Pf2",
+    "en": "Pf2"
+   },
+   "titled": true,
+   "year": "2020",
+   "category": "papier",
+   "medium": {
+    "fr": "Acrylique sur carton",
+    "en": "Acrylic on cardboard"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 20,
+    "hIn": 7.9,
+    "wIn": 7.9
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/15012266.jpg",
+    "width": 1440,
+    "height": 1478,
+    "aspect": 0.974
+   },
+   "images": [
+    {
+     "file": "works/15012266.jpg",
+     "width": 1440,
+     "height": 1478,
+     "aspect": 0.974
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/15012266/pf2"
+  },
+  {
+   "id": "8224384",
+   "slug": "sans-titre-8-8224384",
+   "title": {
+    "fr": "Sans titre 8",
+    "en": "Untitled 8"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 822,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/8224384.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/8224384.jpg",
+     "width": 1200,
+     "height": 1600,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224384/p1016467-jpg"
+  },
+  {
+   "id": "8224381",
+   "slug": "sans-titre-9-8224381",
+   "title": {
+    "fr": "Sans titre 9",
+    "en": "Untitled 9"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 822,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/8224381.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/8224381.jpg",
+     "width": 1200,
+     "height": 1600,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224381/p1016468-jpg"
+  },
+  {
+   "id": "6938542",
+   "slug": "sans-titre-18-6938542",
+   "title": {
+    "fr": "Sans titre 18",
+    "en": "Untitled 18"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 50,
+    "w": 70,
+    "hIn": 19.7,
+    "wIn": 27.6
+   },
+   "price": 775,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/6938542.jpg",
+    "width": 750,
+    "height": 563,
+    "aspect": 1.332
+   },
+   "images": [
+    {
+     "file": "works/6938542.jpg",
+     "width": 750,
+     "height": 563,
+     "aspect": 1.332
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938542/p1015825-001-jpg"
+  },
+  {
+   "id": "8224372",
+   "slug": "sans-titre-11-8224372",
+   "title": {
+    "fr": "Sans titre 11",
+    "en": "Untitled 11"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 522,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/8224372.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/8224372.jpg",
+     "width": 1200,
+     "height": 1600,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224372/p1016474-jpg"
+  },
+  {
+   "id": "8224366",
+   "slug": "sans-titre-12-8224366",
+   "title": {
+    "fr": "Sans titre 12",
+    "en": "Untitled 12"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": 522,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/8224366.jpg",
+    "width": 1137,
+    "height": 1559,
+    "aspect": 0.729
+   },
+   "images": [
+    {
+     "file": "works/8224366.jpg",
+     "width": 1137,
+     "height": 1559,
+     "aspect": 0.729
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224366/p1016475-001-jpg"
+  },
+  {
+   "id": "6938572",
+   "slug": "sans-titre-15-6938572",
+   "title": {
+    "fr": "Sans titre 15",
+    "en": "Untitled 15"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 20,
+    "hIn": 7.9,
+    "wIn": 7.9
+   },
+   "price": 217,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/6938572.jpg",
+    "width": 750,
+    "height": 393,
+    "aspect": 1.908
+   },
+   "images": [
+    {
+     "file": "works/6938572.jpg",
+     "width": 750,
+     "height": 393,
+     "aspect": 1.908
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938572/p1015828-jpg"
+  },
+  {
+   "id": "16008160",
+   "slug": "nu-noir-et-blanc-iii-16008160",
+   "title": {
+    "fr": "Nu, noir et blanc III",
+    "en": "Nude, black and white III"
+   },
+   "titled": true,
+   "year": "2017",
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 70,
+    "w": 50,
+    "hIn": 27.6,
+    "wIn": 19.7
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/16008160.jpg",
+    "width": 984,
+    "height": 1015,
+    "aspect": 0.969
+   },
+   "images": [
+    {
+     "file": "works/16008160.jpg",
+     "width": 984,
+     "height": 1015,
+     "aspect": 0.969
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16008160/nu-nb3"
+  },
+  {
+   "id": "6850585",
+   "slug": "sans-titre-25-6850585",
+   "title": {
+    "fr": "Sans titre 25",
+    "en": "Untitled 25"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": 4000,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/6850585.jpg",
+    "width": 556,
+    "height": 750,
+    "aspect": 0.741
+   },
+   "images": [
+    {
+     "file": "works/6850585.jpg",
+     "width": 556,
+     "height": 750,
+     "aspect": 0.741
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850585/p1015802-jpg"
+  },
+  {
+   "id": "6099280",
+   "slug": "cartons-compresses-6099280",
+   "title": {
+    "fr": "Cartons compressés",
+    "en": "Compressed cardboard"
+   },
+   "titled": true,
+   "year": "2012",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 20,
+    "hIn": 7.9,
+    "wIn": 7.9
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6099280.jpg",
+    "width": 650,
+    "height": 488,
+    "aspect": 1.332
+   },
+   "images": [
+    {
+     "file": "works/6099280.jpg",
+     "width": 650,
+     "height": 488,
+     "aspect": 1.332
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6099280/cartons-compresses"
+  },
+  {
+   "id": "6938566",
+   "slug": "sans-titre-16-6938566",
+   "title": {
+    "fr": "Sans titre 16",
+    "en": "Untitled 16"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": 2500,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/6938566.jpg",
+    "width": 423,
+    "height": 750,
+    "aspect": 0.564
+   },
+   "images": [
+    {
+     "file": "works/6938566.jpg",
+     "width": 423,
+     "height": 750,
+     "aspect": 0.564
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938566/p1015824-jpg"
+  },
+  {
+   "id": "265452",
+   "slug": "petits-formats-en-ligne-265452",
+   "title": {
+    "fr": "Petits formats en ligne",
+    "en": "Petits formats en ligne"
+   },
+   "titled": true,
+   "year": "2005",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 27,
+    "w": 22,
+    "hIn": 10.6,
+    "wIn": 8.7
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/265452.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/265452.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265452/petits-formats-en-ligne"
+  },
+  {
+   "id": "260883",
+   "slug": "grand-receptacle-260883",
+   "title": {
+    "fr": "Grand réceptacle",
+    "en": "Large vessel"
+   },
+   "titled": true,
+   "year": "2005",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 90,
+    "w": 30,
+    "hIn": 35.4,
+    "wIn": 11.8
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/260883.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/260883.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260883/grand-receptacle-ncm4"
+  },
+  {
+   "id": "259458",
+   "slug": "estafilade-259458",
+   "title": {
+    "fr": "Estafilade",
+    "en": "Estafilade"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 148,
+    "w": 115,
+    "hIn": 58.3,
+    "wIn": 45.3
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/259458.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/259458.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259458/estafilade"
+  },
+  {
+   "id": "259405",
+   "slug": "plaque-murale-259405",
+   "title": {
+    "fr": "Plaque murale",
+    "en": "Wall plaque"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 22,
+    "w": 12,
+    "hIn": 8.7,
+    "wIn": 4.7
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/259405.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/259405.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259405/plaque-murale"
+  },
+  {
+   "id": "258853",
+   "slug": "trois-sculptures-258853",
+   "title": {
+    "fr": "Trois sculptures",
+    "en": "Three sculptures"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 8,
+    "w": 20,
+    "hIn": 3.1,
+    "wIn": 7.9
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "terres"
+   ],
+   "image": {
+    "file": "works/258853.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/258853.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258853/3-sculptures"
+  },
+  {
+   "id": "258826",
+   "slug": "petits-receptacles-258826",
+   "title": {
+    "fr": "Petits réceptacles",
+    "en": "Small vessels"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 25,
+    "w": 12,
+    "hIn": 9.8,
+    "wIn": 4.7
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258826.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258826.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258826/petits-receptacles"
+  },
+  {
+   "id": "259454",
+   "slug": "aurore-259454",
+   "title": {
+    "fr": "Aurore",
+    "en": "Aurore"
+   },
+   "titled": true,
+   "year": "2003",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 93,
+    "w": 73,
+    "hIn": 36.6,
+    "wIn": 28.7
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/259454.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/259454.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259454/aurore"
+  },
+  {
+   "id": "258900",
+   "slug": "receptacle-258900",
+   "title": {
+    "fr": "Réceptacle",
+    "en": "Vessel"
+   },
+   "titled": true,
+   "year": "2002",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 25,
+    "w": 10,
+    "hIn": 9.8,
+    "wIn": 3.9
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258900.jpg",
+    "width": 503,
+    "height": 750,
+    "aspect": 0.671
+   },
+   "images": [
+    {
+     "file": "works/258900.jpg",
+     "width": 503,
+     "height": 750,
+     "aspect": 0.671
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258900/receptacle"
+  },
+  {
+   "id": "258762",
+   "slug": "tete-ii-258762",
+   "title": {
+    "fr": "Tête II",
+    "en": "Head II"
+   },
+   "titled": true,
+   "year": "2002",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 10,
+    "hIn": 7.9,
+    "wIn": 3.9
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258762.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258762.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258762/tete2"
+  },
+  {
+   "id": "265462",
+   "slug": "petits-formats-265462",
+   "title": {
+    "fr": "Petits formats",
+    "en": "Petits formats"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/265462.jpg",
+    "width": 1440,
+    "height": 1982,
+    "aspect": 0.727
+   },
+   "images": [
+    {
+     "file": "works/265462.jpg",
+     "width": 1440,
+     "height": 1982,
+     "aspect": 0.727
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265462/petits-formats"
+  },
+  {
+   "id": "258911",
+   "slug": "terre-patinee-258911",
+   "title": {
+    "fr": "Terre patinée",
+    "en": "Patinated clay"
+   },
+   "titled": true,
+   "year": "1995",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 15,
+    "w": 25,
+    "hIn": 5.9,
+    "wIn": 9.8
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "terres"
+   ],
+   "image": {
+    "file": "works/258911.jpg",
+    "width": 750,
+    "height": 634,
+    "aspect": 1.183
+   },
+   "images": [
+    {
+     "file": "works/258911.jpg",
+     "width": 750,
+     "height": 634,
+     "aspect": 1.183
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258911/terre-patinee"
+  },
+  {
+   "id": "259344",
+   "slug": "paravent-mdgc-259344",
+   "title": {
+    "fr": "Paravent MDGC",
+    "en": "Paravent MDGC"
+   },
+   "titled": true,
+   "year": "2000",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 180,
+    "w": 160,
+    "hIn": 70.9,
+    "wIn": 63
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "paravents"
+   ],
+   "image": {
+    "file": "works/259344.jpg",
+    "width": 1440,
+    "height": 1850,
+    "aspect": 0.778
+   },
+   "images": [
+    {
+     "file": "works/259344.jpg",
+     "width": 1440,
+     "height": 1850,
+     "aspect": 0.778
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259344/paravent-mdgc"
+  },
+  {
+   "id": "6557443",
+   "slug": "sans-titre-31-6557443",
+   "title": {
+    "fr": "Sans titre 31",
+    "en": "Untitled 31"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": 400,
+   "availability": "for-sale",
+   "series": [],
+   "image": {
+    "file": "works/6557443.jpg",
+    "width": 650,
+    "height": 488,
+    "aspect": 1.332
+   },
+   "images": [
+    {
+     "file": "works/6557443.jpg",
+     "width": 650,
+     "height": 488,
+     "aspect": 1.332
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557443/p1014763-jpg"
+  },
+  {
+   "id": "258746",
+   "slug": "cm-mc-stpe-258746",
+   "title": {
+    "fr": "Cm mc stpe",
+    "en": "Cm mc stpe"
+   },
+   "titled": true,
+   "year": "1991",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 147,
+    "w": 115,
+    "hIn": 57.9,
+    "wIn": 45.3
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "peintures"
+   ],
+   "image": {
+    "file": "works/258746.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258746.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258746/cm-mc-stpe"
+  },
+  {
+   "id": "6036280",
+   "slug": "bleu-6036280",
+   "title": {
+    "fr": "Bleu",
+    "en": "Blue"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 73,
+    "hIn": 39.4,
+    "wIn": 28.7
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6036280.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6036280.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6036280/bleu"
+  },
+  {
+   "id": "17905849",
+   "slug": "en-attente-2024-17905849",
+   "title": {
+    "fr": "En attente, 2024",
+    "en": "Waiting, 2024"
+   },
+   "titled": true,
+   "year": null,
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/17905849.jpg",
+    "width": 1440,
+    "height": 648,
+    "aspect": 2.222
+   },
+   "images": [
+    {
+     "file": "works/17905849.jpg",
+     "width": 1440,
+     "height": 648,
+     "aspect": 2.222
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17905849/en-attente2024"
+  },
+  {
+   "id": "16060192",
+   "slug": "stand-16060192",
+   "title": {
+    "fr": "Stand",
+    "en": "Stand"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/16060192.jpg",
+    "width": 1440,
+    "height": 1080,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/16060192.jpg",
+     "width": 1440,
+     "height": 1080,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16060192/stand"
+  },
+  {
+   "id": "13172489",
+   "slug": "portrait-13172489",
+   "title": {
+    "fr": "Portrait",
+    "en": "Portrait"
+   },
+   "titled": true,
+   "year": null,
+   "category": "photographie",
+   "medium": {
+    "fr": "Photographie",
+    "en": "Photograph"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/13172489.jpg",
+    "width": 1213,
+    "height": 2007,
+    "aspect": 0.604
+   },
+   "images": [
+    {
+     "file": "works/13172489.jpg",
+     "width": 1213,
+     "height": 2007,
+     "aspect": 0.604
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/13172489/portrait"
+  },
+  {
+   "id": "9073054",
+   "slug": "vert-lumiere-9073054",
+   "title": {
+    "fr": "Vert lumière",
+    "en": "Light green"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 73,
+    "hIn": 39.4,
+    "wIn": 28.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/9073054.jpg",
+    "width": 1440,
+    "height": 2147,
+    "aspect": 0.671
+   },
+   "images": [
+    {
+     "file": "works/9073054.jpg",
+     "width": 1440,
+     "height": 2147,
+     "aspect": 0.671
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073054/vert-lumiere"
+  },
+  {
+   "id": "8227369",
+   "slug": "de-dos-8227369",
+   "title": {
+    "fr": "De dos",
+    "en": "From behind"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 147,
+    "w": 116,
+    "hIn": 57.9,
+    "wIn": 45.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/8227369.jpg",
+    "width": 1440,
+    "height": 1920,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/8227369.jpg",
+     "width": 1440,
+     "height": 1920,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8227369/de-dos"
+  },
+  {
+   "id": "806169",
+   "slug": "passage-sentier-de-la-brague-806169",
+   "title": {
+    "fr": "Passage — sentier de la Brague",
+    "en": "Passage — sentier de la Brague"
+   },
+   "titled": true,
+   "year": "2006",
+   "category": "land-art",
+   "medium": {
+    "fr": "Land art, in situ",
+    "en": "Land art, in situ"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "land-art"
+   ],
+   "image": {
+    "file": "works/806169.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/806169.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/806169/passage-sentier-de-la-brague"
+  },
+  {
+   "id": "806161",
+   "slug": "passage-sentier-de-la-brague-806161",
+   "title": {
+    "fr": "Passage... sentier de la Brague",
+    "en": "Passage... sentier de la Brague"
+   },
+   "titled": true,
+   "year": "2006",
+   "category": "land-art",
+   "medium": {
+    "fr": "Land art, in situ",
+    "en": "Land art, in situ"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "land-art"
+   ],
+   "image": {
+    "file": "works/806161.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/806161.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/806161/passage-sentier-de-la-brague"
+  },
+  {
+   "id": "265451",
+   "slug": "petits-formats-en-ligne-265451",
+   "title": {
+    "fr": "Petits formats en ligne",
+    "en": "Petits formats en ligne"
+   },
+   "titled": true,
+   "year": "2005",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 27,
+    "w": 22,
+    "hIn": 10.6,
+    "wIn": 8.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/265451.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/265451.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265451/petits-formats-en-ligne"
+  },
+  {
+   "id": "265448",
+   "slug": "petits-formats-en-ligne-265448",
+   "title": {
+    "fr": "Petits formats en ligne",
+    "en": "Petits formats en ligne"
+   },
+   "titled": true,
+   "year": "2005",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 27,
+    "w": 22,
+    "hIn": 10.6,
+    "wIn": 8.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/265448.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/265448.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265448/petits-formats-en-ligne"
+  },
+  {
+   "id": "265440",
+   "slug": "personnage-neige-265440",
+   "title": {
+    "fr": "Personnage neige",
+    "en": "Personnage neige"
+   },
+   "titled": true,
+   "year": "2005",
+   "category": "land-art",
+   "medium": {
+    "fr": "Land art, in situ",
+    "en": "Land art, in situ"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "land-art"
+   ],
+   "image": {
+    "file": "works/265440.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/265440.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265440/personnage-neige"
+  },
+  {
+   "id": "260895",
+   "slug": "sans-260895",
+   "title": {
+    "fr": "Sans",
+    "en": "Sans"
+   },
+   "titled": true,
+   "year": "2005",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 54,
+    "hIn": 25.6,
+    "wIn": 21.3
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/260895.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/260895.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260895/sans"
+  },
+  {
+   "id": "258893",
+   "slug": "ebouriffee-i-258893",
+   "title": {
+    "fr": "Ebouriffée I",
+    "en": "Ebouriffée I"
+   },
+   "titled": true,
+   "year": "2005",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 130,
+    "w": 97,
+    "hIn": 51.2,
+    "wIn": 38.2
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/258893.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258893.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258893/ebouriffee-i"
+  },
+  {
+   "id": "258764",
+   "slug": "grands-receptacles-258764",
+   "title": {
+    "fr": "Grands réceptacles",
+    "en": "Grands réceptacles"
+   },
+   "titled": true,
+   "year": "2005",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 40,
+    "hIn": 25.6,
+    "wIn": 15.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258764.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258764.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258764/grands-receptacles"
+  },
+  {
+   "id": "806165",
+   "slug": "passage-sentier-de-la-brague-juin-2006-806165",
+   "title": {
+    "fr": "Passage... sentier de la brague juin 2006",
+    "en": "Passage... sentier de la brague juin 2006"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "land-art",
+   "medium": {
+    "fr": "Land art, in situ",
+    "en": "Land art, in situ"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "land-art"
+   ],
+   "image": {
+    "file": "works/806165.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/806165.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/806165/passage-sentier-de-la-brague-juin-2006"
+  },
+  {
+   "id": "260893",
+   "slug": "personnage-neige-260893",
+   "title": {
+    "fr": "Personnage neige",
+    "en": "Personnage neige"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "land-art",
+   "medium": {
+    "fr": "Land art, in situ",
+    "en": "Land art, in situ"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "land-art"
+   ],
+   "image": {
+    "file": "works/260893.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/260893.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260893/personnage-neige"
+  },
+  {
+   "id": "260880",
+   "slug": "grand-receptacle-1-260880",
+   "title": {
+    "fr": "Grand réceptacle 1",
+    "en": "Grand réceptacle 1"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 30,
+    "hIn": 39.4,
+    "wIn": 11.8
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/260880.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/260880.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260880/grand-receptacle-1"
+  },
+  {
+   "id": "260420",
+   "slug": "personnage-neige-260420",
+   "title": {
+    "fr": "Personnage neige",
+    "en": "Personnage neige"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "land-art",
+   "medium": {
+    "fr": "Land art, in situ",
+    "en": "Land art, in situ"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "land-art"
+   ],
+   "image": {
+    "file": "works/260420.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/260420.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260420/personnage-neige"
+  },
+  {
+   "id": "260419",
+   "slug": "personnage-neige-260419",
+   "title": {
+    "fr": "Personnage neige",
+    "en": "Personnage neige"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "land-art",
+   "medium": {
+    "fr": "Land art, in situ",
+    "en": "Land art, in situ"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "land-art"
+   ],
+   "image": {
+    "file": "works/260419.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/260419.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260419/personnage-neige"
+  },
+  {
+   "id": "260418",
+   "slug": "personnage-neige-260418",
+   "title": {
+    "fr": "Personnage neige",
+    "en": "Personnage neige"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "land-art",
+   "medium": {
+    "fr": "Land art, in situ",
+    "en": "Land art, in situ"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "land-art"
+   ],
+   "image": {
+    "file": "works/260418.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/260418.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260418/personnage-neige"
+  },
+  {
+   "id": "258862",
+   "slug": "au-bord-de-la-riviere-258862",
+   "title": {
+    "fr": "Au bord de la rivière",
+    "en": "Au bord de la rivière"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 120,
+    "w": 80,
+    "hIn": 47.2,
+    "wIn": 31.5
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/258862.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258862.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258862/au-bord-de-la-riviere"
+  },
+  {
+   "id": "258850",
+   "slug": "sans-258850",
+   "title": {
+    "fr": "Sans",
+    "en": "Sans"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 10,
+    "w": 28,
+    "hIn": 3.9,
+    "wIn": 11
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "terres"
+   ],
+   "image": {
+    "file": "works/258850.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/258850.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258850/sans"
+  },
+  {
+   "id": "258835",
+   "slug": "bas-relief-258835",
+   "title": {
+    "fr": "Bas relief",
+    "en": "Bas relief"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 20,
+    "hIn": 7.9,
+    "wIn": 7.9
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258835.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258835.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258835/bas-relief"
+  },
+  {
+   "id": "258829",
+   "slug": "plaque-raku-258829",
+   "title": {
+    "fr": "Plaque raku",
+    "en": "Plaque raku"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 22,
+    "w": 15,
+    "hIn": 8.7,
+    "wIn": 5.9
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258829.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258829.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258829/plaque-raku"
+  },
+  {
+   "id": "258825",
+   "slug": "grand-receptacle-detail-258825",
+   "title": {
+    "fr": "Grand réceptacle, détail",
+    "en": "Large vessel, detail"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258825.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258825.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258825/detail-grand-receptacle"
+  },
+  {
+   "id": "258763",
+   "slug": "grand-receptacle-258763",
+   "title": {
+    "fr": "Grand réceptacle",
+    "en": "Grand réceptacle"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 90,
+    "w": 30,
+    "hIn": 35.4,
+    "wIn": 11.8
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258763.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258763.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258763/grand-receptacle"
+  },
+  {
+   "id": "258759",
+   "slug": "l-empreinte-258759",
+   "title": {
+    "fr": "L'empreinte",
+    "en": "L'empreinte"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 165,
+    "w": 130,
+    "hIn": 65,
+    "wIn": 51.2
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/258759.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258759.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258759/l-empreinte"
+  },
+  {
+   "id": "258757",
+   "slug": "sans-ancrage-258757",
+   "title": {
+    "fr": "Sans ancrage",
+    "en": "Sans ancrage"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 130,
+    "w": 162,
+    "hIn": 51.2,
+    "wIn": 63.8
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/258757.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/258757.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258757/sans-ancrage"
+  },
+  {
+   "id": "258756",
+   "slug": "foule-258756",
+   "title": {
+    "fr": "Foule",
+    "en": "Crowd"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 115,
+    "w": 148,
+    "hIn": 45.3,
+    "wIn": 58.3
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/258756.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/258756.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/258756/foule"
+  },
+  {
+   "id": "258673",
+   "slug": "serie-6-petits-formats-258673",
+   "title": {
+    "fr": "Série 6 petits formats",
+    "en": "Série 6 petits formats"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 20,
+    "hIn": 7.9,
+    "wIn": 7.9
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/258673.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/258673.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258673/serie-6-petits-formats"
+  },
+  {
+   "id": "259457",
+   "slug": "sans-titre-259457",
+   "title": {
+    "fr": "Sans titre",
+    "en": "Sans titre"
+   },
+   "titled": true,
+   "year": "2003",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 54,
+    "hIn": 25.6,
+    "wIn": 21.3
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/259457.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/259457.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259457/sans-titre"
+  },
+  {
+   "id": "259404",
+   "slug": "plat-259404",
+   "title": {
+    "fr": "Plat",
+    "en": "Plat"
+   },
+   "titled": true,
+   "year": "2003",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 25,
+    "w": 25,
+    "hIn": 9.8,
+    "wIn": 9.8
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/259404.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/259404.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259404/plat"
+  },
+  {
+   "id": "258761",
+   "slug": "tete-1-258761",
+   "title": {
+    "fr": "Tete 1",
+    "en": "Tete 1"
+   },
+   "titled": true,
+   "year": "2003",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 30,
+    "w": 10,
+    "hIn": 11.8,
+    "wIn": 3.9
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258761.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258761.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258761/tete-1"
+  },
+  {
+   "id": "258903",
+   "slug": "sans-258903",
+   "title": {
+    "fr": "Sans",
+    "en": "Sans"
+   },
+   "titled": true,
+   "year": "2002",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 35,
+    "w": 22,
+    "hIn": 13.8,
+    "wIn": 8.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "terres"
+   ],
+   "image": {
+    "file": "works/258903.jpg",
+    "width": 463,
+    "height": 750,
+    "aspect": 0.617
+   },
+   "images": [
+    {
+     "file": "works/258903.jpg",
+     "width": 463,
+     "height": 750,
+     "aspect": 0.617
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258903/sans"
+  },
+  {
+   "id": "258847",
+   "slug": "sans-258847",
+   "title": {
+    "fr": "Sans",
+    "en": "Sans"
+   },
+   "titled": true,
+   "year": "2000",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 40,
+    "w": 25,
+    "hIn": 15.7,
+    "wIn": 9.8
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "terres"
+   ],
+   "image": {
+    "file": "works/258847.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258847.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258847/sans"
+  },
+  {
+   "id": "258749",
+   "slug": "croix-258749",
+   "title": {
+    "fr": "Croix",
+    "en": "Croix"
+   },
+   "titled": true,
+   "year": "1992",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 165,
+    "w": 120,
+    "hIn": 65,
+    "wIn": 47.2
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "peintures"
+   ],
+   "image": {
+    "file": "works/258749.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258749.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258749/croix"
+  },
+  {
+   "id": "258748",
+   "slug": "envol-258748",
+   "title": {
+    "fr": "Envol",
+    "en": "Envol"
+   },
+   "titled": true,
+   "year": "1992",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 145,
+    "w": 120,
+    "hIn": 57.1,
+    "wIn": 47.2
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "peintures"
+   ],
+   "image": {
+    "file": "works/258748.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258748.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258748/envol"
+  },
+  {
+   "id": "258884",
+   "slug": "croix-2-258884",
+   "title": {
+    "fr": "Croix 2",
+    "en": "Croix 2"
+   },
+   "titled": true,
+   "year": "1991",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 165,
+    "w": 120,
+    "hIn": 65,
+    "wIn": 47.2
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "peintures"
+   ],
+   "image": {
+    "file": "works/258884.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258884.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258884/croix-2"
+  },
+  {
+   "id": "16057156",
+   "slug": "desequilibre-16057156",
+   "title": {
+    "fr": "Déséquilibre",
+    "en": "Off balance"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 120,
+    "w": 120,
+    "hIn": 47.2,
+    "wIn": 47.2
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/16057156.jpg",
+    "width": 972,
+    "height": 972,
+    "aspect": 1
+   },
+   "images": [
+    {
+     "file": "works/16057156.jpg",
+     "width": 972,
+     "height": 972,
+     "aspect": 1
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16057156/desequilibre"
+  },
+  {
+   "id": "16007998",
+   "slug": "dr-pascal-16007998",
+   "title": {
+    "fr": "Dr Pascal",
+    "en": "Dr Pascal"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Acrylique sur toile",
+    "en": "Acrylic on canvas"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 73,
+    "hIn": 39.4,
+    "wIn": 28.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/16007998.jpg",
+    "width": 861,
+    "height": 956,
+    "aspect": 0.901
+   },
+   "images": [
+    {
+     "file": "works/16007998.jpg",
+     "width": 861,
+     "height": 956,
+     "aspect": 0.901
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16007998/dr-pascal"
+  },
+  {
+   "id": "14485238",
+   "slug": "bleu-ii-14485238",
+   "title": {
+    "fr": "Bleu II",
+    "en": "Blue II"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/14485238.jpg",
+    "width": 892,
+    "height": 1600,
+    "aspect": 0.558
+   },
+   "images": [
+    {
+     "file": "works/14485238.jpg",
+     "width": 892,
+     "height": 1600,
+     "aspect": 0.558
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/14485238/bleu-2"
+  },
+  {
+   "id": "6557449",
+   "slug": "intimite-6557449",
+   "title": {
+    "fr": "Intimité",
+    "en": "Intimacy"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6557449.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6557449.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557449/intimite"
+  },
+  {
+   "id": "6099319",
+   "slug": "tendresses-6099319",
+   "title": {
+    "fr": "Tendresses",
+    "en": "Tendernesses"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6099319.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6099319.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6099319/tendresses"
+  },
+  {
+   "id": "6036376",
+   "slug": "cinq-couleurs-6036376",
+   "title": {
+    "fr": "Cinq couleurs",
+    "en": "Five colours"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 73,
+    "hIn": 39.4,
+    "wIn": 28.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6036376.jpg",
+    "width": 478,
+    "height": 650,
+    "aspect": 0.735
+   },
+   "images": [
+    {
+     "file": "works/6036376.jpg",
+     "width": 478,
+     "height": 650,
+     "aspect": 0.735
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6036376/5-couleurs"
+  },
+  {
+   "id": "6036121",
+   "slug": "rouge-6036121",
+   "title": {
+    "fr": "Rouge",
+    "en": "Red"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 73,
+    "hIn": 39.4,
+    "wIn": 28.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6036121.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6036121.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6036121/rouge"
+  },
+  {
+   "id": "5381272",
+   "slug": "indigne-5381272",
+   "title": {
+    "fr": "Indigné",
+    "en": "Indignant"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 50,
+    "hIn": 25.6,
+    "wIn": 19.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/5381272.jpg",
+    "width": 375,
+    "height": 480,
+    "aspect": 0.781
+   },
+   "images": [
+    {
+     "file": "works/5381272.jpg",
+     "width": 375,
+     "height": 480,
+     "aspect": 0.781
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/5381272/indigne"
+  },
+  {
+   "id": "4723414",
+   "slug": "hors-champ-4723414",
+   "title": {
+    "fr": "Hors champ",
+    "en": "Out of frame"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/4723414.jpg",
+    "width": 522,
+    "height": 650,
+    "aspect": 0.803
+   },
+   "images": [
+    {
+     "file": "works/4723414.jpg",
+     "width": 522,
+     "height": 650,
+     "aspect": 0.803
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723414/hors-champ"
+  },
+  {
+   "id": "4723378",
+   "slug": "metamorphose-4723378",
+   "title": {
+    "fr": "Métamorphose",
+    "en": "Metamorphosis"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 160,
+    "w": 130,
+    "hIn": 63,
+    "wIn": 51.2
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/4723378.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/4723378.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723378/metamorphose"
+  },
+  {
+   "id": "4723357",
+   "slug": "13-03-06-4723357",
+   "title": {
+    "fr": "13 03 06",
+    "en": "13 03 06"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 130,
+    "w": 130,
+    "hIn": 51.2,
+    "wIn": 51.2
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/4723357.jpg",
+    "width": 447,
+    "height": 480,
+    "aspect": 0.931
+   },
+   "images": [
+    {
+     "file": "works/4723357.jpg",
+     "width": 447,
+     "height": 480,
+     "aspect": 0.931
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723357/13-03-06"
+  },
+  {
+   "id": "3806971",
+   "slug": "en-attente-rose-3806971",
+   "title": {
+    "fr": "En attente, rose",
+    "en": "Waiting, pink"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 60,
+    "w": 60,
+    "hIn": 23.6,
+    "wIn": 23.6
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/3806971.jpg",
+    "width": 611,
+    "height": 640,
+    "aspect": 0.955
+   },
+   "images": [
+    {
+     "file": "works/3806971.jpg",
+     "width": 611,
+     "height": 640,
+     "aspect": 0.955
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/3806971/en-attente-rose"
+  },
+  {
+   "id": "15068807",
+   "slug": "sans-titre-1-15068807",
+   "title": {
+    "fr": "Sans titre 1",
+    "en": "Untitled 1"
+   },
+   "titled": false,
+   "year": "2019",
+   "category": "papier",
+   "medium": {
+    "fr": "Huile sur papier",
+    "en": "Oil on paper"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 12,
+    "hIn": 7.9,
+    "wIn": 4.7
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/15068807.jpg",
+    "width": 1073,
+    "height": 1841,
+    "aspect": 0.583
+   },
+   "images": [
+    {
+     "file": "works/15068807.jpg",
+     "width": 1073,
+     "height": 1841,
+     "aspect": 0.583
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/15068807/20x12"
+  },
+  {
+   "id": "17930785",
+   "slug": "receptacle-raku-17930785",
+   "title": {
+    "fr": "Réceptacle, raku",
+    "en": "Vessel, raku"
+   },
+   "titled": true,
+   "year": null,
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/17930785.jpg",
+    "width": 1440,
+    "height": 2808,
+    "aspect": 0.513
+   },
+   "images": [
+    {
+     "file": "works/17930785.jpg",
+     "width": 1440,
+     "height": 2808,
+     "aspect": 0.513
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17930785/receptacle-raku"
+  },
+  {
+   "id": "8227372",
+   "slug": "sans-titre-7-8227372",
+   "title": {
+    "fr": "Sans titre 7",
+    "en": "Untitled 7"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 70,
+    "w": 100,
+    "hIn": 27.6,
+    "wIn": 39.4
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/8227372.jpg",
+    "width": 1440,
+    "height": 1080,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/8227372.jpg",
+     "width": 1440,
+     "height": 1080,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8227372/p1016543-jpg"
+  },
+  {
+   "id": "6691642",
+   "slug": "sans-titre-26-6691642",
+   "title": {
+    "fr": "Sans titre 26",
+    "en": "Untitled 26"
+   },
+   "titled": false,
+   "year": "2013",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 148,
+    "w": 115,
+    "hIn": 58.3,
+    "wIn": 45.3
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6691642.jpg",
+    "width": 457,
+    "height": 650,
+    "aspect": 0.703
+   },
+   "images": [
+    {
+     "file": "works/6691642.jpg",
+     "width": 457,
+     "height": 650,
+     "aspect": 0.703
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6691642/xap-163x114cm-tech-mixte-jpg"
+  },
+  {
+   "id": "6691639",
+   "slug": "sans-titre-27-6691639",
+   "title": {
+    "fr": "Sans titre 27",
+    "en": "Untitled 27"
+   },
+   "titled": false,
+   "year": "2013",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 130,
+    "w": 130,
+    "hIn": 51.2,
+    "wIn": 51.2
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6691639.jpg",
+    "width": 650,
+    "height": 648,
+    "aspect": 1.003
+   },
+   "images": [
+    {
+     "file": "works/6691639.jpg",
+     "width": 650,
+     "height": 648,
+     "aspect": 1.003
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6691639/en-attente-o-130x130cm-tech-mixte-jpg"
+  },
+  {
+   "id": "6691636",
+   "slug": "sans-titre-28-6691636",
+   "title": {
+    "fr": "Sans titre 28",
+    "en": "Untitled 28"
+   },
+   "titled": false,
+   "year": "2013",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 70,
+    "w": 100,
+    "hIn": 27.6,
+    "wIn": 39.4
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6691636.jpg",
+    "width": 650,
+    "height": 459,
+    "aspect": 1.416
+   },
+   "images": [
+    {
+     "file": "works/6691636.jpg",
+     "width": 650,
+     "height": 459,
+     "aspect": 1.416
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6691636/a-deux-70x100cm-tech-mixte-photo-c-monmarson-jpg"
+  },
+  {
+   "id": "258885",
+   "slug": "sans-titre-49-258885",
+   "title": {
+    "fr": "Sans titre 49",
+    "en": "Untitled 49"
+   },
+   "titled": false,
+   "year": "2005",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 32,
+    "w": 22,
+    "hIn": 12.6,
+    "wIn": 8.7
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/258885.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258885.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258885/hpim0695-jpg"
+  },
+  {
+   "id": "258828",
+   "slug": "coupelle-258828",
+   "title": {
+    "fr": "Coupelle",
+    "en": "Coupelle"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/258828.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258828.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258828/coupelle"
+  },
+  {
+   "id": "258758",
+   "slug": "trois-258758",
+   "title": {
+    "fr": "Trois",
+    "en": "Trois"
+   },
+   "titled": true,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "grands-formats"
+   ],
+   "image": {
+    "file": "works/258758.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258758.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258758/trois"
+  },
+  {
+   "id": "258710",
+   "slug": "sans-titre-51-258710",
+   "title": {
+    "fr": "Sans titre 51",
+    "en": "Untitled 51"
+   },
+   "titled": false,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 25,
+    "w": 20,
+    "hIn": 9.8,
+    "wIn": 7.9
+   },
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/258710.jpg",
+    "width": 400,
+    "height": 533,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258710.jpg",
+     "width": 400,
+     "height": 533,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258710/hpim0353-jpg"
+  },
+  {
+   "id": "258751",
+   "slug": "de-l-avant-258751",
+   "title": {
+    "fr": "De l'avant",
+    "en": "De l'avant"
+   },
+   "titled": true,
+   "year": "1991",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "peintures"
+   ],
+   "image": {
+    "file": "works/258751.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258751.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258751/de-l-avant"
+  },
+  {
+   "id": "6557419",
+   "slug": "receptacle-6557419",
+   "title": {
+    "fr": "Réceptacle",
+    "en": "Vessel"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6557419.jpg",
+    "width": 428,
+    "height": 650,
+    "aspect": 0.658
+   },
+   "images": [
+    {
+     "file": "works/6557419.jpg",
+     "width": 428,
+     "height": 650,
+     "aspect": 0.658
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557419/receptacle"
+  },
+  {
+   "id": "3788947",
+   "slug": "adieux-3788947",
+   "title": {
+    "fr": "Adieux",
+    "en": "Farewells"
+   },
+   "titled": true,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/3788947.jpg",
+    "width": 469,
+    "height": 650,
+    "aspect": 0.722
+   },
+   "images": [
+    {
+     "file": "works/3788947.jpg",
+     "width": 469,
+     "height": 650,
+     "aspect": 0.722
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/3788947/adieux"
+  },
+  {
+   "id": "9073033",
+   "slug": "sans-titre-5-9073033",
+   "title": {
+    "fr": "Sans titre 5",
+    "en": "Untitled 5"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/9073033.jpg",
+    "width": 1440,
+    "height": 2001,
+    "aspect": 0.72
+   },
+   "images": [
+    {
+     "file": "works/9073033.jpg",
+     "width": 1440,
+     "height": 2001,
+     "aspect": 0.72
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073033/100x73-0-jpg"
+  },
+  {
+   "id": "9037249",
+   "slug": "sans-titre-6-9037249",
+   "title": {
+    "fr": "Sans titre 6",
+    "en": "Untitled 6"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 70,
+    "hIn": 39.4,
+    "wIn": 27.6
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/9037249.jpg",
+    "width": 1440,
+    "height": 2215,
+    "aspect": 0.65
+   },
+   "images": [
+    {
+     "file": "works/9037249.jpg",
+     "width": 1440,
+     "height": 2215,
+     "aspect": 0.65
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9037249/100x65-jpg"
+  },
+  {
+   "id": "260417",
+   "slug": "sans-titre-1-260417",
+   "title": {
+    "fr": "Sans titre 1",
+    "en": "Untitled 1"
+   },
+   "titled": false,
+   "year": "2005",
+   "category": "land-art",
+   "medium": {
+    "fr": "Land art, in situ",
+    "en": "Land art, in situ"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [
+    "land-art"
+   ],
+   "image": {
+    "file": "works/260417.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/260417.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260417/hpim1138-jpg"
+  },
+  {
+   "id": "258888",
+   "slug": "sans-titre-46-258888",
+   "title": {
+    "fr": "Sans titre 46",
+    "en": "Untitled 46"
+   },
+   "titled": false,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 20,
+    "hIn": 7.9,
+    "wIn": 7.9
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/258888.jpg",
+    "width": 567,
+    "height": 561,
+    "aspect": 1.011
+   },
+   "images": [
+    {
+     "file": "works/258888.jpg",
+     "width": 567,
+     "height": 561,
+     "aspect": 1.011
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258888/monmarson18-jpg"
+  },
+  {
+   "id": "258713",
+   "slug": "sans-titre-50-258713",
+   "title": {
+    "fr": "Sans titre 50",
+    "en": "Untitled 50"
+   },
+   "titled": false,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 20,
+    "w": 20,
+    "hIn": 7.9,
+    "wIn": 7.9
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/258713.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258713.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258713/hpim1331-jpg"
+  },
+  {
+   "id": "258910",
+   "slug": "sans-titre-2-258910",
+   "title": {
+    "fr": "Sans titre 2",
+    "en": "Untitled 2"
+   },
+   "titled": false,
+   "year": "2002",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": {
+    "h": 40,
+    "w": 25,
+    "hIn": 15.7,
+    "wIn": 9.8
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "terres"
+   ],
+   "image": {
+    "file": "works/258910.jpg",
+    "width": 520,
+    "height": 750,
+    "aspect": 0.693
+   },
+   "images": [
+    {
+     "file": "works/258910.jpg",
+     "width": 520,
+     "height": 750,
+     "aspect": 0.693
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258910/dossier1009-jpg"
+  },
+  {
+   "id": "258928",
+   "slug": "sans-titre-42-258928",
+   "title": {
+    "fr": "Sans titre 42",
+    "en": "Untitled 42"
+   },
+   "titled": false,
+   "year": "2001",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 150,
+    "w": 105,
+    "hIn": 59.1,
+    "wIn": 41.3
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "peintures"
+   ],
+   "image": {
+    "file": "works/258928.jpg",
+    "width": 433,
+    "height": 750,
+    "aspect": 0.577
+   },
+   "images": [
+    {
+     "file": "works/258928.jpg",
+     "width": 433,
+     "height": 750,
+     "aspect": 0.577
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258928/dossier1005-jpg"
+  },
+  {
+   "id": "258927",
+   "slug": "sans-titre-43-258927",
+   "title": {
+    "fr": "Sans titre 43",
+    "en": "Untitled 43"
+   },
+   "titled": false,
+   "year": "2001",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 150,
+    "w": 105,
+    "hIn": 59.1,
+    "wIn": 41.3
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "peintures"
+   ],
+   "image": {
+    "file": "works/258927.jpg",
+    "width": 459,
+    "height": 750,
+    "aspect": 0.612
+   },
+   "images": [
+    {
+     "file": "works/258927.jpg",
+     "width": 459,
+     "height": 750,
+     "aspect": 0.612
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258927/dossier1004-jpg"
+  },
+  {
+   "id": "6938548",
+   "slug": "sans-titre-17-6938548",
+   "title": {
+    "fr": "Sans titre 17",
+    "en": "Untitled 17"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6938548.jpg",
+    "width": 750,
+    "height": 453,
+    "aspect": 1.656
+   },
+   "images": [
+    {
+     "file": "works/6938548.jpg",
+     "width": 750,
+     "height": 453,
+     "aspect": 1.656
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938548/p1015827-jpg"
+  },
+  {
+   "id": "6938539",
+   "slug": "sans-titre-19-6938539",
+   "title": {
+    "fr": "Sans titre 19",
+    "en": "Untitled 19"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6938539.jpg",
+    "width": 750,
+    "height": 471,
+    "aspect": 1.592
+   },
+   "images": [
+    {
+     "file": "works/6938539.jpg",
+     "width": 750,
+     "height": 471,
+     "aspect": 1.592
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938539/p1015826-jpg"
+  },
+  {
+   "id": "6850618",
+   "slug": "sans-titre-20-6850618",
+   "title": {
+    "fr": "Sans titre 20",
+    "en": "Untitled 20"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6850618.jpg",
+    "width": 750,
+    "height": 542,
+    "aspect": 1.384
+   },
+   "images": [
+    {
+     "file": "works/6850618.jpg",
+     "width": 750,
+     "height": 542,
+     "aspect": 1.384
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850618/p1015799-jpg"
+  },
+  {
+   "id": "6850615",
+   "slug": "sans-titre-21-6850615",
+   "title": {
+    "fr": "Sans titre 21",
+    "en": "Untitled 21"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6850615.jpg",
+    "width": 600,
+    "height": 750,
+    "aspect": 0.8
+   },
+   "images": [
+    {
+     "file": "works/6850615.jpg",
+     "width": 600,
+     "height": 750,
+     "aspect": 0.8
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850615/p1015797-jpg"
+  },
+  {
+   "id": "6850597",
+   "slug": "sans-titre-23-6850597",
+   "title": {
+    "fr": "Sans titre 23",
+    "en": "Untitled 23"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6850597.jpg",
+    "width": 750,
+    "height": 563,
+    "aspect": 1.332
+   },
+   "images": [
+    {
+     "file": "works/6850597.jpg",
+     "width": 750,
+     "height": 563,
+     "aspect": 1.332
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850597/p1015813-jpg"
+  },
+  {
+   "id": "6850594",
+   "slug": "sans-titre-24-6850594",
+   "title": {
+    "fr": "Sans titre 24",
+    "en": "Untitled 24"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6850594.jpg",
+    "width": 750,
+    "height": 563,
+    "aspect": 1.332
+   },
+   "images": [
+    {
+     "file": "works/6850594.jpg",
+     "width": 750,
+     "height": 563,
+     "aspect": 1.332
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850594/p1015809-jpg"
+  },
+  {
+   "id": "6557467",
+   "slug": "sans-titre-29-6557467",
+   "title": {
+    "fr": "Sans titre 29",
+    "en": "Untitled 29"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6557467.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6557467.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557467/p1015294-jpg"
+  },
+  {
+   "id": "6557422",
+   "slug": "sans-titre-33-6557422",
+   "title": {
+    "fr": "Sans titre 33",
+    "en": "Untitled 33"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/6557422.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6557422.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557422/p1014673-jpg"
+  },
+  {
+   "id": "6557266",
+   "slug": "sans-titre-35-6557266",
+   "title": {
+    "fr": "Sans titre 35",
+    "en": "Untitled 35"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Huile",
+    "en": "Oil"
+   },
+   "dimensions": {
+    "h": 130,
+    "w": 130,
+    "hIn": 51.2,
+    "wIn": 51.2
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6557266.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6557266.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557266/p1014737-jpg"
+  },
+  {
+   "id": "4723327",
+   "slug": "sans-titre-36-4723327",
+   "title": {
+    "fr": "Sans titre 36",
+    "en": "Untitled 36"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/4723327.jpg",
+    "width": 465,
+    "height": 650,
+    "aspect": 0.715
+   },
+   "images": [
+    {
+     "file": "works/4723327.jpg",
+     "width": 465,
+     "height": 650,
+     "aspect": 0.715
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723327/p1013506-jpg"
+  },
+  {
+   "id": "4723324",
+   "slug": "sans-titre-37-4723324",
+   "title": {
+    "fr": "Sans titre 37",
+    "en": "Untitled 37"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "on-request",
+   "series": [],
+   "image": {
+    "file": "works/4723324.jpg",
+    "width": 480,
+    "height": 650,
+    "aspect": 0.738
+   },
+   "images": [
+    {
+     "file": "works/4723324.jpg",
+     "width": 480,
+     "height": 650,
+     "aspect": 0.738
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723324/p1013501-jpg"
+  },
+  {
+   "id": "1621041",
+   "slug": "sans-titre-38-1621041",
+   "title": {
+    "fr": "Sans titre 38",
+    "en": "Untitled 38"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 65,
+    "w": 65,
+    "hIn": 25.6,
+    "wIn": 25.6
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/1621041.jpg",
+    "width": 650,
+    "height": 648,
+    "aspect": 1.003
+   },
+   "images": [
+    {
+     "file": "works/1621041.jpg",
+     "width": 650,
+     "height": 648,
+     "aspect": 1.003
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/1621041/p5180805-jpg"
+  },
+  {
+   "id": "1621017",
+   "slug": "sans-titre-39-1621017",
+   "title": {
+    "fr": "Sans titre 39",
+    "en": "Untitled 39"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 45,
+    "w": 45,
+    "hIn": 17.7,
+    "wIn": 17.7
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/1621017.jpg",
+    "width": 628,
+    "height": 650,
+    "aspect": 0.966
+   },
+   "images": [
+    {
+     "file": "works/1621017.jpg",
+     "width": 628,
+     "height": 650,
+     "aspect": 0.966
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/1621017/p5180815-jpg"
+  },
+  {
+   "id": "1621001",
+   "slug": "sans-titre-40-1621001",
+   "title": {
+    "fr": "Sans titre 40",
+    "en": "Untitled 40"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 100,
+    "w": 100,
+    "hIn": 39.4,
+    "wIn": 39.4
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/1621001.jpg",
+    "width": 650,
+    "height": 635,
+    "aspect": 1.024
+   },
+   "images": [
+    {
+     "file": "works/1621001.jpg",
+     "width": 650,
+     "height": 635,
+     "aspect": 1.024
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/1621001/p4260746-jpg"
+  },
+  {
+   "id": "1620989",
+   "slug": "sans-titre-41-1620989",
+   "title": {
+    "fr": "Sans titre 41",
+    "en": "Untitled 41"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": {
+    "h": 35,
+    "w": 35,
+    "hIn": 13.8,
+    "wIn": 13.8
+   },
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/1620989.jpg",
+    "width": 631,
+    "height": 640,
+    "aspect": 0.986
+   },
+   "images": [
+    {
+     "file": "works/1620989.jpg",
+     "width": 631,
+     "height": 640,
+     "aspect": 0.986
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/1620989/35x35-jpg"
+  },
+  {
+   "id": "9073111",
+   "slug": "sans-titre-2-9073111",
+   "title": {
+    "fr": "Sans titre 2",
+    "en": "Untitled 2"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/9073111.jpg",
+    "width": 1440,
+    "height": 1985,
+    "aspect": 0.725
+   },
+   "images": [
+    {
+     "file": "works/9073111.jpg",
+     "width": 1440,
+     "height": 1985,
+     "aspect": 0.725
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073111/100x73-jpg"
+  },
+  {
+   "id": "9073066",
+   "slug": "sans-titre-3-9073066",
+   "title": {
+    "fr": "Sans titre 3",
+    "en": "Untitled 3"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/9073066.jpg",
+    "width": 1440,
+    "height": 2100,
+    "aspect": 0.686
+   },
+   "images": [
+    {
+     "file": "works/9073066.jpg",
+     "width": 1440,
+     "height": 2100,
+     "aspect": 0.686
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073066/dsc01059-jpg"
+  },
+  {
+   "id": "9073063",
+   "slug": "sans-titre-4-9073063",
+   "title": {
+    "fr": "Sans titre 4",
+    "en": "Untitled 4"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/9073063.jpg",
+    "width": 1440,
+    "height": 2127,
+    "aspect": 0.677
+   },
+   "images": [
+    {
+     "file": "works/9073063.jpg",
+     "width": 1440,
+     "height": 2127,
+     "aspect": 0.677
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073063/dsc01049-jpg"
+  },
+  {
+   "id": "258890",
+   "slug": "sans-titre-45-258890",
+   "title": {
+    "fr": "Sans titre 45",
+    "en": "Untitled 45"
+   },
+   "titled": false,
+   "year": "2005",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/258890.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258890.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258890/hpim1316-jpg"
+  },
+  {
+   "id": "258887",
+   "slug": "sans-titre-47-258887",
+   "title": {
+    "fr": "Sans titre 47",
+    "en": "Untitled 47"
+   },
+   "titled": false,
+   "year": "2005",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/258887.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258887.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258887/hpim0702-jpg"
+  },
+  {
+   "id": "258886",
+   "slug": "sans-titre-48-258886",
+   "title": {
+    "fr": "Sans titre 48",
+    "en": "Untitled 48"
+   },
+   "titled": false,
+   "year": "2005",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/258886.jpg",
+    "width": 480,
+    "height": 640,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/258886.jpg",
+     "width": 480,
+     "height": 640,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258886/hpim0696-jpg"
+  },
+  {
+   "id": "265436",
+   "slug": "sans-titre-1-265436",
+   "title": {
+    "fr": "Sans titre 1",
+    "en": "Untitled 1"
+   },
+   "titled": false,
+   "year": "2004",
+   "category": "sculpture",
+   "medium": {
+    "fr": "Terre, raku",
+    "en": "Raku-fired clay"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "raku"
+   ],
+   "image": {
+    "file": "works/265436.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/265436.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265436/hpim1402-jpg"
+  },
+  {
+   "id": "258891",
+   "slug": "sans-titre-44-258891",
+   "title": {
+    "fr": "Sans titre 44",
+    "en": "Untitled 44"
+   },
+   "titled": false,
+   "year": "2004",
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [
+    "petits-formats"
+   ],
+   "image": {
+    "file": "works/258891.jpg",
+    "width": 640,
+    "height": 480,
+    "aspect": 1.333
+   },
+   "images": [
+    {
+     "file": "works/258891.jpg",
+     "width": 640,
+     "height": 480,
+     "aspect": 1.333
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258891/hpim1325-jpg"
+  },
+  {
+   "id": "9571282",
+   "slug": "sans-titre-1-9571282",
+   "title": {
+    "fr": "Sans titre 1",
+    "en": "Untitled 1"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/9571282.jpg",
+    "width": 810,
+    "height": 1527,
+    "aspect": 0.53
+   },
+   "images": [
+    {
+     "file": "works/9571282.jpg",
+     "width": 810,
+     "height": 1527,
+     "aspect": 0.53
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9571282/p1016710-jpg"
+  },
+  {
+   "id": "8224378",
+   "slug": "sans-titre-10-8224378",
+   "title": {
+    "fr": "Sans titre 10",
+    "en": "Untitled 10"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/8224378.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75
+   },
+   "images": [
+    {
+     "file": "works/8224378.jpg",
+     "width": 1200,
+     "height": 1600,
+     "aspect": 0.75
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224378/p1016472-jpg"
+  },
+  {
+   "id": "6850612",
+   "slug": "sans-titre-22-6850612",
+   "title": {
+    "fr": "Sans titre 22",
+    "en": "Untitled 22"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6850612.jpg",
+    "width": 563,
+    "height": 750,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6850612.jpg",
+     "width": 563,
+     "height": 750,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850612/p1015794-jpg"
+  },
+  {
+   "id": "6557455",
+   "slug": "sans-titre-30-6557455",
+   "title": {
+    "fr": "Sans titre 30",
+    "en": "Untitled 30"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6557455.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6557455.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557455/p1015289-jpg"
+  },
+  {
+   "id": "6557431",
+   "slug": "sans-titre-32-6557431",
+   "title": {
+    "fr": "Sans titre 32",
+    "en": "Untitled 32"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6557431.jpg",
+    "width": 488,
+    "height": 650,
+    "aspect": 0.751
+   },
+   "images": [
+    {
+     "file": "works/6557431.jpg",
+     "width": 488,
+     "height": 650,
+     "aspect": 0.751
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557431/p1014743-jpg"
+  },
+  {
+   "id": "6557413",
+   "slug": "sans-titre-34-6557413",
+   "title": {
+    "fr": "Sans titre 34",
+    "en": "Untitled 34"
+   },
+   "titled": false,
+   "year": null,
+   "category": "peinture",
+   "medium": {
+    "fr": "Technique mixte",
+    "en": "Mixed media"
+   },
+   "dimensions": null,
+   "price": null,
+   "availability": "sold",
+   "series": [],
+   "image": {
+    "file": "works/6557413.jpg",
+    "width": 490,
+    "height": 650,
+    "aspect": 0.754
+   },
+   "images": [
+    {
+     "file": "works/6557413.jpg",
+     "width": 490,
+     "height": 650,
+     "aspect": 0.754
+    }
+   ],
+   "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557413/p1015249-jpg"
+  }
+ ]
+}

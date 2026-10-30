@@ -1,0 +1,83 @@
+---
+import Base from '../../layouts/Base.astro';
+import { artist } from '../../data/content';
+---
+
+<Base
+  lang="en"
+  paths={{ fr: '/mentions-legales', en: '/legal' }}
+  title="Legal"
+  description="Legal notice, terms of sale and privacy policy for Catherine Monmarson's website."
+>
+  <section class="hero" style="padding-block: var(--s8) var(--s6)">
+    <h1 style="font-size: var(--t-2xl)">Legal</h1>
+  </section>
+
+  <div class="prose">
+    <h2>Publisher</h2>
+    <p>
+      Catherine Monmarson — visual artist.<br />
+      {artist.address}<br />
+      Email: {artist.email}
+    </p>
+    <p class="faint">
+      French SIRET number and artist-author status to be completed before public launch.
+    </p>
+
+    <h2>Hosting</h2>
+    <p>
+      Static site hosted by Netlify, Inc. — 512 2nd Street, Suite 200, San Francisco,
+      CA 94107, USA.
+    </p>
+
+    <h2>Intellectual property</h2>
+    <p>
+      All works, photographs and texts on this site are the exclusive property of Catherine
+      Monmarson. Reproduction, display or distribution, in whole or in part, without prior
+      written permission is prohibited.
+    </p>
+
+    <h2>Terms of sale</h2>
+    <h3>The works</h3>
+    <p>
+      Every work offered is a unique original, signed by the artist and supplied with a
+      certificate of authenticity. Dimensions are given unframed, height × width. Screen
+      colours may differ slightly from the original.
+    </p>
+    <h3>Prices and payment</h3>
+    <p>
+      Prices are in euros, taxes included, excluding shipping. Payment is by card through a
+      secure provider, or by bank transfer. Payment in three instalments is available on
+      request above €1,500.
+    </p>
+    <h3>Shipping</h3>
+    <p>
+      Works ship from Biot (06410), France, packed to measure and insured in transit. Usual
+      delivery: 5–10 working days within France, 10–20 days internationally. Sculpture and
+      canvases over 130 cm are quoted individually for freight. Collection from the studio is
+      possible by appointment.
+    </p>
+    <h3>Right of withdrawal</h3>
+    <p>
+      Under French consumer law the buyer has fourteen days from delivery to withdraw, without
+      giving a reason. The work must be returned in its original packaging and in perfect
+      condition; return shipping is at the buyer's expense. Refunds are issued within fourteen
+      days of receipt.
+    </p>
+
+    <h2>Personal data</h2>
+    <p>
+      Information submitted through the contact form — name, email address and message — is
+      used only to answer the enquiry. It is never sold or passed to third parties, and is
+      kept for at most three years. Under the GDPR you may request access to, correction of,
+      or erasure of your data by writing to {artist.email}.
+    </p>
+    <p>
+      This site uses no advertising cookies and no third-party trackers. Audience measurement,
+      where enabled, is anonymous and cookie-free.
+    </p>
+
+    <h2>Mediation</h2>
+    <p class="faint">Consumer mediator details to be completed before public launch.</p>
+  </div>
+</Base>
