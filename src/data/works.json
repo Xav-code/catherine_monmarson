@@ -11,7 +11,7 @@
   "forSale": 45,
   "priceMin": 209,
   "priceMax": 4799,
-  "generated": "2026-10-30T22:12:33.024Z"
+  "generated": "2026-10-30T22:56:34.712Z"
  },
  "featured": [
   "14109713",
@@ -51,14 +51,16 @@
     "file": "works/17136439.jpg",
     "width": 1440,
     "height": 1427,
-    "aspect": 1.009
+    "aspect": 1.009,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/17136439.jpg",
      "width": 1440,
      "height": 1427,
-     "aspect": 1.009
+     "aspect": 1.009,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17136439/predelle",
@@ -91,14 +93,16 @@
     "file": "works/9037243.jpg",
     "width": 1440,
     "height": 2069,
-    "aspect": 0.696
+    "aspect": 0.696,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/9037243.jpg",
      "width": 1440,
      "height": 2069,
-     "aspect": 0.696
+     "aspect": 0.696,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9037243/ci-mediart"
@@ -132,14 +136,16 @@
     "file": "works/15002129.jpg",
     "width": 1440,
     "height": 1372,
-    "aspect": 1.05
+    "aspect": 1.05,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/15002129.jpg",
      "width": 1440,
      "height": 1372,
-     "aspect": 1.05
+     "aspect": 1.05,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/15002129/pf1"
@@ -171,14 +177,16 @@
     "file": "works/14109713.jpg",
     "width": 1440,
     "height": 1800,
-    "aspect": 0.8
+    "aspect": 0.8,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/14109713.jpg",
      "width": 1440,
      "height": 1800,
-     "aspect": 0.8
+     "aspect": 0.8,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/14109713/non-finito",
@@ -211,14 +219,16 @@
     "file": "works/16920097.jpg",
     "width": 1440,
     "height": 2411,
-    "aspect": 0.597
+    "aspect": 0.597,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/16920097.jpg",
      "width": 1440,
      "height": 2411,
-     "aspect": 0.597
+     "aspect": 0.597,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16920097/pita",
@@ -251,14 +261,16 @@
     "file": "works/16752730.jpg",
     "width": 1440,
     "height": 2219,
-    "aspect": 0.649
+    "aspect": 0.649,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/16752730.jpg",
      "width": 1440,
      "height": 2219,
-     "aspect": 0.649
+     "aspect": 0.649,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16752730/souffle",
@@ -291,14 +303,16 @@
     "file": "works/14109776.jpg",
     "width": 1440,
     "height": 1800,
-    "aspect": 0.8
+    "aspect": 0.8,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/14109776.jpg",
      "width": 1440,
      "height": 1800,
-     "aspect": 0.8
+     "aspect": 0.8,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/14109776/venise",
@@ -331,14 +345,16 @@
     "file": "works/14109809.jpg",
     "width": 995,
     "height": 1518,
-    "aspect": 0.655
+    "aspect": 0.655,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/14109809.jpg",
      "width": 995,
      "height": 1518,
-     "aspect": 0.655
+     "aspect": 0.655,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/14109809/conciliabule",
@@ -371,14 +387,16 @@
     "file": "works/16057213.jpg",
     "width": 1440,
     "height": 1962,
-    "aspect": 0.734
+    "aspect": 0.734,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/16057213.jpg",
      "width": 1440,
      "height": 1962,
-     "aspect": 0.734
+     "aspect": 0.734,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16057213/entre-trouble-et-attachement",
@@ -411,14 +429,16 @@
     "file": "works/9073099.jpg",
     "width": 1440,
     "height": 971,
-    "aspect": 1.483
+    "aspect": 1.483,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/9073099.jpg",
      "width": 1440,
      "height": 971,
-     "aspect": 1.483
+     "aspect": 1.483,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073099/nb"
@@ -450,14 +470,16 @@
     "file": "works/8224351.jpg",
     "width": 1440,
     "height": 1993,
-    "aspect": 0.723
+    "aspect": 0.723,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8224351.jpg",
      "width": 1440,
      "height": 1993,
-     "aspect": 0.723
+     "aspect": 0.723,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224351/vigilence"
@@ -489,14 +511,16 @@
     "file": "works/8224294.jpg",
     "width": 1440,
     "height": 1920,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8224294.jpg",
      "width": 1440,
      "height": 1920,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224294/en-fete"
@@ -528,14 +552,16 @@
     "file": "works/9073018.jpg",
     "width": 1440,
     "height": 2171,
-    "aspect": 0.663
+    "aspect": 0.663,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/9073018.jpg",
      "width": 1440,
      "height": 2171,
-     "aspect": 0.663
+     "aspect": 0.663,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073018/chakras"
@@ -567,14 +593,16 @@
     "file": "works/9072997.jpg",
     "width": 1440,
     "height": 2187,
-    "aspect": 0.658
+    "aspect": 0.658,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/9072997.jpg",
      "width": 1440,
      "height": 2187,
-     "aspect": 0.658
+     "aspect": 0.658,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9072997/dessin"
@@ -606,14 +634,16 @@
     "file": "works/17600023.jpg",
     "width": 1440,
     "height": 2149,
-    "aspect": 0.67
+    "aspect": 0.67,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/17600023.jpg",
      "width": 1440,
      "height": 2149,
-     "aspect": 0.67
+     "aspect": 0.67,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17600023/en-bleu"
@@ -645,14 +675,16 @@
     "file": "works/9037240.jpg",
     "width": 1440,
     "height": 1977,
-    "aspect": 0.728
+    "aspect": 0.728,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/9037240.jpg",
      "width": 1440,
      "height": 1977,
-     "aspect": 0.728
+     "aspect": 0.728,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9037240/dos-2"
@@ -684,14 +716,16 @@
     "file": "works/13422404.jpg",
     "width": 1300,
     "height": 2209,
-    "aspect": 0.589
+    "aspect": 0.589,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/13422404.jpg",
      "width": 1300,
      "height": 2209,
-     "aspect": 0.589
+     "aspect": 0.589,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/13422404/miroir"
@@ -723,14 +757,16 @@
     "file": "works/3788941.jpg",
     "width": 445,
     "height": 650,
-    "aspect": 0.685
+    "aspect": 0.685,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/3788941.jpg",
      "width": 445,
      "height": 650,
-     "aspect": 0.685
+     "aspect": 0.685,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/3788941/chercher-du-pied-nu-l-empreinte-sur-le-sable"
@@ -762,14 +798,16 @@
     "file": "works/17599948.jpg",
     "width": 1440,
     "height": 1080,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/17599948.jpg",
      "width": 1440,
      "height": 1080,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17599948/en-attente-cosmos-2"
@@ -801,14 +839,16 @@
     "file": "works/17136442.jpg",
     "width": 1440,
     "height": 1920,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/17136442.jpg",
      "width": 1440,
      "height": 1920,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17136442/cosmos-1"
@@ -840,14 +880,16 @@
     "file": "works/9073087.jpg",
     "width": 1440,
     "height": 1858,
-    "aspect": 0.775
+    "aspect": 0.775,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/9073087.jpg",
      "width": 1440,
      "height": 1858,
-     "aspect": 0.775
+     "aspect": 0.775,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073087/dessin-nb"
@@ -879,14 +921,16 @@
     "file": "works/15069416.jpg",
     "width": 1440,
     "height": 1920,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/15069416.jpg",
      "width": 1440,
      "height": 1920,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/15069416/litho2"
@@ -918,14 +962,16 @@
     "file": "works/6557326.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6557326.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557326/en-attente-1"
@@ -957,14 +1003,16 @@
     "file": "works/16057258.jpg",
     "width": 1080,
     "height": 1080,
-    "aspect": 1
+    "aspect": 1,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/16057258.jpg",
      "width": 1080,
      "height": 1080,
-     "aspect": 1
+     "aspect": 1,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16057258/vigilance",
@@ -997,14 +1045,16 @@
     "file": "works/16007890.jpg",
     "width": 907,
     "height": 1042,
-    "aspect": 0.87
+    "aspect": 0.87,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/16007890.jpg",
      "width": 907,
      "height": 1042,
-     "aspect": 0.87
+     "aspect": 0.87,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16007890/noir2"
@@ -1036,14 +1086,16 @@
     "file": "works/9571294.jpg",
     "width": 1046,
     "height": 1546,
-    "aspect": 0.677
+    "aspect": 0.677,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/9571294.jpg",
      "width": 1046,
      "height": 1546,
-     "aspect": 0.677
+     "aspect": 0.677,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9571294/invite-bleu"
@@ -1075,14 +1127,16 @@
     "file": "works/9571291.jpg",
     "width": 1084,
     "height": 1552,
-    "aspect": 0.698
+    "aspect": 0.698,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/9571291.jpg",
      "width": 1084,
      "height": 1552,
-     "aspect": 0.698
+     "aspect": 0.698,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9571291/pieds-sur-terre"
@@ -1114,14 +1168,16 @@
     "file": "works/16008061.jpg",
     "width": 1080,
     "height": 1080,
-    "aspect": 1
+    "aspect": 1,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/16008061.jpg",
      "width": 1080,
      "height": 1080,
-     "aspect": 1
+     "aspect": 1,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16008061/nu-nb"
@@ -1153,14 +1209,16 @@
     "file": "works/16008124.jpg",
     "width": 866,
     "height": 1004,
-    "aspect": 0.863
+    "aspect": 0.863,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/16008124.jpg",
      "width": 866,
      "height": 1004,
-     "aspect": 0.863
+     "aspect": 0.863,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16008124/nu-j"
@@ -1192,14 +1250,16 @@
     "file": "works/16008091.jpg",
     "width": 894,
     "height": 954,
-    "aspect": 0.937
+    "aspect": 0.937,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/16008091.jpg",
      "width": 894,
      "height": 954,
-     "aspect": 0.937
+     "aspect": 0.937,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16008091/nu-nb2"
@@ -1231,14 +1291,16 @@
     "file": "works/8224375.jpg",
     "width": 1200,
     "height": 1600,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8224375.jpg",
      "width": 1200,
      "height": 1600,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224375/dessin-sur-papier"
@@ -1270,14 +1332,16 @@
     "file": "works/5381254.jpg",
     "width": 384,
     "height": 480,
-    "aspect": 0.8
+    "aspect": 0.8,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/5381254.jpg",
      "width": 384,
      "height": 480,
-     "aspect": 0.8
+     "aspect": 0.8,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/5381254/la-joue"
@@ -1309,14 +1373,16 @@
     "file": "works/8224387.jpg",
     "width": 1200,
     "height": 1600,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8224387.jpg",
      "width": 1200,
      "height": 1600,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224387/dessin-sur-papier-nb3"
@@ -1348,14 +1414,16 @@
     "file": "works/13422374.jpg",
     "width": 512,
     "height": 384,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/13422374.jpg",
      "width": 512,
      "height": 384,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/13422374/petits-formats-2"
@@ -1387,14 +1455,16 @@
     "file": "works/6938575.jpg",
     "width": 563,
     "height": 750,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/6938575.jpg",
      "width": 563,
      "height": 750,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938575/snc16329-jpg"
@@ -1426,14 +1496,16 @@
     "file": "works/8224357.jpg",
     "width": 1440,
     "height": 2168,
-    "aspect": 0.664
+    "aspect": 0.664,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/8224357.jpg",
      "width": 1440,
      "height": 2168,
-     "aspect": 0.664
+     "aspect": 0.664,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224357/p1016439-001-jpg"
@@ -1467,14 +1539,16 @@
     "file": "works/15012422.jpg",
     "width": 1440,
     "height": 1458,
-    "aspect": 0.988
+    "aspect": 0.988,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/15012422.jpg",
      "width": 1440,
      "height": 1458,
-     "aspect": 0.988
+     "aspect": 0.988,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/15012422/pfx"
@@ -1508,14 +1582,16 @@
     "file": "works/15012266.jpg",
     "width": 1440,
     "height": 1478,
-    "aspect": 0.974
+    "aspect": 0.974,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/15012266.jpg",
      "width": 1440,
      "height": 1478,
-     "aspect": 0.974
+     "aspect": 0.974,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/15012266/pf2"
@@ -1547,14 +1623,16 @@
     "file": "works/8224384.jpg",
     "width": 1200,
     "height": 1600,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8224384.jpg",
      "width": 1200,
      "height": 1600,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224384/p1016467-jpg"
@@ -1586,14 +1664,16 @@
     "file": "works/8224381.jpg",
     "width": 1200,
     "height": 1600,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8224381.jpg",
      "width": 1200,
      "height": 1600,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224381/p1016468-jpg"
@@ -1625,14 +1705,16 @@
     "file": "works/6938542.jpg",
     "width": 750,
     "height": 563,
-    "aspect": 1.332
+    "aspect": 1.332,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/6938542.jpg",
      "width": 750,
      "height": 563,
-     "aspect": 1.332
+     "aspect": 1.332,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938542/p1015825-001-jpg"
@@ -1664,14 +1746,16 @@
     "file": "works/8224372.jpg",
     "width": 1200,
     "height": 1600,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8224372.jpg",
      "width": 1200,
      "height": 1600,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224372/p1016474-jpg"
@@ -1703,14 +1787,16 @@
     "file": "works/8224366.jpg",
     "width": 1137,
     "height": 1559,
-    "aspect": 0.729
+    "aspect": 0.729,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8224366.jpg",
      "width": 1137,
      "height": 1559,
-     "aspect": 0.729
+     "aspect": 0.729,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224366/p1016475-001-jpg"
@@ -1742,14 +1828,16 @@
     "file": "works/6938572.jpg",
     "width": 750,
     "height": 393,
-    "aspect": 1.908
+    "aspect": 1.908,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6938572.jpg",
      "width": 750,
      "height": 393,
-     "aspect": 1.908
+     "aspect": 1.908,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938572/p1015828-jpg"
@@ -1781,14 +1869,16 @@
     "file": "works/16008160.jpg",
     "width": 984,
     "height": 1015,
-    "aspect": 0.969
+    "aspect": 0.969,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/16008160.jpg",
      "width": 984,
      "height": 1015,
-     "aspect": 0.969
+     "aspect": 0.969,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16008160/nu-nb3"
@@ -1815,14 +1905,16 @@
     "file": "works/6850585.jpg",
     "width": 556,
     "height": 750,
-    "aspect": 0.741
+    "aspect": 0.741,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6850585.jpg",
      "width": 556,
      "height": 750,
-     "aspect": 0.741
+     "aspect": 0.741,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850585/p1015802-jpg"
@@ -1854,14 +1946,16 @@
     "file": "works/6099280.jpg",
     "width": 650,
     "height": 488,
-    "aspect": 1.332
+    "aspect": 1.332,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6099280.jpg",
      "width": 650,
      "height": 488,
-     "aspect": 1.332
+     "aspect": 1.332,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6099280/cartons-compresses"
@@ -1888,14 +1982,16 @@
     "file": "works/6938566.jpg",
     "width": 423,
     "height": 750,
-    "aspect": 0.564
+    "aspect": 0.564,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6938566.jpg",
      "width": 423,
      "height": 750,
-     "aspect": 0.564
+     "aspect": 0.564,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938566/p1015824-jpg"
@@ -1929,14 +2025,16 @@
     "file": "works/265452.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/265452.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265452/petits-formats-en-ligne"
@@ -1970,14 +2068,16 @@
     "file": "works/260883.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/260883.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260883/grand-receptacle-ncm4"
@@ -2011,14 +2111,16 @@
     "file": "works/259458.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/259458.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259458/estafilade"
@@ -2052,14 +2154,16 @@
     "file": "works/259405.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/259405.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259405/plaque-murale"
@@ -2093,14 +2197,16 @@
     "file": "works/258853.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258853.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258853/3-sculptures"
@@ -2134,14 +2240,16 @@
     "file": "works/258826.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258826.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258826/petits-receptacles"
@@ -2175,14 +2283,16 @@
     "file": "works/259454.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/259454.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259454/aurore"
@@ -2216,14 +2326,16 @@
     "file": "works/258900.jpg",
     "width": 503,
     "height": 750,
-    "aspect": 0.671
+    "aspect": 0.671,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258900.jpg",
      "width": 503,
      "height": 750,
-     "aspect": 0.671
+     "aspect": 0.671,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258900/receptacle"
@@ -2257,14 +2369,16 @@
     "file": "works/258762.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258762.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258762/tete2"
@@ -2293,14 +2407,16 @@
     "file": "works/265462.jpg",
     "width": 1440,
     "height": 1982,
-    "aspect": 0.727
+    "aspect": 0.727,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/265462.jpg",
      "width": 1440,
      "height": 1982,
-     "aspect": 0.727
+     "aspect": 0.727,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265462/petits-formats"
@@ -2334,14 +2450,16 @@
     "file": "works/258911.jpg",
     "width": 750,
     "height": 634,
-    "aspect": 1.183
+    "aspect": 1.183,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258911.jpg",
      "width": 750,
      "height": 634,
-     "aspect": 1.183
+     "aspect": 1.183,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258911/terre-patinee"
@@ -2375,14 +2493,16 @@
     "file": "works/259344.jpg",
     "width": 1440,
     "height": 1850,
-    "aspect": 0.778
+    "aspect": 0.778,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/259344.jpg",
      "width": 1440,
      "height": 1850,
-     "aspect": 0.778
+     "aspect": 0.778,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259344/paravent-mdgc"
@@ -2409,14 +2529,16 @@
     "file": "works/6557443.jpg",
     "width": 650,
     "height": 488,
-    "aspect": 1.332
+    "aspect": 1.332,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6557443.jpg",
      "width": 650,
      "height": 488,
-     "aspect": 1.332
+     "aspect": 1.332,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557443/p1014763-jpg"
@@ -2450,14 +2572,16 @@
     "file": "works/258746.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258746.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258746/cm-mc-stpe"
@@ -2489,14 +2613,16 @@
     "file": "works/6036280.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/6036280.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6036280/bleu"
@@ -2523,14 +2649,16 @@
     "file": "works/17905849.jpg",
     "width": 1440,
     "height": 648,
-    "aspect": 2.222
+    "aspect": 2.222,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/17905849.jpg",
      "width": 1440,
      "height": 648,
-     "aspect": 2.222
+     "aspect": 2.222,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17905849/en-attente2024"
@@ -2557,14 +2685,16 @@
     "file": "works/16060192.jpg",
     "width": 1440,
     "height": 1080,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/16060192.jpg",
      "width": 1440,
      "height": 1080,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16060192/stand"
@@ -2591,14 +2721,16 @@
     "file": "works/13172489.jpg",
     "width": 1213,
     "height": 2007,
-    "aspect": 0.604
+    "aspect": 0.604,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/13172489.jpg",
      "width": 1213,
      "height": 2007,
-     "aspect": 0.604
+     "aspect": 0.604,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/13172489/portrait"
@@ -2630,14 +2762,16 @@
     "file": "works/9073054.jpg",
     "width": 1440,
     "height": 2147,
-    "aspect": 0.671
+    "aspect": 0.671,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/9073054.jpg",
      "width": 1440,
      "height": 2147,
-     "aspect": 0.671
+     "aspect": 0.671,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073054/vert-lumiere"
@@ -2669,14 +2803,16 @@
     "file": "works/8227369.jpg",
     "width": 1440,
     "height": 1920,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8227369.jpg",
      "width": 1440,
      "height": 1920,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8227369/de-dos"
@@ -2705,14 +2841,16 @@
     "file": "works/806169.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/806169.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/806169/passage-sentier-de-la-brague"
@@ -2741,14 +2879,16 @@
     "file": "works/806161.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/806161.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/806161/passage-sentier-de-la-brague"
@@ -2782,14 +2922,16 @@
     "file": "works/265451.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/265451.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265451/petits-formats-en-ligne"
@@ -2823,14 +2965,16 @@
     "file": "works/265448.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/265448.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265448/petits-formats-en-ligne"
@@ -2859,14 +3003,16 @@
     "file": "works/265440.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/265440.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265440/personnage-neige"
@@ -2900,14 +3046,16 @@
     "file": "works/260895.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/260895.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260895/sans"
@@ -2941,14 +3089,16 @@
     "file": "works/258893.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258893.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258893/ebouriffee-i"
@@ -2982,14 +3132,16 @@
     "file": "works/258764.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258764.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258764/grands-receptacles"
@@ -3018,14 +3170,16 @@
     "file": "works/806165.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/806165.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/806165/passage-sentier-de-la-brague-juin-2006"
@@ -3054,14 +3208,16 @@
     "file": "works/260893.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/260893.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260893/personnage-neige"
@@ -3095,14 +3251,16 @@
     "file": "works/260880.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/260880.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260880/grand-receptacle-1"
@@ -3131,14 +3289,16 @@
     "file": "works/260420.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/260420.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260420/personnage-neige"
@@ -3167,14 +3327,16 @@
     "file": "works/260419.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/260419.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260419/personnage-neige"
@@ -3203,14 +3365,16 @@
     "file": "works/260418.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/260418.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260418/personnage-neige"
@@ -3244,14 +3408,16 @@
     "file": "works/258862.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258862.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258862/au-bord-de-la-riviere"
@@ -3285,14 +3451,16 @@
     "file": "works/258850.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258850.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258850/sans"
@@ -3326,14 +3494,16 @@
     "file": "works/258835.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258835.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258835/bas-relief"
@@ -3367,14 +3537,16 @@
     "file": "works/258829.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258829.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258829/plaque-raku"
@@ -3403,14 +3575,16 @@
     "file": "works/258825.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258825.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258825/detail-grand-receptacle"
@@ -3444,14 +3618,16 @@
     "file": "works/258763.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258763.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258763/grand-receptacle"
@@ -3485,14 +3661,16 @@
     "file": "works/258759.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258759.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258759/l-empreinte"
@@ -3526,14 +3704,16 @@
     "file": "works/258757.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258757.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258757/sans-ancrage"
@@ -3567,14 +3747,16 @@
     "file": "works/258756.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258756.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/258756/foule"
@@ -3608,14 +3790,16 @@
     "file": "works/258673.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258673.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258673/serie-6-petits-formats"
@@ -3649,14 +3833,16 @@
     "file": "works/259457.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/259457.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259457/sans-titre"
@@ -3690,14 +3876,16 @@
     "file": "works/259404.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/259404.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/259404/plat"
@@ -3731,14 +3919,16 @@
     "file": "works/258761.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258761.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258761/tete-1"
@@ -3772,14 +3962,16 @@
     "file": "works/258903.jpg",
     "width": 463,
     "height": 750,
-    "aspect": 0.617
+    "aspect": 0.617,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258903.jpg",
      "width": 463,
      "height": 750,
-     "aspect": 0.617
+     "aspect": 0.617,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258903/sans"
@@ -3813,14 +4005,16 @@
     "file": "works/258847.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258847.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258847/sans"
@@ -3854,14 +4048,16 @@
     "file": "works/258749.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258749.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258749/croix"
@@ -3895,14 +4091,16 @@
     "file": "works/258748.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258748.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258748/envol"
@@ -3936,14 +4134,16 @@
     "file": "works/258884.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258884.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258884/croix-2"
@@ -3975,14 +4175,16 @@
     "file": "works/16057156.jpg",
     "width": 972,
     "height": 972,
-    "aspect": 1
+    "aspect": 1,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/16057156.jpg",
      "width": 972,
      "height": 972,
-     "aspect": 1
+     "aspect": 1,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16057156/desequilibre"
@@ -4014,14 +4216,16 @@
     "file": "works/16007998.jpg",
     "width": 861,
     "height": 956,
-    "aspect": 0.901
+    "aspect": 0.901,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/16007998.jpg",
      "width": 861,
      "height": 956,
-     "aspect": 0.901
+     "aspect": 0.901,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/16007998/dr-pascal"
@@ -4053,14 +4257,16 @@
     "file": "works/14485238.jpg",
     "width": 892,
     "height": 1600,
-    "aspect": 0.558
+    "aspect": 0.558,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/14485238.jpg",
      "width": 892,
      "height": 1600,
-     "aspect": 0.558
+     "aspect": 0.558,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/14485238/bleu-2"
@@ -4092,14 +4298,16 @@
     "file": "works/6557449.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/6557449.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557449/intimite"
@@ -4131,14 +4339,16 @@
     "file": "works/6099319.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/6099319.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6099319/tendresses"
@@ -4170,14 +4380,16 @@
     "file": "works/6036376.jpg",
     "width": 478,
     "height": 650,
-    "aspect": 0.735
+    "aspect": 0.735,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/6036376.jpg",
      "width": 478,
      "height": 650,
-     "aspect": 0.735
+     "aspect": 0.735,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6036376/5-couleurs"
@@ -4209,14 +4421,16 @@
     "file": "works/6036121.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/6036121.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6036121/rouge"
@@ -4248,14 +4462,16 @@
     "file": "works/5381272.jpg",
     "width": 375,
     "height": 480,
-    "aspect": 0.781
+    "aspect": 0.781,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/5381272.jpg",
      "width": 375,
      "height": 480,
-     "aspect": 0.781
+     "aspect": 0.781,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/5381272/indigne"
@@ -4287,14 +4503,16 @@
     "file": "works/4723414.jpg",
     "width": 522,
     "height": 650,
-    "aspect": 0.803
+    "aspect": 0.803,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/4723414.jpg",
      "width": 522,
      "height": 650,
-     "aspect": 0.803
+     "aspect": 0.803,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723414/hors-champ"
@@ -4326,14 +4544,16 @@
     "file": "works/4723378.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/4723378.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723378/metamorphose"
@@ -4365,14 +4585,16 @@
     "file": "works/4723357.jpg",
     "width": 447,
     "height": 480,
-    "aspect": 0.931
+    "aspect": 0.931,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/4723357.jpg",
      "width": 447,
      "height": 480,
-     "aspect": 0.931
+     "aspect": 0.931,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723357/13-03-06"
@@ -4404,14 +4626,16 @@
     "file": "works/3806971.jpg",
     "width": 611,
     "height": 640,
-    "aspect": 0.955
+    "aspect": 0.955,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/3806971.jpg",
      "width": 611,
      "height": 640,
-     "aspect": 0.955
+     "aspect": 0.955,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/3806971/en-attente-rose"
@@ -4445,14 +4669,16 @@
     "file": "works/15068807.jpg",
     "width": 1073,
     "height": 1841,
-    "aspect": 0.583
+    "aspect": 0.583,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/15068807.jpg",
      "width": 1073,
      "height": 1841,
-     "aspect": 0.583
+     "aspect": 0.583,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/15068807/20x12"
@@ -4479,14 +4705,16 @@
     "file": "works/17930785.jpg",
     "width": 1440,
     "height": 2808,
-    "aspect": 0.513
+    "aspect": 0.513,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/17930785.jpg",
      "width": 1440,
      "height": 2808,
-     "aspect": 0.513
+     "aspect": 0.513,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/17930785/receptacle-raku"
@@ -4518,14 +4746,16 @@
     "file": "works/8227372.jpg",
     "width": 1440,
     "height": 1080,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/8227372.jpg",
      "width": 1440,
      "height": 1080,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8227372/p1016543-jpg"
@@ -4557,14 +4787,16 @@
     "file": "works/6691642.jpg",
     "width": 457,
     "height": 650,
-    "aspect": 0.703
+    "aspect": 0.703,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6691642.jpg",
      "width": 457,
      "height": 650,
-     "aspect": 0.703
+     "aspect": 0.703,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6691642/xap-163x114cm-tech-mixte-jpg"
@@ -4596,14 +4828,16 @@
     "file": "works/6691639.jpg",
     "width": 650,
     "height": 648,
-    "aspect": 1.003
+    "aspect": 1.003,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/6691639.jpg",
      "width": 650,
      "height": 648,
-     "aspect": 1.003
+     "aspect": 1.003,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6691639/en-attente-o-130x130cm-tech-mixte-jpg"
@@ -4635,14 +4869,16 @@
     "file": "works/6691636.jpg",
     "width": 650,
     "height": 459,
-    "aspect": 1.416
+    "aspect": 1.416,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/6691636.jpg",
      "width": 650,
      "height": 459,
-     "aspect": 1.416
+     "aspect": 1.416,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6691636/a-deux-70x100cm-tech-mixte-photo-c-monmarson-jpg"
@@ -4676,14 +4912,16 @@
     "file": "works/258885.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258885.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258885/hpim0695-jpg"
@@ -4712,14 +4950,16 @@
     "file": "works/258828.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258828.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258828/coupelle"
@@ -4748,14 +4988,16 @@
     "file": "works/258758.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258758.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258758/trois"
@@ -4789,14 +5031,16 @@
     "file": "works/258710.jpg",
     "width": 400,
     "height": 533,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258710.jpg",
      "width": 400,
      "height": 533,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258710/hpim0353-jpg"
@@ -4825,14 +5069,16 @@
     "file": "works/258751.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258751.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258751/de-l-avant"
@@ -4859,14 +5105,16 @@
     "file": "works/6557419.jpg",
     "width": 428,
     "height": 650,
-    "aspect": 0.658
+    "aspect": 0.658,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6557419.jpg",
      "width": 428,
      "height": 650,
-     "aspect": 0.658
+     "aspect": 0.658,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557419/receptacle"
@@ -4893,14 +5141,16 @@
     "file": "works/3788947.jpg",
     "width": 469,
     "height": 650,
-    "aspect": 0.722
+    "aspect": 0.722,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/3788947.jpg",
      "width": 469,
      "height": 650,
-     "aspect": 0.722
+     "aspect": 0.722,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/3788947/adieux"
@@ -4927,14 +5177,16 @@
     "file": "works/9073033.jpg",
     "width": 1440,
     "height": 2001,
-    "aspect": 0.72
+    "aspect": 0.72,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/9073033.jpg",
      "width": 1440,
      "height": 2001,
-     "aspect": 0.72
+     "aspect": 0.72,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073033/100x73-0-jpg"
@@ -4966,14 +5218,16 @@
     "file": "works/9037249.jpg",
     "width": 1440,
     "height": 2215,
-    "aspect": 0.65
+    "aspect": 0.65,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/9037249.jpg",
      "width": 1440,
      "height": 2215,
-     "aspect": 0.65
+     "aspect": 0.65,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9037249/100x65-jpg"
@@ -5002,14 +5256,16 @@
     "file": "works/260417.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/260417.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/260417/hpim1138-jpg"
@@ -5043,14 +5299,16 @@
     "file": "works/258888.jpg",
     "width": 567,
     "height": 561,
-    "aspect": 1.011
+    "aspect": 1.011,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/258888.jpg",
      "width": 567,
      "height": 561,
-     "aspect": 1.011
+     "aspect": 1.011,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258888/monmarson18-jpg"
@@ -5084,14 +5342,16 @@
     "file": "works/258713.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258713.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258713/hpim1331-jpg"
@@ -5125,14 +5385,16 @@
     "file": "works/258910.jpg",
     "width": 520,
     "height": 750,
-    "aspect": 0.693
+    "aspect": 0.693,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258910.jpg",
      "width": 520,
      "height": 750,
-     "aspect": 0.693
+     "aspect": 0.693,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258910/dossier1009-jpg"
@@ -5166,14 +5428,16 @@
     "file": "works/258928.jpg",
     "width": 433,
     "height": 750,
-    "aspect": 0.577
+    "aspect": 0.577,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258928.jpg",
      "width": 433,
      "height": 750,
-     "aspect": 0.577
+     "aspect": 0.577,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258928/dossier1005-jpg"
@@ -5207,14 +5471,16 @@
     "file": "works/258927.jpg",
     "width": 459,
     "height": 750,
-    "aspect": 0.612
+    "aspect": 0.612,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258927.jpg",
      "width": 459,
      "height": 750,
-     "aspect": 0.612
+     "aspect": 0.612,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258927/dossier1004-jpg"
@@ -5241,14 +5507,16 @@
     "file": "works/6938548.jpg",
     "width": 750,
     "height": 453,
-    "aspect": 1.656
+    "aspect": 1.656,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6938548.jpg",
      "width": 750,
      "height": 453,
-     "aspect": 1.656
+     "aspect": 1.656,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938548/p1015827-jpg"
@@ -5275,14 +5543,16 @@
     "file": "works/6938539.jpg",
     "width": 750,
     "height": 471,
-    "aspect": 1.592
+    "aspect": 1.592,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6938539.jpg",
      "width": 750,
      "height": 471,
-     "aspect": 1.592
+     "aspect": 1.592,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6938539/p1015826-jpg"
@@ -5309,14 +5579,16 @@
     "file": "works/6850618.jpg",
     "width": 750,
     "height": 542,
-    "aspect": 1.384
+    "aspect": 1.384,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6850618.jpg",
      "width": 750,
      "height": 542,
-     "aspect": 1.384
+     "aspect": 1.384,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850618/p1015799-jpg"
@@ -5343,14 +5615,16 @@
     "file": "works/6850615.jpg",
     "width": 600,
     "height": 750,
-    "aspect": 0.8
+    "aspect": 0.8,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6850615.jpg",
      "width": 600,
      "height": 750,
-     "aspect": 0.8
+     "aspect": 0.8,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850615/p1015797-jpg"
@@ -5377,14 +5651,16 @@
     "file": "works/6850597.jpg",
     "width": 750,
     "height": 563,
-    "aspect": 1.332
+    "aspect": 1.332,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6850597.jpg",
      "width": 750,
      "height": 563,
-     "aspect": 1.332
+     "aspect": 1.332,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850597/p1015813-jpg"
@@ -5411,14 +5687,16 @@
     "file": "works/6850594.jpg",
     "width": 750,
     "height": 563,
-    "aspect": 1.332
+    "aspect": 1.332,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6850594.jpg",
      "width": 750,
      "height": 563,
-     "aspect": 1.332
+     "aspect": 1.332,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850594/p1015809-jpg"
@@ -5445,14 +5723,16 @@
     "file": "works/6557467.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6557467.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557467/p1015294-jpg"
@@ -5479,14 +5759,16 @@
     "file": "works/6557422.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6557422.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557422/p1014673-jpg"
@@ -5518,14 +5800,16 @@
     "file": "works/6557266.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6557266.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557266/p1014737-jpg"
@@ -5552,14 +5836,16 @@
     "file": "works/4723327.jpg",
     "width": 465,
     "height": 650,
-    "aspect": 0.715
+    "aspect": 0.715,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/4723327.jpg",
      "width": 465,
      "height": 650,
-     "aspect": 0.715
+     "aspect": 0.715,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723327/p1013506-jpg"
@@ -5586,14 +5872,16 @@
     "file": "works/4723324.jpg",
     "width": 480,
     "height": 650,
-    "aspect": 0.738
+    "aspect": 0.738,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/4723324.jpg",
      "width": 480,
      "height": 650,
-     "aspect": 0.738
+     "aspect": 0.738,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/4723324/p1013501-jpg"
@@ -5625,14 +5913,16 @@
     "file": "works/1621041.jpg",
     "width": 650,
     "height": 648,
-    "aspect": 1.003
+    "aspect": 1.003,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/1621041.jpg",
      "width": 650,
      "height": 648,
-     "aspect": 1.003
+     "aspect": 1.003,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/1621041/p5180805-jpg"
@@ -5664,14 +5954,16 @@
     "file": "works/1621017.jpg",
     "width": 628,
     "height": 650,
-    "aspect": 0.966
+    "aspect": 0.966,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/1621017.jpg",
      "width": 628,
      "height": 650,
-     "aspect": 0.966
+     "aspect": 0.966,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/1621017/p5180815-jpg"
@@ -5703,14 +5995,16 @@
     "file": "works/1621001.jpg",
     "width": 650,
     "height": 635,
-    "aspect": 1.024
+    "aspect": 1.024,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/1621001.jpg",
      "width": 650,
      "height": 635,
-     "aspect": 1.024
+     "aspect": 1.024,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/1621001/p4260746-jpg"
@@ -5742,14 +6036,16 @@
     "file": "works/1620989.jpg",
     "width": 631,
     "height": 640,
-    "aspect": 0.986
+    "aspect": 0.986,
+    "matchesDimensions": true
    },
    "images": [
     {
      "file": "works/1620989.jpg",
      "width": 631,
      "height": 640,
-     "aspect": 0.986
+     "aspect": 0.986,
+     "matchesDimensions": true
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/1620989/35x35-jpg"
@@ -5776,14 +6072,16 @@
     "file": "works/9073111.jpg",
     "width": 1440,
     "height": 1985,
-    "aspect": 0.725
+    "aspect": 0.725,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/9073111.jpg",
      "width": 1440,
      "height": 1985,
-     "aspect": 0.725
+     "aspect": 0.725,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073111/100x73-jpg"
@@ -5810,14 +6108,16 @@
     "file": "works/9073066.jpg",
     "width": 1440,
     "height": 2100,
-    "aspect": 0.686
+    "aspect": 0.686,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/9073066.jpg",
      "width": 1440,
      "height": 2100,
-     "aspect": 0.686
+     "aspect": 0.686,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073066/dsc01059-jpg"
@@ -5844,14 +6144,16 @@
     "file": "works/9073063.jpg",
     "width": 1440,
     "height": 2127,
-    "aspect": 0.677
+    "aspect": 0.677,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/9073063.jpg",
      "width": 1440,
      "height": 2127,
-     "aspect": 0.677
+     "aspect": 0.677,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9073063/dsc01049-jpg"
@@ -5880,14 +6182,16 @@
     "file": "works/258890.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258890.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258890/hpim1316-jpg"
@@ -5916,14 +6220,16 @@
     "file": "works/258887.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258887.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258887/hpim0702-jpg"
@@ -5952,14 +6258,16 @@
     "file": "works/258886.jpg",
     "width": 480,
     "height": 640,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258886.jpg",
      "width": 480,
      "height": 640,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258886/hpim0696-jpg"
@@ -5988,14 +6296,16 @@
     "file": "works/265436.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/265436.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/265436/hpim1402-jpg"
@@ -6024,14 +6334,16 @@
     "file": "works/258891.jpg",
     "width": 640,
     "height": 480,
-    "aspect": 1.333
+    "aspect": 1.333,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/258891.jpg",
      "width": 640,
      "height": 480,
-     "aspect": 1.333
+     "aspect": 1.333,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/fr/oeuvres-d-art/258891/hpim1325-jpg"
@@ -6058,14 +6370,16 @@
     "file": "works/9571282.jpg",
     "width": 810,
     "height": 1527,
-    "aspect": 0.53
+    "aspect": 0.53,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/9571282.jpg",
      "width": 810,
      "height": 1527,
-     "aspect": 0.53
+     "aspect": 0.53,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/9571282/p1016710-jpg"
@@ -6092,14 +6406,16 @@
     "file": "works/8224378.jpg",
     "width": 1200,
     "height": 1600,
-    "aspect": 0.75
+    "aspect": 0.75,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/8224378.jpg",
      "width": 1200,
      "height": 1600,
-     "aspect": 0.75
+     "aspect": 0.75,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/8224378/p1016472-jpg"
@@ -6126,14 +6442,16 @@
     "file": "works/6850612.jpg",
     "width": 563,
     "height": 750,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6850612.jpg",
      "width": 563,
      "height": 750,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6850612/p1015794-jpg"
@@ -6160,14 +6478,16 @@
     "file": "works/6557455.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6557455.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557455/p1015289-jpg"
@@ -6194,14 +6514,16 @@
     "file": "works/6557431.jpg",
     "width": 488,
     "height": 650,
-    "aspect": 0.751
+    "aspect": 0.751,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6557431.jpg",
      "width": 488,
      "height": 650,
-     "aspect": 0.751
+     "aspect": 0.751,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557431/p1014743-jpg"
@@ -6228,14 +6550,16 @@
     "file": "works/6557413.jpg",
     "width": 490,
     "height": 650,
-    "aspect": 0.754
+    "aspect": 0.754,
+    "matchesDimensions": false
    },
    "images": [
     {
      "file": "works/6557413.jpg",
      "width": 490,
      "height": 650,
-     "aspect": 0.754
+     "aspect": 0.754,
+     "matchesDimensions": false
     }
    ],
    "source": "https://www.artmajeur.com/catherine-monmarson-9851162/en/artworks/6557413/p1015249-jpg"

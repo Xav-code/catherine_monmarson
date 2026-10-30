@@ -228,6 +228,9 @@ async function describe(name) {
     width: meta.width,
     height: meta.height,
     aspect: Math.round((meta.width / meta.height) * 1000) / 1000,
+    // Extra views are angles and details; only the main photograph is ever
+    // treated as a straight-on record of the work.
+    matchesDimensions: false,
   };
 }
 const untitledCount = {};
@@ -283,11 +286,21 @@ for (const r of raw) {
 
   const availability = r.sold ? 'sold' : price ? 'for-sale' : 'on-request';
 
+  /* Does the photograph frame the work itself, or the work in its
+     surroundings? For a canvas shot square-on the two aspects agree; for a
+     raku vessel standing in grass they do not, and the room preview must not
+     pretend otherwise by stretching the photo into the work's footprint. */
+  const photoAspect = meta.width / meta.height;
+  const matchesDimensions = dims
+    ? Math.abs(Math.log(photoAspect / (dims.w / dims.h))) < 0.08
+    : false;
+
   const primary = {
     file: `works/${base}`,
     width: meta.width,
     height: meta.height,
-    aspect: Math.round((meta.width / meta.height) * 1000) / 1000,
+    aspect: Math.round(photoAspect * 1000) / 1000,
+    matchesDimensions,
   };
   const views = [primary];
   for (const v of extraViews.get(r.id) || []) {

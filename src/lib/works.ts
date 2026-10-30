@@ -6,7 +6,15 @@ import type { Lang } from '../i18n/ui';
 export type Category = 'peinture' | 'papier' | 'sculpture' | 'land-art' | 'photographie';
 export type Availability = 'for-sale' | 'on-request' | 'sold';
 
-export type WorkImage = { file: string; width: number; height: number; aspect: number };
+export type WorkImage = {
+  file: string;
+  width: number;
+  height: number;
+  aspect: number;
+  /** True when the photograph frames the work itself rather than the work in
+   *  its surroundings — i.e. when it can honestly be shown at true size. */
+  matchesDimensions: boolean;
+};
 
 export type Work = {
   id: string;

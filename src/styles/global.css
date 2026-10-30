@@ -124,6 +124,14 @@ video {
   max-width: 100%;
 }
 
+/* Astro emits real width/height attributes, which act as CSS presentational
+   hints and make the height *definite*. Without this, a max-height and a
+   max-width clamp each axis independently and the artwork is stretched.
+   Any rule that genuinely wants a fixed height sets it explicitly below. */
+img {
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -716,7 +724,28 @@ hr {
 .room__art img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  /* The box already carries the work's true proportions, so the photograph
+     fills it exactly — but only a photograph that matches is ever placed here
+     (see RoomPreview). `contain` keeps that honest if one ever slips through. */
+  object-fit: contain;
+}
+
+/* When the photograph shows the work in its surroundings, the footprint is
+   drawn instead of faking a composite. */
+.room__art--outline {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--rule-strong);
+  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  box-shadow: none;
+}
+
+.room__size {
+  font-size: var(--t-xs);
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  white-space: nowrap;
+  padding: 0 0.15rem;
 }
 
 .room__plinth {

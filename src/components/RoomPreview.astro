@@ -24,8 +24,13 @@ const pctH = (cm: number) => (cm / WALL_H) * 100;
 const d = work.dimensions;
 const sculptural = isThreeDimensional(work);
 
-// Hung work: centre of the canvas at 150 cm above the floor.
-// Sculpture: stood on a 100 cm plinth.
+/* Only paste the photograph onto the wall when it is a straight-on record of
+   the work. When it shows the work in its surroundings — a raku vessel in the
+   grass, a canvas cropped square for Instagram — stretching it into the real
+   footprint would misrepresent the work's proportions. In that case we draw
+   the footprint itself: same scale information, no lie about the shape. */
+const showPhoto = Boolean(img && work.image.matchesDimensions);
+
 const PLINTH_H = 100;
 const PLINTH_W = 44;
 
@@ -36,13 +41,7 @@ if (d) {
   const width = pctW(d.w);
   const height = pctH(d.h);
   if (sculptural) {
-    const baseCm = floorCm + PLINTH_H;
-    art = {
-      left: 50 - width / 2,
-      bottom: pctH(baseCm),
-      width,
-      height,
-    };
+    art = { left: 50 - width / 2, bottom: pctH(floorCm + PLINTH_H), width, height };
     plinth = {
       left: 50 - pctW(PLINTH_W) / 2,
       bottom: FLOOR,
@@ -50,22 +49,20 @@ if (d) {
       height: pctH(PLINTH_H),
     };
   } else {
+    // Hung so the centre of the work sits 150 cm above the floor.
     const centreCm = 150 + floorCm;
-    art = {
-      left: 50 - width / 2,
-      bottom: pctH(centreCm - d.h / 2),
-      width,
-      height,
-    };
+    art = { left: 50 - width / 2, bottom: pctH(centreCm - d.h / 2), width, height };
   }
 }
+
+const sizeLabel = d ? `${d.h} × ${d.w} cm` : '';
 ---
 
 {
-  art && img && (
+  art && d && (
     <figure class="room" style="margin:0">
       <div class="room__wall">
-        <div class="room__floor" aria-hidden="true"></div>
+        <div class="room__floor" aria-hidden="true" />
 
         {plinth && (
           <div
@@ -76,10 +73,16 @@ if (d) {
         )}
 
         <div
-          class="room__art"
+          class={`room__art${showPhoto ? '' : ' room__art--outline'}`}
           style={`left:${art.left}%;bottom:${art.bottom}%;width:${art.width}%;height:${art.height}%`}
         >
-          <Image src={img} alt="" widths={[320, 560]} sizes="40vw" quality={70} loading="lazy" />
+          {showPhoto && img ? (
+            <Image src={img} alt="" widths={[320, 560]} sizes="40vw" quality={70} loading="lazy" />
+          ) : (
+            <span class="room__size" aria-hidden="true">
+              {sizeLabel}
+            </span>
+          )}
         </div>
 
         <svg
@@ -92,14 +95,12 @@ if (d) {
           fill="currentColor"
         >
           <circle cx="30" cy="13" r="11" />
-          <path
-            d="M30 26c-11 0-18 6-19 17l-3 34c-.4 4 5 5 5.6 1l3.4-24 1.2 42-4.6 50c-.6 5 6.4 6 7.2 1l6.2-39h5.2l6.2 39c.8 5 7.8 4 7.2-1l-4.6-50 1.2-42 3.4 24c.6 4 6 3 5.6-1l-3-34C48 32 41 26 30 26Z"
-          />
+          <path d="M30 26c-11 0-18 6-19 17l-3 34c-.4 4 5 5 5.6 1l3.4-24 1.2 42-4.6 50c-.6 5 6.4 6 7.2 1l6.2-39h5.2l6.2 39c.8 5 7.8 4 7.2-1l-4.6-50 1.2-42 3.4 24c.6 4 6 3 5.6-1l-3-34C48 32 41 26 30 26Z" />
         </svg>
       </div>
 
       <figcaption class="room__caption">
-        <span>{t('work.room')}</span>
+        <span>{showPhoto ? t('work.room') : t('work.roomFootprint')}</span>
         <label class="toggle" for="room-toggle">
           <input type="checkbox" id="room-toggle" checked />
           {t('work.roomToggle')}
