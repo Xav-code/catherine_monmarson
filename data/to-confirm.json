@@ -5,54 +5,51 @@
     "That tells you what is still outstanding and refuses to pass until the",
     "launch-blocking ones are done. Nothing here is invented; empty means unknown."
   ],
-
   "contact": {
-    "email": "",
+    "email": "cathy.monmarson@wanadoo.fr",
     "_email": "The address she actually reads. Appears on the legal and press pages, and receives enquiries. LAUNCH BLOCKER.",
-
     "phone": "",
     "_phone": "Optional. Leave empty to omit it from the site.",
-
     "addressPublic": "3393 route de Valbonne, 06410 Biot, France",
     "_addressPublic": "Confirm she is happy for the street address to be public. If not, replace with 'Biot, Alpes-Maritimes' and keep the exact address for buyers only. LAUNCH BLOCKER."
   },
-
   "social": {
     "instagram": "",
     "_instagram": "Full URL, e.g. https://www.instagram.com/… Leave empty to hide the link.",
-
     "newsletter": "",
     "_newsletter": "Buttondown list handle only, e.g. 'catherinemonmarson'. Leave empty to hide the signup."
   },
-
   "legal": {
     "siret": "",
     "_siret": "14-digit SIRET. Required on a French commercial site. LAUNCH BLOCKER.",
-
     "status": "",
     "_status": "e.g. 'Artiste-auteur affilié à la Maison des Artistes' or 'Auto-entrepreneur'. LAUNCH BLOCKER.",
-
     "vatNumber": "",
     "_vatNumber": "Leave empty if she is under the franchise en base de TVA; the site then says prices are net of VAT.",
-
     "mediator": {
       "name": "",
       "url": "",
       "_note": "Consumer mediator, mandatory for French distance selling. Typically ~€30/yr via a body such as CM2C or Medicys. LAUNCH BLOCKER once anything can be bought online."
     }
   },
-
   "shipping": {
     "_note": "All figures in euros, insurance included. The site shows these verbatim, so they must be hers, not estimates. LAUNCH BLOCKER.",
-    "france": { "upTo100cm": null, "over100cm": null },
-    "eu": { "upTo100cm": null, "over100cm": null },
-    "world": { "quoteOnly": true },
+    "france": {
+      "upTo100cm": null,
+      "over100cm": null
+    },
+    "eu": {
+      "upTo100cm": null,
+      "over100cm": null
+    },
+    "world": {
+      "quoteOnly": true
+    },
     "largeWorksQuoted": true,
     "_largeWorksQuoted": "Sculpture and canvases over 130 cm quoted individually.",
     "carrier": "",
     "_carrier": "Who actually ships. Affects the stated delivery times."
   },
-
   "terms": {
     "buyNowBelow": 800,
     "_buyNowBelow": "Works at or under this price show a direct Buy button when a Stripe link exists.",
@@ -61,7 +58,6 @@
     "returnDays": 14,
     "_returnDays": "14 is the French legal minimum. Raise it if she wants to."
   },
-
   "prices": {
     "confirmed": false,
     "_confirmed": "The 45 prices came from ArtMajeur and may be stale. Set true once she has reviewed the list. LAUNCH BLOCKER."
