@@ -14,7 +14,7 @@
     "_addressPublic": "Confirm she is happy for the street address to be public. If not, replace with 'Biot, Alpes-Maritimes' and keep the exact address for buyers only. LAUNCH BLOCKER."
   },
   "social": {
-    "instagram": "",
+    "instagram": "https://www.instagram.com/catherinemonmarson",
     "_instagram": "Full URL, e.g. https://www.instagram.com/… Leave empty to hide the link.",
     "newsletter": "",
     "_newsletter": "Buttondown list handle only, e.g. 'catherinemonmarson'. Leave empty to hide the signup."
