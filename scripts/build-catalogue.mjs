@@ -392,7 +392,6 @@ const stats = {
   forSale: works.filter((w) => w.availability === 'for-sale').length,
   priceMin: Math.min(...works.filter((w) => w.price).map((w) => w.price)),
   priceMax: Math.max(...works.filter((w) => w.price).map((w) => w.price)),
-  generated: new Date().toISOString(),
 };
 
 await writeFile(
