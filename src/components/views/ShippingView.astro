@@ -1,6 +1,6 @@
 ---
 import { useT, href, routes, type Lang } from '../../i18n/ui';
-import { terms } from '../../data/content';
+import { terms, confirmed } from '../../data/content';
 
 interface Props {
   lang: Lang;
@@ -9,8 +9,23 @@ const { lang } = Astro.props;
 const t = useT(lang);
 
 /* Written out in full rather than left to the legal page: a buyer deciding on a
-   €3 000 canvas wants this before the enquiry, not after. TO CONFIRM with Cathy —
-   the rates and the carrier are the two things she needs to settle. */
+   €3 000 canvas wants this before the enquiry, not after.
+   Rates come from data/to-confirm.json. Until they are set the page says the
+   cost is quoted per work rather than inventing a figure. */
+const s = confirmed.shipping;
+const haveRates = Boolean(s.france.upTo100cm && s.eu.upTo100cm);
+const eur = (n: number | null) =>
+  n === null ? '' : new Intl.NumberFormat(lang === 'fr' ? 'fr-FR' : 'en-GB', {
+    style: 'currency', currency: 'EUR', maximumFractionDigits: 0,
+  }).format(n);
+
+const ratesFr = haveRates
+  ? `France métropolitaine : ${eur(s.france.upTo100cm)} jusqu’à 100 cm, ${eur(s.france.over100cm)} au-delà. Union européenne : ${eur(s.eu.upTo100cm)} jusqu’à 100 cm, ${eur(s.eu.over100cm)} au-delà. Reste du monde : sur devis.`
+  : 'Les frais d’expédition sont calculés pour chaque œuvre, selon son format et sa destination, et vous sont communiqués avant tout engagement. L’assurance, à hauteur du prix de l’œuvre, est comprise dans tous les cas.';
+
+const ratesEn = haveRates
+  ? `Mainland France: ${eur(s.france.upTo100cm)} up to 100 cm, ${eur(s.france.over100cm)} above. European Union: ${eur(s.eu.upTo100cm)} up to 100 cm, ${eur(s.eu.over100cm)} above. Rest of the world: quoted.`
+  : 'Shipping is costed for each work, according to its size and destination, and given to you before any commitment. Insurance to the full value of the work is included in every case.';
 const sections = {
   fr: [
     {
@@ -31,8 +46,8 @@ const sections = {
     {
       head: t('ship.rates'),
       body: [
-        'France métropolitaine : 25 € jusqu’à 100 cm, 60 € au-delà. Union européenne : 55 € jusqu’à 100 cm, 120 € au-delà. Reste du monde : sur devis.',
-        'Sculptures et toiles de plus de 130 cm : devis de transport spécifique, communiqué avant tout engagement. L’assurance est comprise dans tous les cas, à hauteur du prix de l’œuvre.',
+        ratesFr,
+        'Sculptures et toiles de plus de 130 cm : devis de transport spécifique, communiqué avant tout engagement.',
       ],
     },
     {
@@ -69,8 +84,8 @@ const sections = {
     {
       head: t('ship.rates'),
       body: [
-        'Mainland France: €25 up to 100 cm, €60 above. European Union: €55 up to 100 cm, €120 above. Rest of the world: quoted.',
-        'Sculpture and canvases over 130 cm are quoted individually for freight, given to you before any commitment. Insurance to the full value of the work is included in every case.',
+        ratesEn,
+        'Sculpture and canvases over 130 cm are quoted individually for freight, given to you before any commitment.',
       ],
     },
     {

@@ -139,6 +139,12 @@ const facts = [
   </h2>
   <p class="measure">
     {artist.name} — {artist.address}
+    {artist.email && (
+      <>
+        <br />
+        <a class="link link--quiet" href={`mailto:${artist.email}`}>{artist.email}</a>
+      </>
+    )}
   </p>
   <p>
     <a class="btn" href={`${href(lang, routes[lang].contact)}?subject=press`}>

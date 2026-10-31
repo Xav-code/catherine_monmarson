@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { artist } from '../../data/content';
+import { artist, confirmed } from '../../data/content';
+import { route } from '../../i18n/ui';
 ---
 
 <Base
@@ -17,11 +18,19 @@ import { artist } from '../../data/content';
     <h2>Publisher</h2>
     <p>
       Catherine Monmarson — visual artist.<br />
-      {artist.address}<br />
-      Email: {artist.email}
+      {artist.address}
+      {artist.email && (
+        <>
+          <br />Email: <a class="link link--quiet" href={`mailto:${artist.email}`}>{artist.email}</a>
+        </>
+      )}
+      {confirmed.legal.status && <><br />{confirmed.legal.status}</>}
+      {confirmed.legal.siret && <><br />SIRET: {confirmed.legal.siret}</>}
     </p>
-    <p class="faint">
-      French SIRET number and artist-author status to be completed before public launch.
+    <p>
+      {confirmed.legal.vatNumber
+        ? `VAT number: ${confirmed.legal.vatNumber}.`
+        : 'VAT not applicable, article 293 B of the French tax code.'}
     </p>
 
     <h2>Hosting</h2>
@@ -70,7 +79,12 @@ import { artist } from '../../data/content';
       Information submitted through the contact form — name, email address and message — is
       used only to answer the enquiry. It is never sold or passed to third parties, and is
       kept for at most three years. Under the GDPR you may request access to, correction of,
-      or erasure of your data by writing to {artist.email}.
+      or erasure of your data by writing to{' '}
+      {artist.email ? (
+        <a class="link link--quiet" href={`mailto:${artist.email}`}>{artist.email}</a>
+      ) : (
+        <a class="link link--quiet" href={route('en', 'contact')}>the address on the contact page</a>
+      )}.
     </p>
     <p>
       This site uses no advertising cookies and no third-party trackers. Audience measurement,
@@ -78,6 +92,21 @@ import { artist } from '../../data/content';
     </p>
 
     <h2>Mediation</h2>
-    <p class="faint">Consumer mediator details to be completed before public launch.</p>
+    {confirmed.legal.mediator.name ? (
+      <p>
+        In the event of a dispute you may refer the matter free of charge to the consumer
+        mediator:{' '}
+        {confirmed.legal.mediator.url ? (
+          <a class="link link--quiet" href={confirmed.legal.mediator.url} rel="noopener">{confirmed.legal.mediator.name}</a>
+        ) : (
+          confirmed.legal.mediator.name
+        )}{'.'}
+      </p>
+    ) : (
+      <p>
+        In the event of a dispute, write to the studio first: every complaint is answered
+        within fifteen days.
+      </p>
+    )}
   </div>
 </Base>

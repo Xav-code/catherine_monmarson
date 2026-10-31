@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import { artist } from '../data/content';
+import { artist, confirmed } from '../data/content';
+import { route } from '../i18n/ui';
 ---
 
 <Base
@@ -17,11 +18,19 @@ import { artist } from '../data/content';
     <h2>Éditeur du site</h2>
     <p>
       Catherine Monmarson — artiste plasticienne.<br />
-      {artist.address}<br />
-      Courriel : {artist.email}
+      {artist.address}
+      {artist.email && (
+        <>
+          <br />Courriel : <a class="link link--quiet" href={`mailto:${artist.email}`}>{artist.email}</a>
+        </>
+      )}
+      {confirmed.legal.status && <><br />{confirmed.legal.status}</>}
+      {confirmed.legal.siret && <><br />SIRET : {confirmed.legal.siret}</>}
     </p>
-    <p class="faint">
-      SIRET et statut d’artiste-auteur à compléter avant la mise en ligne publique.
+    <p>
+      {confirmed.legal.vatNumber
+        ? `TVA intracommunautaire : ${confirmed.legal.vatNumber}.`
+        : 'TVA non applicable, article 293 B du Code général des impôts.'}
     </p>
 
     <h2>Hébergement</h2>
@@ -71,7 +80,12 @@ import { artist } from '../data/content';
       message — sont utilisées uniquement pour répondre à la demande. Elles ne sont ni
       revendues ni transmises à des tiers, et sont conservées trois ans au maximum.
       Conformément au RGPD, vous pouvez demander l’accès, la rectification ou l’effacement de
-      vos données en écrivant à {artist.email}.
+      vos données en écrivant à{' '}
+      {artist.email ? (
+        <a class="link link--quiet" href={`mailto:${artist.email}`}>{artist.email}</a>
+      ) : (
+        <a class="link link--quiet" href={route('fr', 'contact')}>l’adresse du formulaire de contact</a>
+      )}.
     </p>
     <p>
       Ce site n’utilise aucun cookie publicitaire ni traceur tiers. La mesure d’audience, si
@@ -79,8 +93,20 @@ import { artist } from '../data/content';
     </p>
 
     <h2>Médiation</h2>
-    <p class="faint">
-      Coordonnées du médiateur de la consommation à compléter avant la mise en ligne publique.
-    </p>
+    {confirmed.legal.mediator.name ? (
+      <p>
+        En cas de litige, vous pouvez saisir gratuitement le médiateur de la consommation :{' '}
+        {confirmed.legal.mediator.url ? (
+          <a class="link link--quiet" href={confirmed.legal.mediator.url} rel="noopener">{confirmed.legal.mediator.name}</a>
+        ) : (
+          confirmed.legal.mediator.name
+        )}{'.'}
+      </p>
+    ) : (
+      <p>
+        En cas de litige, écrivez d’abord à l’atelier : toute réclamation reçoit une réponse
+        sous quinze jours.
+      </p>
+    )}
   </div>
 </Base>

@@ -67,6 +67,42 @@ title to the corrected French and English titles. 55 works still have no title
 at all and show as *Sans titre / Untitled* — that list is the first thing to
 walk through with Cathy (ROADMAP §6.1).
 
+## Before it goes public
+
+Everything Catherine still has to supply lives in one file, `data/to-confirm.json`.
+Fill a value in, save, and run:
+
+```bash
+npm run prelaunch
+```
+
+It lists what is ready, what is cosmetic, and what is a launch blocker, and exits
+non-zero while a blocker remains. Nothing in that file is invented: an empty value
+means the site omits the detail rather than guessing. With no email set the legal
+and press pages point at the contact form; with no shipping rates the page says
+shipping is costed per work.
+
+To collect the missing titles, years and dimensions:
+
+```bash
+npm run worksheet
+```
+
+That writes `data/worksheet.html` — every unfinished work with its photograph,
+its CM- reference and ruled lines, to print or fill on screen — and
+`data/worksheet-titles.csv`, which opens straight into French Excel.
+
+Put her answers in `data/titles.json`:
+
+```json
+{
+  "260883": { "fr": "Grand réceptacle", "en": "Large vessel",
+              "year": "2005", "h": 90, "w": 30, "d": 30 }
+}
+```
+
+then `npm run catalogue`. Those values override anything harvested from ArtMajeur.
+
 ## Selling
 
 Prices and availability come from the catalogue. The artwork page decides:

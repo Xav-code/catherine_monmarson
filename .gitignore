@@ -6,3 +6,5 @@ dist/
 .env
 .env.*
 src/assets/works/
+data/worksheet.html
+data/worksheet-titles.csv

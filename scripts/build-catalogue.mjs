@@ -201,6 +201,14 @@ function categoryOf(raw, medium) {
 
 const raw = JSON.parse(await readFile(path.join(ROOT, 'data', 'artmajeur-catalogue.json'), 'utf8'));
 
+/* Catherine's own answers, keyed by work id, overriding anything harvested.
+   See scripts/make-worksheet.mjs for how the questions are generated. */
+let answers = {};
+if (existsSync(path.join(ROOT, 'data', 'titles.json'))) {
+  answers = JSON.parse(await readFile(path.join(ROOT, 'data', 'titles.json'), 'utf8'));
+  delete answers._readme;
+}
+
 await mkdir(OUT_IMAGES, { recursive: true });
 await mkdir(OUT_DATA, { recursive: true });
 
@@ -254,10 +262,16 @@ for (const r of raw) {
   const mediumEn = MEDIUM_EN[mediumFr] || 'Mixed media';
   const category = categoryOf(r, mediumFr);
 
-  const named = r.title && !FILENAME_TITLE.test(r.title) && !/\.(jpg|jpeg|png)$/i.test(r.title);
+  const answer = answers[r.id] || {};
+  const named =
+    Boolean(answer.fr) ||
+    (r.title && !FILENAME_TITLE.test(r.title) && !/\.(jpg|jpeg|png)$/i.test(r.title));
   let titleFr;
   let titleEn;
-  if (named) {
+  if (answer.fr) {
+    titleFr = answer.fr;
+    titleEn = answer.en || answer.fr;
+  } else if (named) {
     const fix = TITLE_FIX[normaliseKey(r.title)];
     if (fix) {
       titleFr = fix.fr;
@@ -277,7 +291,10 @@ for (const r of raw) {
     titleEn = `Untitled ${untitledCount[category]}`;
   }
 
-  const dims = orientDimensions(r.size, meta.width, meta.height);
+  const dims =
+    answer.h && answer.w
+      ? { h: Number(answer.h), w: Number(answer.w) }
+      : orientDimensions(r.size, meta.width, meta.height);
   const price = r.price_eur ? Number(r.price_eur.replace(/[^\d]/g, '')) : null;
   const series = (r.collections || [])
     .map((c) => SERIES[c])
@@ -313,11 +330,17 @@ for (const r of raw) {
     slug: `${slugify(titleFr)}-${r.id}`,
     title: { fr: titleFr, en: titleEn },
     titled: named,
-    year: r.year || null,
+    year: answer.year || r.year || null,
     category,
     medium: { fr: mediumFr, en: mediumEn },
     dimensions: dims
-      ? { h: dims.h, w: dims.w, hIn: toInches(dims.h), wIn: toInches(dims.w) }
+      ? {
+          h: dims.h,
+          w: dims.w,
+          hIn: toInches(dims.h),
+          wIn: toInches(dims.w),
+          ...(answer.d ? { d: Number(answer.d), dIn: toInches(Number(answer.d)) } : {}),
+        }
       : null,
     price,
     availability,
@@ -382,3 +405,5 @@ console.log(`works.json — ${works.length} works`);
 console.table(stats.byCategory);
 console.log(`for sale: ${stats.forSale}   €${stats.priceMin}–€${stats.priceMax}`);
 console.log(`featured: ${featured.length}/${FEATURED_IDS.length}`);
+const answered = Object.keys(answers).length;
+if (answered) console.log(`answers applied from data/titles.json: ${answered}`);

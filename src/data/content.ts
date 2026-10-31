@@ -7,21 +7,43 @@
  * pass from Cathy before launch (see ROADMAP §6).
  */
 
+import toConfirm from '../../data/to-confirm.json';
+
+/* Values Catherine still has to supply live in data/to-confirm.json, so there
+   is one place to fill in and `npm run prelaunch` can tell you what is left.
+   Empty means unknown: the site omits the detail rather than inventing it. */
+const tc = toConfirm as {
+  contact: { email: string; phone: string; addressPublic: string };
+  social: { instagram: string; newsletter: string };
+  legal: {
+    siret: string;
+    status: string;
+    vatNumber: string;
+    mediator: { name: string; url: string };
+  };
+  shipping: {
+    france: { upTo100cm: number | null; over100cm: number | null };
+    eu: { upTo100cm: number | null; over100cm: number | null };
+    carrier: string;
+  };
+  terms: { buyNowBelow: number; instalmentsAbove: number; returnDays: number };
+};
+
+export const confirmed = tc;
+
 export const artist = {
   name: 'Catherine Monmarson',
   born: 1947,
   bornPlace: { fr: 'Orléans, France', en: 'Orléans, France' },
   city: 'Biot',
   region: { fr: 'Alpes-Maritimes, Côte d’Azur', en: 'Alpes-Maritimes, French Riviera' },
-  address: '3393 route de Valbonne, 06410 Biot, France',
+  address: tc.contact.addressPublic,
   country: 'FR',
-  // TO CONFIRM — placeholder until Cathy gives the address she wants published.
-  email: 'contact@catherinemonmarson.com',
+  email: tc.contact.email,
+  phone: tc.contact.phone,
   artmajeur: 'https://www.artmajeur.com/catherine-monmarson-9851162',
-  instagram: '', // TO CONFIRM
-  // Buttondown list handle, e.g. 'catherinemonmarson'. Empty until the list exists —
-  // the footer hides the signup rather than shipping a field that goes nowhere.
-  newsletter: '',
+  instagram: tc.social.instagram,
+  newsletter: tc.social.newsletter,
 };
 
 /** Her own words. Kept verbatim — these are the spine of the studio page. */
@@ -193,10 +215,9 @@ export const series = [
   },
 ];
 
-/** Sale terms, shown on every artwork page. TO CONFIRM with Cathy. */
+/** Sale terms, shown on every artwork page. Edit data/to-confirm.json. */
 export const terms = {
-  freeShipThreshold: 0,
-  instalmentsAbove: 1500,
-  buyNowBelow: 800, // above this, the enquiry route converts better
-  returnDays: 14,
+  instalmentsAbove: tc.terms.instalmentsAbove,
+  buyNowBelow: tc.terms.buyNowBelow,
+  returnDays: tc.terms.returnDays,
 };
