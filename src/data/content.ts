@@ -27,6 +27,7 @@ const tc = toConfirm as {
     carrier: string;
   };
   terms: { buyNowBelow: number; instalmentsAbove: number; returnDays: number };
+  forms: { provider: 'netlify' | 'formspree' | 'none'; endpoint: string };
 };
 
 export const confirmed = tc;

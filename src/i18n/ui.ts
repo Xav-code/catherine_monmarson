@@ -139,6 +139,9 @@ export const ui = {
     'contact.about': 'Au sujet de',
     'contact.send': 'Envoyer',
     'contact.required': 'Champs obligatoires',
+    'contact.byEmail': 'Écrivez-moi directement :',
+    'contact.byEmailNote':
+      'Précisez le titre de l’œuvre et sa référence CM- si votre message concerne une pièce en particulier. Réponse sous 48 heures.',
     'contact.studio': 'Atelier',
     'contact.studioNote': 'Visites sur rendez-vous',
     'contact.workshops': 'Ateliers d’arts plastiques',
@@ -322,6 +325,9 @@ export const ui = {
     'contact.about': 'Regarding',
     'contact.send': 'Send',
     'contact.required': 'Required fields',
+    'contact.byEmail': 'Write to me directly:',
+    'contact.byEmailNote':
+      'Mention the title and CM- reference if your message is about a particular work. I reply within 48 hours.',
     'contact.studio': 'Studio',
     'contact.studioNote': 'Visits by appointment',
     'contact.workshops': 'Visual arts workshops',

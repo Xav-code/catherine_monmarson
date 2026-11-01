@@ -1,12 +1,21 @@
 ---
 import { useT, href, routes, type Lang } from '../../i18n/ui';
-import { artist } from '../../data/content';
+import { artist, confirmed } from '../../data/content';
 
 interface Props {
   lang: Lang;
 }
 const { lang } = Astro.props;
 const t = useT(lang);
+
+/* The form's destination depends on the host. Netlify Forms needs only its
+   own attributes; Formspree needs an action URL; with neither configured we
+   show her email rather than a form that quietly discards messages. */
+const provider = confirmed.forms.provider;
+const useNetlify = provider === 'netlify';
+const useEndpoint = provider === 'formspree' && Boolean(confirmed.forms.endpoint);
+const hasForm = useNetlify || useEndpoint;
+const action = useEndpoint ? confirmed.forms.endpoint : href(lang, routes[lang].thanks);
 
 const subjects = [
   'acquire',
@@ -24,17 +33,20 @@ const subjects = [
 </section>
 
 <div class="contact-grid">
-  <!-- Netlify Forms: `data-netlify` is read at deploy time; the honeypot keeps bots out. -->
+  {hasForm ? (
   <form
     class="form"
     id="form"
     name="enquiry"
     method="POST"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-    action={href(lang, routes[lang].thanks)}
+    action={action}
+    data-netlify={useNetlify ? 'true' : undefined}
+    netlify-honeypot={useNetlify ? 'bot-field' : undefined}
   >
-    <input type="hidden" name="form-name" value="enquiry" />
+    {useNetlify && <input type="hidden" name="form-name" value="enquiry" />}
+    {useEndpoint && (
+      <input type="hidden" name="_redirect" value={href(lang, routes[lang].thanks)} />
+    )}
     <input type="hidden" name="subject-line" value={`Site — ${t('contact.title')}`} />
     <input type="hidden" name="lang" value={lang} />
     <input type="hidden" name="ref" id="field-ref" value="" />
@@ -73,6 +85,17 @@ const subjects = [
       <button class="btn" type="submit">{t('contact.send')}</button>
     </p>
   </form>
+  ) : (
+    <div class="form">
+      <p class="lede">{t('contact.byEmail')}</p>
+      {artist.email && (
+        <p style="margin:0">
+          <a class="btn" href={`mailto:${artist.email}`}>{artist.email}</a>
+        </p>
+      )}
+      <p class="field__hint">{t('contact.byEmailNote')}</p>
+    </div>
+  )}
 
   <aside style="display:grid; gap: var(--s6); align-content:start">
     <div>

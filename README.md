@@ -145,14 +145,34 @@ Confirmation and 404 pages carry `noindex` and stay out of the sitemap.
 
 ## Deploy
 
-Netlify (or Cloudflare Pages) with the settings already in `netlify.toml`:
+The build is host-neutral. `public/_headers` and `public/_redirects` are read by
+both Netlify and Cloudflare Pages; `netlify.toml` and `.node-version` cover the
+build settings on each.
 
-- build: `npm run catalogue && npm run build`
-- publish: `dist`
+| | |
+|---|---|
+| Build command | `npm run catalogue && npm run build` |
+| Output directory | `dist` |
+| Node version | 22 |
 
-Then: point `catherinemonmarson.com` at it, redirect the `.fr`, and enable form
-notifications to Cathy's address. `public/_headers` carries the security and
-cache headers.
+**Cloudflare Pages** — dash.cloudflare.com → *Workers & Pages* → *Create* →
+*Pages* → *Connect to Git* → pick the repo, then enter the three values above.
+
+**Netlify** — app.netlify.com → *Add new site* → *Import an existing project*;
+it reads `netlify.toml` and fills them in itself.
+
+### The enquiry form
+
+The one host-specific piece. `data/to-confirm.json` → `forms`:
+
+- `"netlify"` — uses Netlify Forms, nothing else to configure
+- `"formspree"` — posts to `forms.endpoint`, works on any host
+  (formspree.io, free, 50 submissions/month, no card)
+- `"none"` — no form at all; the contact page shows her email instead, so a
+  message is never silently discarded
+
+On Netlify, also set *Forms → Form notifications* to her address, or enquiries
+sit unread in the dashboard.
 
 Before going public, fill in the placeholders marked **TO CONFIRM** in
 `src/data/content.ts` (email address, Instagram) and in the legal pages (SIRET,

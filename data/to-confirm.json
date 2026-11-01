@@ -61,5 +61,11 @@
   "prices": {
     "confirmed": false,
     "_confirmed": "The 45 prices came from ArtMajeur and may be stale. Set true once she has reviewed the list. LAUNCH BLOCKER."
+  },
+  "forms": {
+    "provider": "none",
+    "_provider": "'netlify' uses Netlify Forms (nothing else needed). 'formspree' posts to the endpoint below. 'none' means no form: the contact page shows her email instead, so no enquiry is ever silently lost.",
+    "endpoint": "",
+    "_endpoint": "For formspree: https://formspree.io/f/xxxxxxxx — create a free form at formspree.io, no card, 50 submissions/month. LAUNCH BLOCKER once the site is public anywhere other than Netlify."
   }
 }

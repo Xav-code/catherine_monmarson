@@ -1,0 +1,3 @@
+# French is the default language and lives at the root; /fr/* is a courtesy.
+# Netlify takes this from netlify.toml, Cloudflare Pages from this file.
+/fr/*   /:splat   301

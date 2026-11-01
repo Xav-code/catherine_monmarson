@@ -55,6 +55,13 @@ check(
 );
 
 check(
+  tc.forms.provider === 'netlify' ||
+    (tc.forms.provider === 'formspree' && /^https:\/\/formspree\.io\/f\//.test(tc.forms.endpoint)),
+  'Enquiry form',
+  "data/to-confirm.json → forms. With provider 'none' the contact page shows her email instead of a form — honest, but a form converts better. On Cloudflare, set provider to 'formspree' and paste a free form endpoint."
+);
+
+check(
   Boolean(tc.legal.mediator.name),
   'Consumer mediator',
   'data/to-confirm.json → legal.mediator. Mandatory for French distance selling once anything can be bought online.'
