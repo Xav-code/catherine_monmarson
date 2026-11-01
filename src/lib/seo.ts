@@ -1,6 +1,6 @@
 import { getImage } from 'astro:assets';
 import { href, routes, type Lang } from '../i18n/ui';
-import { artist } from '../data/content';
+import { artist, confirmed } from '../data/content';
 import { imageOf, formatDimensions, type Work } from './works';
 
 /** Title, description, canonical URL and social image for one artwork. */
@@ -30,7 +30,7 @@ export async function workMeta(work: Work, lang: Lang, site: URL | undefined) {
       : `${work.title.en}, ${work.medium.en.toLowerCase()}${dims ? `, ${dims.split(' · ')[0]}` : ''}, by Catherine Monmarson. Unique original work, signed, shipped from Biot, France. ${availability}`;
 
   const path = `${routes[lang].works}/${work.slug}`;
-  const url = new URL(href(lang, path), site ?? 'https://catherinemonmarson.com').toString();
+  const url = new URL(href(lang, path), site ?? confirmed.site.url).toString();
 
   let image: string | undefined;
   const source = imageOf(work);

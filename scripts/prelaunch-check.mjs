@@ -13,6 +13,12 @@ const read = async (p) => JSON.parse(await readFile(path.join(ROOT, p), 'utf8'))
 const tc = await read('data/to-confirm.json');
 const { works } = await read('src/data/works.json');
 
+/* PHP mail() is refused by shared hosts when From: is not on a domain they
+   serve, so check the address against the site's own host, not just its shape. */
+const siteHost = new URL(tc.site.url).hostname;
+const registrable = siteHost.split('.').slice(-2).join('.');
+const fromDomain = (tc.forms.mailFrom || '').split('@')[1] || '';
+
 const blockers = [];
 const warnings = [];
 const done = [];
@@ -56,11 +62,13 @@ check(
 
 check(
   tc.forms.provider === 'netlify' ||
-    (tc.forms.provider === 'php' && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(tc.forms.mailFrom || '')) ||
+    (tc.forms.provider === 'php' &&
+      /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(tc.forms.mailFrom || '') &&
+      fromDomain.endsWith(registrable)) ||
     (tc.forms.provider === 'formspree' && /^https:\/\/formspree\.io\/f\//.test(tc.forms.endpoint)),
   'Enquiry form',
   tc.forms.provider === 'php'
-    ? 'data/to-confirm.json → forms.mailFrom. PHP mail() must send From: an address on the hosting domain, or DreamHost will reject it. The enquirer goes in Reply-To.'
+    ? `data/to-confirm.json → forms.mailFrom. PHP mail() must send From: an address on ${registrable}, the domain the site is served from, or DreamHost will reject it. The enquirer goes in Reply-To.${fromDomain && !fromDomain.endsWith(registrable) ? ` Currently set to @${fromDomain}, which will not send.` : ''}`
     : "data/to-confirm.json → forms. With provider 'none' the contact page shows her email instead of a form — honest, but a form converts better."
 );
 

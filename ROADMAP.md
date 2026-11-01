@@ -118,7 +118,7 @@ unstretched canvas; crated freight quote for sculpture and canvases over 130 cm.
 | Payments | Stripe Checkout | See §4 |
 | Forms | Netlify Forms (or Formspree) → email to Cathy | No server to run |
 | Hosting | Netlify or Cloudflare Pages, free tier | Push-to-deploy, instant rollback |
-| Domain | `catherinemonmarson.com` + `.fr` redirect | Buy both |
+| Domain | `catherinemonmarson.seailles.com` today, on Xavier's DreamHost plan. `catherinemonmarson.com` when she wants her own name | A subdomain costs nothing and works now |
 | Analytics | Plausible | GDPR-clean, no cookie banner |
 | i18n | Astro routing: `/` (FR) + `/en/` | FR is her market, EN is her reach |
 

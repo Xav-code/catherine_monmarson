@@ -13,6 +13,7 @@ import toConfirm from '../../data/to-confirm.json';
    is one place to fill in and `npm run prelaunch` can tell you what is left.
    Empty means unknown: the site omits the detail rather than inventing it. */
 const tc = toConfirm as {
+  site: { url: string };
   contact: { email: string; phone: string; addressPublic: string };
   social: { instagram: string; newsletter: string };
   legal: {

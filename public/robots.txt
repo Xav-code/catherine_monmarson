@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://catherinemonmarson.com/sitemap-index.xml
+Sitemap: https://catherinemonmarson.seailles.com/sitemap-index.xml

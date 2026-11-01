@@ -5,6 +5,10 @@
     "That tells you what is still outstanding and refuses to pass until the",
     "launch-blocking ones are done. Nothing here is invented; empty means unknown."
   ],
+  "site": {
+    "url": "https://catherinemonmarson.seailles.com",
+    "_url": "The public address, no trailing slash. Everything derives from it: canonical links, hreflang, the sitemap, social card URLs and robots.txt. Change it here only."
+  },
   "contact": {
     "email": "cathy.monmarson@wanadoo.fr",
     "_email": "The address she actually reads. Appears on the legal and press pages, and receives enquiries. LAUNCH BLOCKER.",
@@ -68,6 +72,6 @@
     "endpoint": "",
     "_endpoint": "Only for provider 'formspree': https://formspree.io/f/xxxxxxxx",
     "mailFrom": "",
-    "_mailFrom": "Only for provider 'php'. The From: address the server sends as. It MUST be on the domain the site is hosted under, e.g. site@catherinemonmarson.com — shared hosts reject or spam-folder mail claiming to come from an address they do not own. The enquirer's address goes in Reply-To. LAUNCH BLOCKER for the php provider."
+    "_mailFrom": "Only for provider 'php'. The From: address the server sends as. It MUST be on the domain the site is served from — seailles.com — e.g. catherine@seailles.com. Shared hosts reject or spam-folder mail claiming to come from a domain they do not host. The enquirer's address goes in Reply-To, so replying reaches them. LAUNCH BLOCKER."
   }
 }

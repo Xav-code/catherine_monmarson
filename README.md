@@ -1,4 +1,4 @@
-# catherinemonmarson.com
+# catherinemonmarson.seailles.com
 
 The website of **Catherine Monmarson** — painter and sculptor, Biot, Côte d'Azur.
 Static, bilingual (FR default, EN at `/en/`), built with Astro.
