@@ -67,7 +67,7 @@
     "_confirmed": "The 45 prices came from ArtMajeur and may be stale. Set true once she has reviewed the list. LAUNCH BLOCKER."
   },
   "forms": {
-    "provider": "php",
+    "provider": "none",
     "_provider": "'php' posts to /contact.php — for Apache hosts with mail, such as DreamHost. 'netlify' uses Netlify Forms. 'formspree' posts to the endpoint below. 'none' shows her email instead of a form.",
     "endpoint": "",
     "_endpoint": "Only for provider 'formspree': https://formspree.io/f/xxxxxxxx",
