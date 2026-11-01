@@ -161,10 +161,27 @@ build settings on each.
 **Netlify** — app.netlify.com → *Add new site* → *Import an existing project*;
 it reads `netlify.toml` and fills them in itself.
 
+**DreamHost (or any Apache host with PHP)** — `npm run build`, then upload the
+contents of `dist/` to the subdomain's directory. `dist/.htaccess` and
+`dist/contact.php` are generated as part of the build.
+
+```bash
+npm run build
+rsync -az --delete dist/ USER@SERVER:~/sub.example.com/
+```
+
+`rsync` needs SSH, which DreamHost enables per user under *Users → Manage Users
+→ Shell access*. SFTP works equally well if you prefer a GUI.
+
 ### The enquiry form
 
 The one host-specific piece. `data/to-confirm.json` → `forms`:
 
+- `"php"` — posts to `/contact.php`, generated at build time from the addresses
+  in the same file. For Apache hosts with mail, such as DreamHost. Set
+  `forms.mailFrom` to an address **on the hosting domain** — shared hosts reject
+  mail claiming to come from a domain they do not own. The enquirer's address
+  goes in `Reply-To`, so replying in her mail client goes to the right person.
 - `"netlify"` — uses Netlify Forms, nothing else to configure
 - `"formspree"` — posts to `forms.endpoint`, works on any host
   (formspree.io, free, 50 submissions/month, no card)

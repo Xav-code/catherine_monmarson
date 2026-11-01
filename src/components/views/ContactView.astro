@@ -13,9 +13,14 @@ const t = useT(lang);
    show her email rather than a form that quietly discards messages. */
 const provider = confirmed.forms.provider;
 const useNetlify = provider === 'netlify';
+const usePhp = provider === 'php';
 const useEndpoint = provider === 'formspree' && Boolean(confirmed.forms.endpoint);
-const hasForm = useNetlify || useEndpoint;
-const action = useEndpoint ? confirmed.forms.endpoint : href(lang, routes[lang].thanks);
+const hasForm = useNetlify || usePhp || useEndpoint;
+const action = usePhp
+  ? '/contact.php'
+  : useEndpoint
+    ? confirmed.forms.endpoint
+    : href(lang, routes[lang].thanks);
 
 const subjects = [
   'acquire',
@@ -49,6 +54,8 @@ const subjects = [
     )}
     <input type="hidden" name="subject-line" value={`Site — ${t('contact.title')}`} />
     <input type="hidden" name="lang" value={lang} />
+
+    <p class="form__error" id="form-error" role="alert" hidden>{t('contact.error')}</p>
     <input type="hidden" name="ref" id="field-ref" value="" />
     <p hidden><label>Do not fill<input name="bot-field" /></label></p>
 
@@ -143,6 +150,15 @@ const subjects = [
 </style>
 
 <script>
+  // The handler bounces back with ?error=1 when it could not send.
+  if (new URLSearchParams(location.search).has('error')) {
+    const box = document.getElementById('form-error');
+    if (box) {
+      box.hidden = false;
+      box.scrollIntoView({ block: 'center' });
+    }
+  }
+
   // Arriving from an artwork's "Acquire" button: pre-fill what it is about.
   const params = new URLSearchParams(location.search);
   const about = params.get('about');

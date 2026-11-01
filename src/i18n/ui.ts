@@ -139,6 +139,8 @@ export const ui = {
     'contact.about': 'Au sujet de',
     'contact.send': 'Envoyer',
     'contact.required': 'Champs obligatoires',
+    'contact.error':
+      'Le message n’a pas pu être envoyé. Vérifiez votre adresse électronique, ou écrivez-moi directement — l’adresse est ci-contre.',
     'contact.byEmail': 'Écrivez-moi directement :',
     'contact.byEmailNote':
       'Précisez le titre de l’œuvre et sa référence CM- si votre message concerne une pièce en particulier. Réponse sous 48 heures.',
@@ -325,6 +327,8 @@ export const ui = {
     'contact.about': 'Regarding',
     'contact.send': 'Send',
     'contact.required': 'Required fields',
+    'contact.error':
+      'The message could not be sent. Check your email address, or write to me directly — the address is alongside.',
     'contact.byEmail': 'Write to me directly:',
     'contact.byEmailNote':
       'Mention the title and CM- reference if your message is about a particular work. I reply within 48 hours.',

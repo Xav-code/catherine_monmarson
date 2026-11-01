@@ -1077,6 +1077,14 @@ hr {
   color: var(--ink-faint);
 }
 
+.form__error {
+  margin: 0;
+  padding: var(--s3) var(--s4);
+  border-left: 2px solid var(--ink);
+  background: var(--paper-sunk);
+  font-size: var(--t-sm);
+}
+
 .field__hint {
   font-size: var(--t-sm);
   color: var(--ink-faint);

@@ -56,9 +56,12 @@ check(
 
 check(
   tc.forms.provider === 'netlify' ||
+    (tc.forms.provider === 'php' && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(tc.forms.mailFrom || '')) ||
     (tc.forms.provider === 'formspree' && /^https:\/\/formspree\.io\/f\//.test(tc.forms.endpoint)),
   'Enquiry form',
-  "data/to-confirm.json → forms. With provider 'none' the contact page shows her email instead of a form — honest, but a form converts better. On Cloudflare, set provider to 'formspree' and paste a free form endpoint."
+  tc.forms.provider === 'php'
+    ? 'data/to-confirm.json → forms.mailFrom. PHP mail() must send From: an address on the hosting domain, or DreamHost will reject it. The enquirer goes in Reply-To.'
+    : "data/to-confirm.json → forms. With provider 'none' the contact page shows her email instead of a form — honest, but a form converts better."
 );
 
 check(
