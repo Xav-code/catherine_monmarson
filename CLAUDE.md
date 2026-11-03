@@ -30,7 +30,7 @@ If a change makes the page busier, it is probably wrong.
 | | |
 |---|---|
 | Repo | `github.com/Xav-code/catherine_monmarson`, branch `main`, clean |
-| Live at | `catherinemonmarson.seailles.com` — DreamHost, uploaded by hand |
+| Live at | **`catherinemonmarson.seailles.com`** — DreamHost, HTTPS, verified 3 Nov 2026 |
 | Target | `catherinemonmarson.com` once Catherine wants her own name |
 | Contact form | **Off.** Page shows her email instead — see *Turning the form on* |
 | Blockers | SIRET, artist status, shipping rates, price review, mediator, form |
@@ -178,8 +178,20 @@ npm run build
 rsync -az --delete dist/ USER@SERVER:~/catherinemonmarson.seailles.com/
 ```
 
-Or zip `dist/` (Python `zipfile`) and extract in the subdomain folder, contents
-at top level. Check `.htaccess` survived — file managers hide dotfiles.
+Or upload the zip and extract **on the server** — this is what worked:
+
+```bash
+scp catherinemonmarson-site.zip dh_t7jqdj@sin1-shared-02.dreamhost.com:~/catherinemonmarson.seailles.com/
+ssh dh_t7jqdj@sin1-shared-02.dreamhost.com
+cd ~/catherinemonmarson.seailles.com
+find . -maxdepth 1 -mindepth 1 ! -name '.dh-diag' -exec rm -rf {} +   # only when replacing wholesale
+unzip -o catherinemonmarson-site.zip && rm catherinemonmarson-site.zip
+```
+
+Never upload through the panel's web File Manager. It flattened all 2,008 files
+into the web root, renamed every page `index (1).html` … `index (356).html`, and
+renamed `.htaccess` to `download`. One archive extracted server-side is the
+only reliable route.
 
 Uploading by hand is the one manual step left. Cloudflare Pages would build on
 push for free and has no account history to overcome; worth revisiting once the
