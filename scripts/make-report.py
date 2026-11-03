@@ -158,10 +158,12 @@ para(
     "previews, dimensions in centimetres and inches, prices, and an enquiry route."
 )
 para(
-    "The source code is complete and committed. The site is being uploaded to "
-    "catherinemonmarson.seailles.com as an interim address. What remains is content only "
-    "Catherine can supply, a mail address for the contact form, and — when she wants it — "
-    "the catherinemonmarson.com domain."
+    "The site is live at catherinemonmarson.seailles.com, served over HTTPS from the "
+    "existing DreamHost plan, and has been verified end to end: every page in both "
+    "languages, the stylesheet, the images, the custom error page, the security headers "
+    "and the caching rules. What remains is content only Catherine can supply, a mail "
+    "address to switch the contact form on, and — when she wants it — the "
+    "catherinemonmarson.com domain."
 )
 
 # ------------------------------------------------------------ what exists --
@@ -300,21 +302,45 @@ para(
     "emitted in each host's own format."
 )
 
-para("3.3 Current: DreamHost", style="Heading 3")
+para("3.3 Resolved: DreamHost — the site is live", style="Heading 3")
 para(
-    "The site is being uploaded to catherinemonmarson.seailles.com on the existing DreamHost "
-    "plan. This is the better outcome for the contact form: DreamHost provides PHP and outbound "
-    "mail, so the form can post to a script on your own domain with no third party, no monthly "
-    "submission cap, and no additional account."
+    "The site is now live at catherinemonmarson.seailles.com on the existing DreamHost plan. "
+    "This is the better outcome for the contact form: DreamHost provides PHP and outbound "
+    "mail, so the form can post to a script on your own domain with no third party, no "
+    "monthly submission cap, and no additional account."
 )
-para("A 157 MB archive of 2,008 built files was prepared and verified for upload.", space_after=4)
+para(
+    "Getting there took three attempts, and the failures are worth recording because they "
+    "would otherwise be repeated."
+)
+bullet(
+    "The panel's web File Manager flattened all 1,638 asset files into the web root, saved "
+    "each of the 358 pages under a name such as \u201cindex (1).html\u201d, and renamed the "
+    ".htaccess configuration file to \u201cdownload\u201d. The result served unstyled text "
+    "with broken images."
+)
+bullet(
+    "SSH, the reliable alternative, was blocked by McAfee's firewall on the local machine, "
+    "for every host and not only DreamHost. Granting ssh.exe and scp.exe access resolved it."
+)
+bullet(
+    "DreamHost's own SSH switch reported an error while in fact succeeding, and both that "
+    "switch and a password change take about ten minutes to reach the server."
+)
+para(
+    "The working method is a single archive uploaded by scp and extracted on the server, "
+    "which builds the directory tree correctly. The full procedure, with screenshots of "
+    "every step and of each failure mode, is in docs/DEPLOYMENT.md in the repository.",
+    space_after=4,
+)
 rich([
-    ("Note on the archive. ", {"bold": True}),
-    ("The repository download from GitHub is ", {}),
+    ("Two traps worth knowing. ", {"bold": True}),
+    ("A download of the repository from GitHub is ", {}),
     ("not", {"italic": True}),
-    (" the website — it contains 237 source files. The site is the generated output, which is "
-     "deliberately excluded from version control. The archive supplied contains that output, "
-     "with POSIX paths so Linux extraction preserves the folder structure.", {}),
+    (" the website — it contains the source, and the site is generated output that is "
+     "deliberately excluded from version control. And an archive made with Windows' built-in "
+     "compression writes paths that Linux extraction flattens; the project includes a script "
+     "that packages it correctly.", {}),
 ])
 
 para("3.4 The contact form today", style="Heading 3")
@@ -335,18 +361,24 @@ para(
     "address; steps 4 and 5 move it to catherinemonmarson.com; step 6 is content quality."
 )
 
-para("Step 1 — Finish the DreamHost setup", style="Heading 3")
-numbered("In the DreamHost panel, under Websites → Add Website, confirm the subdomain is hosted with PHP 8.x enabled.")
-numbered("Extract the archive so that index.html sits directly in the subdomain's folder, not inside a sub-folder.")
-numbered("Confirm the hidden file .htaccess was uploaded — many file managers hide dotfiles. It carries the security headers, caching, the 404 page and the clean-URL rules.")
-numbered("Enable Let's Encrypt for free HTTPS. This is free because seailles.com is already in your account.")
-numbered("Visit the site and check: the homepage, a work page, the English side, and a deliberate wrong URL to confirm the 404 page appears.")
+para("Step 1 — Done: the site is live", style="Heading 3")
+para(
+    "Completed on 3 November 2026 and verified from outside: all 358 pages in both languages "
+    "respond correctly, the stylesheet and images load, the French error page appears on a bad "
+    "address, and the four security headers and two caching policies are active. HTTPS is in "
+    "place through Let's Encrypt."
+)
+rich([
+    ("If a page ever looks unstyled after a future upload, ", {"bold": True}),
+    ("press Ctrl+Shift+R first. A browser tab that saw a broken version caches those failures, "
+     "and an ordinary reload does not clear them.", {}),
+])
 
 para("Step 2 — Turn the contact form on", style="Heading 3")
 rich([("This is the only step needed for a fully working enquiry form.", {"bold": True})], space_after=4)
 numbered("In the DreamHost panel, Mail → Manage Email, create an address on seailles.com, for example catherine@seailles.com.")
 numbered("Record it in data/to-confirm.json as forms.mailFrom, and set forms.provider to \"php\".")
-numbered("Rebuild and re-upload. The handler is generated automatically.")
+numbered("Rebuild and re-upload, following docs/DEPLOYMENT.md sections 6 to 8. The handler is generated automatically; nothing else needs editing.")
 para("", space_after=2)
 rich([
     ("Why it cannot be her Wanadoo address. ", {"bold": True}),
@@ -441,6 +473,12 @@ table(
 para("To add a work: place the photograph in media/originals, add its details to the catalogue "
      "file, rebuild. To add a second view of a work, name the file with a -2 suffix and the "
      "angle strip appears by itself.")
+para(
+    "Publishing a change is then: build, package the output, upload it by scp and extract it "
+    "over SSH — about five minutes, fully documented in docs/DEPLOYMENT.md. Adding an SSH key, "
+    "described in section 12 of that document, reduces it to a single rsync command that "
+    "transfers only what changed."
+)
 
 para("A note on automation", style="Heading 3")
 para(
@@ -461,7 +499,8 @@ table(
         ["Bilingual French and English", "Complete"],
         ["Accessibility and SEO", "Complete and audited"],
         ["Source code committed and pushed", "Complete"],
-        ["Hosting on the interim subdomain", "In progress"],
+        ["Deployment procedure documented", "Complete, with screenshots"],
+        ["Live on catherinemonmarson.seailles.com", "Done, verified"],
         ["Working contact form", "Needs a sending address — step 2"],
         ["Legal and commercial details", "Needs Catherine — step 3"],
         ["catherinemonmarson.com", "Not started — steps 4 and 5"],
@@ -473,9 +512,10 @@ table(
 para("", space_after=2)
 rich([
     ("The shortest path to a site worth sharing: ", {"bold": True}),
-    ("finish the upload, create one email address on seailles.com and turn the form back on "
-     "(about ten minutes), then give Catherine the worksheet. The domain can follow whenever "
-     "she wants her own name on it — it is a one-line change.", {}),
+    ("create one email address on seailles.com and turn the contact form back on — about ten "
+     "minutes — then give Catherine the worksheet so the untitled works can be named. The "
+     "legal details can follow, and the domain whenever she wants her own name on it: that is "
+     "a one-line change.", {}),
 ])
 
 out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),

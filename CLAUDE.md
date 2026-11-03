@@ -4,8 +4,9 @@ Project context for resuming work. Written to be read first, in one pass.
 Named `CLAUDE.md` because Claude Code loads it automatically each session — it
 serves equally as a human handover note.
 
-See also: `README.md` (how to run it), `ROADMAP.md` (the plan and its reasoning),
-`python scripts/make-report.py` (status report as .docx for Xavier).
+See also: `README.md` (how to run it), `ROADMAP.md` (the plan and its
+reasoning), `docs/DEPLOYMENT.md` (step-by-step DreamHost deployment with
+screenshots), `python scripts/make-report.py` (status report as .docx).
 
 ---
 
@@ -178,7 +179,7 @@ npm run build
 rsync -az --delete dist/ USER@SERVER:~/catherinemonmarson.seailles.com/
 ```
 
-Or upload the zip and extract **on the server** — this is what worked:
+**Full walkthrough with screenshots: `docs/DEPLOYMENT.md`.** The short version:
 
 ```bash
 scp catherinemonmarson-site.zip dh_t7jqdj@sin1-shared-02.dreamhost.com:~/catherinemonmarson.seailles.com/
@@ -188,10 +189,14 @@ find . -maxdepth 1 -mindepth 1 ! -name '.dh-diag' -exec rm -rf {} +   # only whe
 unzip -o catherinemonmarson-site.zip && rm catherinemonmarson-site.zip
 ```
 
-Never upload through the panel's web File Manager. It flattened all 2,008 files
-into the web root, renamed every page `index (1).html` … `index (356).html`, and
-renamed `.htaccess` to `download`. One archive extracted server-side is the
-only reliable route.
+Never upload through the panel's web File Manager — it flattened all the files
+into the web root and renamed `.htaccess` to `download`. Never zip with
+PowerShell's `Compress-Archive` (backslash paths). One archive built with
+Python's `zipfile` and extracted server-side is the only reliable route.
+
+Credentials live in the user's password manager, never in this repo. The one
+screenshot that showed the SFTP password is redacted in
+`docs/deployment-snapshots/08-reset-password-redacted.png`.
 
 Uploading by hand is the one manual step left. Cloudflare Pages would build on
 push for free and has no account history to overcome; worth revisiting once the

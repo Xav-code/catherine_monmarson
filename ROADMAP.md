@@ -115,9 +115,9 @@ unstretched canvas; crated freight quote for sculpture and canvases over 130 cm.
 | Images | Astro `<Image>` → AVIF/WebP, responsive srcset | 36 MB of originals must not become a 36 MB payload |
 | Content | JSON + Markdown in the repo, generated from the catalogue | Cathy edits one file; no CMS to maintain |
 | CMS (phase 2) | Sveltia CMS, git-backed, free | Lets Cathy add a work from her phone |
-| Payments | Stripe Checkout | See §4 |
-| Forms | Netlify Forms (or Formspree) → email to Cathy | No server to run |
-| Hosting | Netlify or Cloudflare Pages, free tier | Push-to-deploy, instant rollback |
+| Payments | Stripe Payment Links | See §4 |
+| Forms | PHP handler on the hosting domain, generated at build | No third party, no monthly cap. `netlify` / `formspree` / `none` also supported |
+| Hosting | **DreamHost shared**, Apache + PHP 8.3, `sin1-shared-02` | Already owned; PHP means the contact form needs no third party. Netlify suspended the account twice; `netlify.toml` and Cloudflare config are kept so either stays possible |
 | Domain | `catherinemonmarson.seailles.com` today, on Xavier's DreamHost plan. `catherinemonmarson.com` when she wants her own name | A subdomain costs nothing and works now |
 | Analytics | Plausible | GDPR-clean, no cookie banner |
 | i18n | Astro routing: `/` (FR) + `/en/` | FR is her market, EN is her reach |
@@ -150,8 +150,9 @@ This blocks the final 20% of quality. Priority order:
 | **2** Catalogue & artwork page | Index with filters, detail page, lightbox zoom, series pages | ✅ done |
 | **3** Story | `/atelier` — bio, statement, process, CV (studio imagery pending §6.4) | ✅ done |
 | **4** Sculpture treatment | Angle strip, room preview with scale silhouette | ✅ done |
-| **5** Commerce | Enquiry flow, shipping & returns page, Stripe Payment Link slots | ✅ built — needs the links themselves (§6.7) |
+| **5** Commerce | Enquiry flow, shipping & returns page, Stripe Payment Link slots | ✅ built — form needs a sending address on `seailles.com`; Stripe needs the links (§6.7) |
 | **6** Polish & launch | `VisualArtwork` + `Offer` + breadcrumb schema, per-work social cards, sitemap, icons, manifest, 404, perf, a11y audit | ✅ done |
+| **6b** Deployment | Live on DreamHost at `catherinemonmarson.seailles.com`, HTTPS, verified 3 Nov 2026. See [docs/DEPLOYMENT.md](./docs/DEPLOYMENT.md) | ✅ done |
 | **7** Growth | Press page built, newsletter signup wired (hidden until the list exists); Instagram discipline and Google Arts profile remain | ◑ partly done |
 
 ---

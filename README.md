@@ -3,8 +3,11 @@
 The website of **Catherine Monmarson** — painter and sculptor, Biot, Côte d'Azur.
 Static, bilingual (FR default, EN at `/en/`), built with Astro.
 
-See [ROADMAP.md](./ROADMAP.md) for the plan, the design decisions and what still
-needs to come from Cathy.
+**Live at [catherinemonmarson.seailles.com](https://catherinemonmarson.seailles.com).**
+
+- [ROADMAP.md](./ROADMAP.md) — the plan, the design decisions, what still needs to come from Cathy
+- [docs/DEPLOYMENT.md](./docs/DEPLOYMENT.md) — step-by-step DreamHost deployment, with screenshots
+- [CLAUDE.md](./CLAUDE.md) — how to pick the project back up
 
 ## Open it
 
@@ -161,17 +164,23 @@ build settings on each.
 **Netlify** — app.netlify.com → *Add new site* → *Import an existing project*;
 it reads `netlify.toml` and fills them in itself.
 
-**DreamHost (or any Apache host with PHP)** — `npm run build`, then upload the
-contents of `dist/` to the subdomain's directory. `dist/.htaccess` and
-`dist/contact.php` are generated as part of the build.
+**DreamHost — how this site is actually hosted.** Full walkthrough with
+screenshots in **[docs/DEPLOYMENT.md](./docs/DEPLOYMENT.md)**. The short version,
+once SSH is set up:
 
-```bash
+```powershell
 npm run build
-rsync -az --delete dist/ USER@SERVER:~/sub.example.com/
+scp catherinemonmarson-site.zip dh_t7jqdj@sin1-shared-02.dreamhost.com:~/catherinemonmarson.seailles.com/
+ssh dh_t7jqdj@sin1-shared-02.dreamhost.com
+```
+```bash
+cd ~/catherinemonmarson.seailles.com && unzip -o catherinemonmarson-site.zip && rm catherinemonmarson-site.zip
 ```
 
-`rsync` needs SSH, which DreamHost enables per user under *Users → Manage Users
-→ Shell access*. SFTP works equally well if you prefer a GUI.
+Zip `dist/` with Python's `zipfile`, never PowerShell's `Compress-Archive` —
+that writes backslash paths which Linux `unzip` flattens. And never use the
+panel's web File Manager: it dumped all 1,638 asset files into the web root and
+renamed every page `index (1).html`. See DEPLOYMENT.md §11.
 
 ### The enquiry form
 
