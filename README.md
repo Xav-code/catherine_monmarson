@@ -7,6 +7,7 @@ Static, bilingual (FR default, EN at `/en/`), built with Astro.
 
 - [ROADMAP.md](./ROADMAP.md) — the plan, the design decisions, what still needs to come from Cathy
 - [docs/DEPLOYMENT.md](./docs/DEPLOYMENT.md) — step-by-step DreamHost deployment, with screenshots
+  (also as Word: `python scripts/make-deployment-doc.py`)
 - [CLAUDE.md](./CLAUDE.md) — how to pick the project back up
 
 ## Open it

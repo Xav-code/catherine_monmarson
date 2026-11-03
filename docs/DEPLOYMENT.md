@@ -8,6 +8,11 @@ Follow it top to bottom the first time. Once SSH is set up, routine deployments
 are only [§6](#6-build-the-site) to [§8](#8-extract-on-the-server) — about five
 minutes.
 
+> **Prefer Word?** `python scripts/make-deployment-doc.py` regenerates this as
+> **Catherine-Monmarson-deployment-guide.docx** in the repository root, with the
+> screenshots cropped to the relevant panel and embedded. Run
+> `python scripts/make-crops.py` first if the crops are missing.
+
 > **A note on the password.** The password is deliberately *not* written in this
 > document, and it is blanked out in the screenshot at §4. This file lives in a
 > git repository; a password that grants shell access and full write access to

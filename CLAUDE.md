@@ -60,7 +60,9 @@ npm run build       # → dist/  (runs the form-handler generator first)
 npm run catalogue   # regenerate src/data/works.json from the harvest
 npm run prelaunch   # what is still outstanding before promoting the site
 npm run worksheet   # sheets for Catherine to fill in
-python scripts/make-report.py   # status .docx
+python scripts/make-report.py            # status .docx
+python scripts/make-crops.py             # crop the deployment screenshots
+python scripts/make-deployment-doc.py    # deployment guide .docx, with images
 ```
 
 `npm run build` is self-sufficient. `npm run catalogue` is only needed after
